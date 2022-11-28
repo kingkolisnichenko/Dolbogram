@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mikepenz:iconics-typeface-api:5.3.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4d24ac8e60fc18a222d3816846da167e/transformed/iconics-typeface-api-5.3.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4d24ac8e60fc18a222d3816846da167e/transformed/iconics-typeface-api-5.3.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4d24ac8e60fc18a222d3816846da167e/transformed/iconics-typeface-api-5.3.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/iconics-typeface-api/5.3.3/8e2936a9aa5b81789e7392b536bdfeb484ac6a5e/iconics-typeface-api-5.3.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/iconics-typeface-api/5.3.3/5d3c3d58e1749725b9e0f1412c49baa04f6eb79c/iconics-typeface-api-5.3.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
