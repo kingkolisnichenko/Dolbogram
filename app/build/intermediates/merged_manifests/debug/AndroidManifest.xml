@@ -37,18 +37,15 @@
         </activity>
 
         <provider
+            android:name="com.mikepenz.iconics.IconicsContentProvider"
+            android:authorities="com.konge.dolbogram.iconics.core.provider"
+            android:enabled="@bool/is_iconics_content_provider_enabled"
+            android:exported="false"
+            android:initOrder="100" />
+        <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.konge.dolbogram.androidx-startup"
             android:exported="false" >
-            <meta-data
-                android:name="com.mikepenz.iconics.animation.SpinProcessor"
-                android:value="androidx.startup" />
-            <meta-data
-                android:name="com.mikepenz.iconics.animation.BlinkAlphaProcessor"
-                android:value="androidx.startup" />
-            <meta-data
-                android:name="com.mikepenz.iconics.animation.BlinkScaleProcessor"
-                android:value="androidx.startup" />
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"
                 android:value="androidx.startup" />

@@ -11,22 +11,22 @@
 9-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
 10
 11    <permission
-11-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\601efcbada60c63eb0bd187e8d609722\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+11-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\862a48ada38c28461deadd92c59b2d5c\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 12        android:name="com.konge.dolbogram.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\601efcbada60c63eb0bd187e8d609722\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+12-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\862a48ada38c28461deadd92c59b2d5c\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\601efcbada60c63eb0bd187e8d609722\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+13-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\862a48ada38c28461deadd92c59b2d5c\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 14
 15    <uses-permission android:name="com.konge.dolbogram.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\601efcbada60c63eb0bd187e8d609722\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\601efcbada60c63eb0bd187e8d609722\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+15-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\862a48ada38c28461deadd92c59b2d5c\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\862a48ada38c28461deadd92c59b2d5c\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 16
 17    <application
 17-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:6:5-25:19
 18        android:allowBackup="true"
 18-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:7:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\601efcbada60c63eb0bd187e8d609722\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+19-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\862a48ada38c28461deadd92c59b2d5c\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
 20-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:8:9-65
 21        android:debuggable="true"
@@ -62,44 +62,38 @@
 37        </activity>
 38
 39        <provider
-39-->[com.mikepenz:iconics-core:5.3.3] C:\Users\Ilya\.gradle\caches\transforms-3\1123124681a76015e84f06487d2bc830\transformed\iconics-core-5.3.3\AndroidManifest.xml:26:9-40:20
-40            android:name="androidx.startup.InitializationProvider"
-40-->[com.mikepenz:iconics-core:5.3.3] C:\Users\Ilya\.gradle\caches\transforms-3\1123124681a76015e84f06487d2bc830\transformed\iconics-core-5.3.3\AndroidManifest.xml:27:13-67
-41            android:authorities="com.konge.dolbogram.androidx-startup"
-41-->[com.mikepenz:iconics-core:5.3.3] C:\Users\Ilya\.gradle\caches\transforms-3\1123124681a76015e84f06487d2bc830\transformed\iconics-core-5.3.3\AndroidManifest.xml:28:13-68
-42            android:exported="false" >
-42-->[com.mikepenz:iconics-core:5.3.3] C:\Users\Ilya\.gradle\caches\transforms-3\1123124681a76015e84f06487d2bc830\transformed\iconics-core-5.3.3\AndroidManifest.xml:29:13-37
-43            <meta-data
-43-->[com.mikepenz:iconics-core:5.3.3] C:\Users\Ilya\.gradle\caches\transforms-3\1123124681a76015e84f06487d2bc830\transformed\iconics-core-5.3.3\AndroidManifest.xml:31:13-33:52
-44                android:name="com.mikepenz.iconics.animation.SpinProcessor"
-44-->[com.mikepenz:iconics-core:5.3.3] C:\Users\Ilya\.gradle\caches\transforms-3\1123124681a76015e84f06487d2bc830\transformed\iconics-core-5.3.3\AndroidManifest.xml:32:17-76
-45                android:value="androidx.startup" />
-45-->[com.mikepenz:iconics-core:5.3.3] C:\Users\Ilya\.gradle\caches\transforms-3\1123124681a76015e84f06487d2bc830\transformed\iconics-core-5.3.3\AndroidManifest.xml:33:17-49
-46            <meta-data
-46-->[com.mikepenz:iconics-core:5.3.3] C:\Users\Ilya\.gradle\caches\transforms-3\1123124681a76015e84f06487d2bc830\transformed\iconics-core-5.3.3\AndroidManifest.xml:34:13-36:52
-47                android:name="com.mikepenz.iconics.animation.BlinkAlphaProcessor"
-47-->[com.mikepenz:iconics-core:5.3.3] C:\Users\Ilya\.gradle\caches\transforms-3\1123124681a76015e84f06487d2bc830\transformed\iconics-core-5.3.3\AndroidManifest.xml:35:17-82
-48                android:value="androidx.startup" />
-48-->[com.mikepenz:iconics-core:5.3.3] C:\Users\Ilya\.gradle\caches\transforms-3\1123124681a76015e84f06487d2bc830\transformed\iconics-core-5.3.3\AndroidManifest.xml:36:17-49
+39-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:27:9-32:39
+40            android:name="com.mikepenz.iconics.IconicsContentProvider"
+40-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:28:13-71
+41            android:authorities="com.konge.dolbogram.iconics.core.provider"
+41-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:29:13-73
+42            android:enabled="@bool/is_iconics_content_provider_enabled"
+42-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:30:13-72
+43            android:exported="false"
+43-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:31:13-37
+44            android:initOrder="100" />
+44-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:32:13-36
+45        <provider
+45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+46            android:name="androidx.startup.InitializationProvider"
+46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+47            android:authorities="com.konge.dolbogram.androidx-startup"
+47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+48            android:exported="false" >
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 49            <meta-data
-49-->[com.mikepenz:iconics-core:5.3.3] C:\Users\Ilya\.gradle\caches\transforms-3\1123124681a76015e84f06487d2bc830\transformed\iconics-core-5.3.3\AndroidManifest.xml:37:13-39:52
-50                android:name="com.mikepenz.iconics.animation.BlinkScaleProcessor"
-50-->[com.mikepenz:iconics-core:5.3.3] C:\Users\Ilya\.gradle\caches\transforms-3\1123124681a76015e84f06487d2bc830\transformed\iconics-core-5.3.3\AndroidManifest.xml:38:17-82
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 51                android:value="androidx.startup" />
-51-->[com.mikepenz:iconics-core:5.3.3] C:\Users\Ilya\.gradle\caches\transforms-3\1123124681a76015e84f06487d2bc830\transformed\iconics-core-5.3.3\AndroidManifest.xml:39:17-49
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 52            <meta-data
-52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\cdd7897d315dbde429e2b9f365814df4\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-53                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\cdd7897d315dbde429e2b9f365814df4\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+52-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\025ed7849c6f43c10d9a6c1cd4d240b1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+53-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\025ed7849c6f43c10d9a6c1cd4d240b1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
 54                android:value="androidx.startup" />
-54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\cdd7897d315dbde429e2b9f365814df4\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-55            <meta-data
-55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\683ed57b598ecc7bebcecc51c2cb0430\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-56                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-56-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\683ed57b598ecc7bebcecc51c2cb0430\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-57                android:value="androidx.startup" />
-57-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\683ed57b598ecc7bebcecc51c2cb0430\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-58        </provider>
-59    </application>
-60
-61</manifest>
+54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\025ed7849c6f43c10d9a6c1cd4d240b1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+55        </provider>
+56    </application>
+57
+58</manifest>

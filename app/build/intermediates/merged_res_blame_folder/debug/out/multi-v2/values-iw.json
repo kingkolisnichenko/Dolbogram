@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-37:/values-iw/values-iw.xml",
+            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-35:/values-iw/values-iw.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\0abd3045f74c0510260b448e83575c52\\transformed\\material-1.8.0-alpha03\\res\\values-iw\\values-iw.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\862a48ada38c28461deadd92c59b2d5c\\transformed\\core-1.9.0\\res\\values-iw\\values-iw.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "100",
+                        "startColumns": "4",
+                        "startOffsets": "8114",
+                        "endColumns": "100",
+                        "endOffsets": "8210"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\09ae06d1804741e43c03bcdc13a7fe36\\transformed\\material-1.8.0-alpha03\\res\\values-iw\\values-iw.xml",
                     "from": {
                         "startLines": "2,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\ba9c93f2d016945cca8db9870dfebc1e\\transformed\\appcompat-1.5.1\\res\\values-iw\\values-iw.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\68ee75195f0df5ad8d472ec660be41c8\\transformed\\appcompat-1.5.1\\res\\values-iw\\values-iw.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\234cd155db4d717a1cd65bbeec3f735a\\transformed\\navigation-ui-2.4.2\\res\\values-iw\\values-iw.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\30d8f74ca12f32a76eef5dc8bd9d3c06\\transformed\\navigation-ui-2.2.0-rc04\\res\\values-iw\\values-iw.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -54,23 +71,6 @@
                         "startOffsets": "7731,7837",
                         "endColumns": "105,119",
                         "endOffsets": "7832,7952"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\601efcbada60c63eb0bd187e8d609722\\transformed\\core-1.9.0\\res\\values-iw\\values-iw.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "100",
-                        "startColumns": "4",
-                        "startOffsets": "8114",
-                        "endColumns": "100",
-                        "endOffsets": "8210"
                     }
                 }
             ]

@@ -1,10 +1,39 @@
 {
     "logs": [
         {
-            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-37:/values-v23/values-v23.xml",
+            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-35:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\dc542e0f093e7d9c2ce1008c010d290a\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\68ee75195f0df5ad8d472ec660be41c8\\transformed\\appcompat-1.5.1\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1225,1975,2094,2221,2443,2667,2782,2889,3002",
+                        "endLines": "2,3,4,5,19,33,34,35,38,42,43,44,45,49",
+                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
+                        "endOffsets": "185,320,395,482,1220,1970,2089,2216,2438,2662,2777,2884,2997,3227"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,21,35,36,37,40,44,45,46,47",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "107,242,377,452,539,1277,2027,2146,2273,2495,2719,2834,2941,3054",
+                        "endLines": "3,4,5,6,20,34,35,36,39,43,44,45,46,50",
+                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
+                        "endOffsets": "237,372,447,534,1272,2022,2141,2268,2490,2714,2829,2936,3049,3279"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\73bc1838f26e35930684936ab265d890\\transformed\\materialize-1.2.1\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "51",
+                        "endOffsets": "102"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\6a7043a1ea02e267aacd751d3a4a761c\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,27 +43,16 @@
                         "endOffsets": "200"
                     },
                     "to": {
-                        "startLines": "50",
+                        "startLines": "51",
                         "startColumns": "4",
-                        "startOffsets": "3232",
-                        "endLines": "52",
+                        "startOffsets": "3284",
+                        "endLines": "53",
                         "endColumns": "12",
-                        "endOffsets": "3377"
+                        "endOffsets": "3429"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\ba9c93f2d016945cca8db9870dfebc1e\\transformed\\appcompat-1.5.1\\res\\values-v23\\values-v23.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,190,325,400,487,1225,1975,2094,2221,2443,2667,2782,2889,3002",
-                        "endLines": "2,3,4,5,19,33,34,35,38,42,43,44,45,49",
-                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
-                        "endOffsets": "185,320,395,482,1220,1970,2089,2216,2438,2662,2777,2884,2997,3227"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\0abd3045f74c0510260b448e83575c52\\transformed\\material-1.8.0-alpha03\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\09ae06d1804741e43c03bcdc13a7fe36\\transformed\\material-1.8.0-alpha03\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,8,13,17,20,23,26,31,34,38",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -44,12 +62,12 @@
                         "endOffsets": "266,476,796,1033,1240,1447,1650,1982,2184,2449,2722"
                     },
                     "to": {
-                        "startLines": "53,56,59,64,68,71,74,77,82,85,89",
+                        "startLines": "54,57,60,65,69,72,75,78,83,86,90",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3382,3598,3808,4128,4365,4572,4779,4982,5314,5516,5781",
-                        "endLines": "55,58,63,67,70,73,76,81,84,88,92",
+                        "startOffsets": "3434,3650,3860,4180,4417,4624,4831,5034,5366,5568,5833",
+                        "endLines": "56,59,64,68,71,74,77,82,85,89,93",
                         "endColumns": "10,10,10,10,10,10,10,10,10,10,10",
-                        "endOffsets": "3593,3803,4123,4360,4567,4774,4977,5309,5511,5776,6049"
+                        "endOffsets": "3645,3855,4175,4412,4619,4826,5029,5361,5563,5828,6101"
                     }
                 }
             ]

@@ -603,12 +603,14 @@
     </attr>
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="is_iconics_content_provider_enabled">false</bool>
     <bool name="mtrl_btn_textappearance_all_caps">true</bool>
     <color name="abc_decor_view_status_guard">#ff000000</color>
     <color name="abc_decor_view_status_guard_light">#ffffffff</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
+    <color name="accent">@color/colorAccent</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
     <color name="androidx_core_ripple_material_light">#1f000000</color>
@@ -630,7 +632,10 @@
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="colorAccent">#FF4081</color>
     <color name="colorPrimary">#0088CC</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorPrimaryLight">#BBDEFB</color>
     <color name="colorPrimaryVariant">#005E8E</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_dark_default_color_background">#121212</color>
@@ -816,8 +821,36 @@
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff008577</color>
-    <color name="material_drawer_divider">#1F000000</color>
+    <color name="material_drawer_accent">@color/materialize_accent</color>
+    <color name="material_drawer_background">@color/md_white_1000</color>
+    <color name="material_drawer_dark_background">@color/md_dark_background</color>
+    <color name="material_drawer_dark_divider">@color/md_dark_dividers</color>
+    <color name="material_drawer_dark_header_selection_subtext">@color/material_drawer_dark_secondary_text</color>
+    <color name="material_drawer_dark_header_selection_text">
+        @color/material_drawer_dark_primary_text
+    </color>
+    <color name="material_drawer_dark_hint_icon">@color/md_dark_disabled</color>
+    <color name="material_drawer_dark_hint_text">@color/md_dark_disabled</color>
+    <color name="material_drawer_dark_primary_icon">@color/md_dark_primary_icon</color>
+    <color name="material_drawer_dark_primary_text">@color/md_dark_primary_text</color>
+    <color name="material_drawer_dark_secondary_text">@color/md_dark_secondary</color>
+    <color name="material_drawer_dark_selected">#1F2196F3</color>
+    <color name="material_drawer_dark_selected_legacy">#202020</color>
+    <color name="material_drawer_dark_selected_text">@color/material_drawer_primary</color>
+    <color name="material_drawer_divider">@color/md_light_dividers</color>
+    <color name="material_drawer_header_selection_subtext">@color/material_drawer_secondary_text</color>
+    <color name="material_drawer_header_selection_text">@color/material_drawer_primary_text</color>
+    <color name="material_drawer_hint_icon">@color/md_light_disabled</color>
+    <color name="material_drawer_hint_text">@color/md_light_disabled</color>
+    <color name="material_drawer_primary">@color/materialize_primary</color>
+    <color name="material_drawer_primary_dark">@color/materialize_primary_dark</color>
+    <color name="material_drawer_primary_icon">@color/md_light_secondary</color>
+    <color name="material_drawer_primary_light">@color/materialize_primary_light</color>
+    <color name="material_drawer_primary_text">@color/md_light_primary_text</color>
+    <color name="material_drawer_secondary_text">@color/md_light_secondary</color>
     <color name="material_drawer_selected">#1F2196F3</color>
+    <color name="material_drawer_selected_legacy">#E8E8E8</color>
+    <color name="material_drawer_selected_text">@color/material_drawer_primary</color>
     <color name="material_grey_100">#fff5f5f5</color>
     <color name="material_grey_300">#ffe0e0e0</color>
     <color name="material_grey_50">#fffafafa</color>
@@ -855,6 +888,287 @@
     <color name="material_personalized_color_surface_variant">#FFFFFF</color>
     <color name="material_personalized_color_tertiary">#FFFFFF</color>
     <color name="material_personalized_color_tertiary_container">#FFFFFF</color>
+    <color name="materialize_accent">@color/accent</color>
+    <color name="materialize_primary">@color/primary</color>
+    <color name="materialize_primary_dark">@color/primary_dark</color>
+    <color name="materialize_primary_light">@color/primary_light</color>
+    <color name="md_amber_100">#FFECB3</color>
+    <color name="md_amber_200">#FFE082</color>
+    <color name="md_amber_300">#FFD54F</color>
+    <color name="md_amber_400">#FFCA28</color>
+    <color name="md_amber_50">#FFF8E1</color>
+    <color name="md_amber_500">#FFC107</color>
+    <color name="md_amber_600">#FFB300</color>
+    <color name="md_amber_700">#FFA000</color>
+    <color name="md_amber_800">#FF8F00</color>
+    <color name="md_amber_900">#FF6F00</color>
+    <color name="md_amber_A100">#FFE57F</color>
+    <color name="md_amber_A200">#FFD740</color>
+    <color name="md_amber_A400">#FFC400</color>
+    <color name="md_amber_A700">#FFAB00</color>
+    <color name="md_black_1000">#000000</color>
+    <color name="md_blue_100">#BBDEFB</color>
+    <color name="md_blue_200">#90CAF9</color>
+    <color name="md_blue_300">#64B5F6</color>
+    <color name="md_blue_400">#42A5F5</color>
+    <color name="md_blue_50">#E3F2FD</color>
+    <color name="md_blue_500">#2196F3</color>
+    <color name="md_blue_600">#1E88E5</color>
+    <color name="md_blue_700">#1976D2</color>
+    <color name="md_blue_800">#1565C0</color>
+    <color name="md_blue_900">#0D47A1</color>
+    <color name="md_blue_A100">#82B1FF</color>
+    <color name="md_blue_A200">#448AFF</color>
+    <color name="md_blue_A400">#2979FF</color>
+    <color name="md_blue_A700">#2962FF</color>
+    <color name="md_blue_grey_100">#CFD8DC</color>
+    <color name="md_blue_grey_200">#B0BEC5</color>
+    <color name="md_blue_grey_300">#90A4AE</color>
+    <color name="md_blue_grey_400">#78909C</color>
+    <color name="md_blue_grey_50">#ECEFF1</color>
+    <color name="md_blue_grey_500">#607D8B</color>
+    <color name="md_blue_grey_600">#546E7A</color>
+    <color name="md_blue_grey_700">#455A64</color>
+    <color name="md_blue_grey_800">#37474F</color>
+    <color name="md_blue_grey_900">#263238</color>
+    <color name="md_brown_100">#D7CCC8</color>
+    <color name="md_brown_200">#BCAAA4</color>
+    <color name="md_brown_300">#A1887F</color>
+    <color name="md_brown_400">#8D6E63</color>
+    <color name="md_brown_50">#EFEBE9</color>
+    <color name="md_brown_500">#795548</color>
+    <color name="md_brown_600">#6D4C41</color>
+    <color name="md_brown_700">#5D4037</color>
+    <color name="md_brown_800">#4E342E</color>
+    <color name="md_brown_900">#3E2723</color>
+    <color name="md_cyan_100">#B2EBF2</color>
+    <color name="md_cyan_200">#80DEEA</color>
+    <color name="md_cyan_300">#4DD0E1</color>
+    <color name="md_cyan_400">#26C6DA</color>
+    <color name="md_cyan_50">#E0F7FA</color>
+    <color name="md_cyan_500">#00BCD4</color>
+    <color name="md_cyan_600">#00ACC1</color>
+    <color name="md_cyan_700">#0097A7</color>
+    <color name="md_cyan_800">#00838F</color>
+    <color name="md_cyan_900">#006064</color>
+    <color name="md_cyan_A100">#84FFFF</color>
+    <color name="md_cyan_A200">#18FFFF</color>
+    <color name="md_cyan_A400">#00E5FF</color>
+    <color name="md_cyan_A700">#00B8D4</color>
+    <color name="md_dark_appbar">@color/md_grey_900</color>
+    <color name="md_dark_background">@color/md_grey_850</color>
+    <color name="md_dark_cards">@color/md_grey_800</color>
+    <color name="md_dark_dialogs">@color/md_grey_800</color>
+    <color name="md_dark_disabled">#4DFFFFFF</color>
+    <color name="md_dark_dividers">#1FFFFFFF</color>
+    <color name="md_dark_primary_icon">#B3FFFFFF</color>
+    <color name="md_dark_primary_text">#FFFFFFFF</color>
+    <color name="md_dark_secondary">#B3FFFFFF</color>
+    <color name="md_dark_statusbar">@color/md_black_1000</color>
+    <color name="md_deep_orange_100">#FFCCBC</color>
+    <color name="md_deep_orange_200">#FFAB91</color>
+    <color name="md_deep_orange_300">#FF8A65</color>
+    <color name="md_deep_orange_400">#FF7043</color>
+    <color name="md_deep_orange_50">#FBE9E7</color>
+    <color name="md_deep_orange_500">#FF5722</color>
+    <color name="md_deep_orange_600">#F4511E</color>
+    <color name="md_deep_orange_700">#E64A19</color>
+    <color name="md_deep_orange_800">#D84315</color>
+    <color name="md_deep_orange_900">#BF360C</color>
+    <color name="md_deep_orange_A100">#FF9E80</color>
+    <color name="md_deep_orange_A200">#FF6E40</color>
+    <color name="md_deep_orange_A400">#FF3D00</color>
+    <color name="md_deep_orange_A700">#DD2C00</color>
+    <color name="md_deep_purple_100">#D1C4E9</color>
+    <color name="md_deep_purple_200">#B39DDB</color>
+    <color name="md_deep_purple_300">#9575CD</color>
+    <color name="md_deep_purple_400">#7E57C2</color>
+    <color name="md_deep_purple_50">#EDE7F6</color>
+    <color name="md_deep_purple_500">#673AB7</color>
+    <color name="md_deep_purple_600">#5E35B1</color>
+    <color name="md_deep_purple_700">#512DA8</color>
+    <color name="md_deep_purple_800">#4527A0</color>
+    <color name="md_deep_purple_900">#311B92</color>
+    <color name="md_deep_purple_A100">#B388FF</color>
+    <color name="md_deep_purple_A200">#7C4DFF</color>
+    <color name="md_deep_purple_A400">#651FFF</color>
+    <color name="md_deep_purple_A700">#6200EA</color>
+    <color name="md_green_100">#C8E6C9</color>
+    <color name="md_green_200">#A5D6A7</color>
+    <color name="md_green_300">#81C784</color>
+    <color name="md_green_400">#66BB6A</color>
+    <color name="md_green_50">#E8F5E9</color>
+    <color name="md_green_500">#4CAF50</color>
+    <color name="md_green_600">#43A047</color>
+    <color name="md_green_700">#388E3C</color>
+    <color name="md_green_800">#2E7D32</color>
+    <color name="md_green_900">#1B5E20</color>
+    <color name="md_green_A100">#B9F6CA</color>
+    <color name="md_green_A200">#69F0AE</color>
+    <color name="md_green_A400">#00E676</color>
+    <color name="md_green_A700">#00C853</color>
+    <color name="md_grey_100">#F5F5F5</color>
+    <color name="md_grey_200">#EEEEEE</color>
+    <color name="md_grey_300">#E0E0E0</color>
+    <color name="md_grey_400">#BDBDBD</color>
+    <color name="md_grey_50">#FAFAFA</color>
+    <color name="md_grey_500">#9E9E9E</color>
+    <color name="md_grey_600">#757575</color>
+    <color name="md_grey_700">#616161</color>
+    <color name="md_grey_800">#424242</color>
+    <color name="md_grey_850">#303030</color>
+    <color name="md_grey_900">#212121</color>
+    <color name="md_indigo_100">#C5CAE9</color>
+    <color name="md_indigo_200">#9FA8DA</color>
+    <color name="md_indigo_300">#7986CB</color>
+    <color name="md_indigo_400">#5C6BC0</color>
+    <color name="md_indigo_50">#E8EAF6</color>
+    <color name="md_indigo_500">#3F51B5</color>
+    <color name="md_indigo_600">#3949AB</color>
+    <color name="md_indigo_700">#303F9F</color>
+    <color name="md_indigo_800">#283593</color>
+    <color name="md_indigo_900">#1A237E</color>
+    <color name="md_indigo_A100">#8C9EFF</color>
+    <color name="md_indigo_A200">#536DFE</color>
+    <color name="md_indigo_A400">#3D5AFE</color>
+    <color name="md_indigo_A700">#304FFE</color>
+    <color name="md_light_appbar">@color/md_grey_100</color>
+    <color name="md_light_background">@color/md_grey_50</color>
+    <color name="md_light_blue_100">#B3E5FC</color>
+    <color name="md_light_blue_200">#81D4FA</color>
+    <color name="md_light_blue_300">#4FC3F7</color>
+    <color name="md_light_blue_400">#29B6F6</color>
+    <color name="md_light_blue_50">#E1F5FE</color>
+    <color name="md_light_blue_500">#03A9F4</color>
+    <color name="md_light_blue_600">#039BE5</color>
+    <color name="md_light_blue_700">#0288D1</color>
+    <color name="md_light_blue_800">#0277BD</color>
+    <color name="md_light_blue_900">#01579B</color>
+    <color name="md_light_blue_A100">#80D8FF</color>
+    <color name="md_light_blue_A200">#40C4FF</color>
+    <color name="md_light_blue_A400">#00B0FF</color>
+    <color name="md_light_blue_A700">#0091EA</color>
+    <color name="md_light_cards">@color/md_white_1000</color>
+    <color name="md_light_dialogs">@color/md_white_1000</color>
+    <color name="md_light_disabled">#61000000</color>
+    <color name="md_light_dividers">#1F000000</color>
+    <color name="md_light_green_100">#DCEDC8</color>
+    <color name="md_light_green_200">#C5E1A5</color>
+    <color name="md_light_green_300">#AED581</color>
+    <color name="md_light_green_400">#9CCC65</color>
+    <color name="md_light_green_50">#F1F8E9</color>
+    <color name="md_light_green_500">#8BC34A</color>
+    <color name="md_light_green_600">#7CB342</color>
+    <color name="md_light_green_700">#689F38</color>
+    <color name="md_light_green_800">#558B2F</color>
+    <color name="md_light_green_900">#33691E</color>
+    <color name="md_light_green_A100">#CCFF90</color>
+    <color name="md_light_green_A200">#B2FF59</color>
+    <color name="md_light_green_A400">#76FF03</color>
+    <color name="md_light_green_A700">#64DD17</color>
+    <color name="md_light_primary_icon">#8A000000</color>
+    <color name="md_light_primary_text">#DE000000</color>
+    <color name="md_light_secondary">#8A000000</color>
+    <color name="md_light_statusbar">@color/md_grey_300</color>
+    <color name="md_lime_100">#F0F4C3</color>
+    <color name="md_lime_200">#E6EE9C</color>
+    <color name="md_lime_300">#DCE775</color>
+    <color name="md_lime_400">#D4E157</color>
+    <color name="md_lime_50">#F9FBE7</color>
+    <color name="md_lime_500">#CDDC39</color>
+    <color name="md_lime_600">#C0CA33</color>
+    <color name="md_lime_700">#AFB42B</color>
+    <color name="md_lime_800">#9E9D24</color>
+    <color name="md_lime_900">#827717</color>
+    <color name="md_lime_A100">#F4FF81</color>
+    <color name="md_lime_A200">#EEFF41</color>
+    <color name="md_lime_A400">#C6FF00</color>
+    <color name="md_lime_A700">#AEEA00</color>
+    <color name="md_orange_100">#FFE0B2</color>
+    <color name="md_orange_200">#FFCC80</color>
+    <color name="md_orange_300">#FFB74D</color>
+    <color name="md_orange_400">#FFA726</color>
+    <color name="md_orange_50">#FFF3E0</color>
+    <color name="md_orange_500">#FF9800</color>
+    <color name="md_orange_600">#FB8C00</color>
+    <color name="md_orange_700">#F57C00</color>
+    <color name="md_orange_800">#EF6C00</color>
+    <color name="md_orange_900">#E65100</color>
+    <color name="md_orange_A100">#FFD180</color>
+    <color name="md_orange_A200">#FFAB40</color>
+    <color name="md_orange_A400">#FF9100</color>
+    <color name="md_orange_A700">#FF6D00</color>
+    <color name="md_pink_100">#F8BBD0</color>
+    <color name="md_pink_200">#F48FB1</color>
+    <color name="md_pink_300">#F06292</color>
+    <color name="md_pink_400">#EC407A</color>
+    <color name="md_pink_50">#FCE4EC</color>
+    <color name="md_pink_500">#E91E63</color>
+    <color name="md_pink_600">#D81B60</color>
+    <color name="md_pink_700">#C2185B</color>
+    <color name="md_pink_800">#AD1457</color>
+    <color name="md_pink_900">#880E4F</color>
+    <color name="md_pink_A100">#FF80AB</color>
+    <color name="md_pink_A200">#FF4081</color>
+    <color name="md_pink_A400">#F50057</color>
+    <color name="md_pink_A700">#C51162</color>
+    <color name="md_purple_100">#E1BEE7</color>
+    <color name="md_purple_200">#CE93D8</color>
+    <color name="md_purple_300">#BA68C8</color>
+    <color name="md_purple_400">#AB47BC</color>
+    <color name="md_purple_50">#F3E5F5</color>
+    <color name="md_purple_500">#9C27B0</color>
+    <color name="md_purple_600">#8E24AA</color>
+    <color name="md_purple_700">#7B1FA2</color>
+    <color name="md_purple_800">#6A1B9A</color>
+    <color name="md_purple_900">#4A148C</color>
+    <color name="md_purple_A100">#EA80FC</color>
+    <color name="md_purple_A200">#E040FB</color>
+    <color name="md_purple_A400">#D500F9</color>
+    <color name="md_purple_A700">#AA00FF</color>
+    <color name="md_red_100">#FFCDD2</color>
+    <color name="md_red_200">#EF9A9A</color>
+    <color name="md_red_300">#E57373</color>
+    <color name="md_red_400">#EF5350</color>
+    <color name="md_red_50">#FFEBEE</color>
+    <color name="md_red_500">#F44336</color>
+    <color name="md_red_600">#E53935</color>
+    <color name="md_red_700">#D32F2F</color>
+    <color name="md_red_800">#C62828</color>
+    <color name="md_red_900">#B71C1C</color>
+    <color name="md_red_A100">#FF8A80</color>
+    <color name="md_red_A200">#FF5252</color>
+    <color name="md_red_A400">#FF1744</color>
+    <color name="md_red_A700">#D50000</color>
+    <color name="md_teal_100">#B2DFDB</color>
+    <color name="md_teal_200">#80CBC4</color>
+    <color name="md_teal_300">#4DB6AC</color>
+    <color name="md_teal_400">#26A69A</color>
+    <color name="md_teal_50">#E0F2F1</color>
+    <color name="md_teal_500">#009688</color>
+    <color name="md_teal_600">#00897B</color>
+    <color name="md_teal_700">#00796B</color>
+    <color name="md_teal_800">#00695C</color>
+    <color name="md_teal_900">#004D40</color>
+    <color name="md_teal_A100">#A7FFEB</color>
+    <color name="md_teal_A200">#64FFDA</color>
+    <color name="md_teal_A400">#1DE9B6</color>
+    <color name="md_teal_A700">#00BFA5</color>
+    <color name="md_white_1000">#FFFFFF</color>
+    <color name="md_yellow_100">#FFF9C4</color>
+    <color name="md_yellow_200">#FFF59D</color>
+    <color name="md_yellow_300">#FFF176</color>
+    <color name="md_yellow_400">#FFEE58</color>
+    <color name="md_yellow_50">#FFFDE7</color>
+    <color name="md_yellow_500">#FFEB3B</color>
+    <color name="md_yellow_600">#FDD835</color>
+    <color name="md_yellow_700">#FBC02D</color>
+    <color name="md_yellow_800">#F9A825</color>
+    <color name="md_yellow_900">#F57F17</color>
+    <color name="md_yellow_A100">#FFFF8D</color>
+    <color name="md_yellow_A200">#FFFF00</color>
+    <color name="md_yellow_A400">#FFEA00</color>
+    <color name="md_yellow_A700">#FFD600</color>
     <color name="mtrl_btn_text_color_disabled">#61000000</color>
     <color name="mtrl_btn_transparent_bg_color">#00ffffff</color>
     <color name="mtrl_scrim_color">#52000000</color>
@@ -865,8 +1179,11 @@
     <color name="mtrl_textinput_hovered_box_stroke_color">#DE000000</color>
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
+    <color name="primary">@color/colorPrimary</color>
+    <color name="primary_dark">@color/colorPrimaryDark</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
+    <color name="primary_light">@color/colorPrimaryLight</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
     <color name="primary_material_light">@color/material_grey_100</color>
     <color name="primary_text_default_material_dark">#ffffffff</color>
@@ -1360,64 +1677,46 @@
     <dimen name="material_drawer_account_header_dropdown">22dp</dimen>
     <dimen name="material_drawer_account_header_dropdown_guideline">80dp</dimen>
     <dimen name="material_drawer_account_header_dropdown_margin_bottom">18dp</dimen>
-    <dimen name="material_drawer_account_header_dropdown_padding">1dp</dimen>
+    <dimen name="material_drawer_account_header_dropdown_padding">5dp</dimen>
     <dimen name="material_drawer_account_header_height">160dp</dimen>
     <dimen name="material_drawer_account_header_height_compact">72dp</dimen>
     <dimen name="material_drawer_account_header_horizontal_bottom">4dp</dimen>
     <dimen name="material_drawer_account_header_horizontal_top">16dp</dimen>
     <dimen name="material_drawer_account_header_non_compact_padding">56dp</dimen>
-    <dimen name="material_drawer_account_header_profile_badge_elevation">4dp</dimen>
-    <dimen name="material_drawer_account_header_profile_elevation">2dp</dimen>
-    <dimen name="material_drawer_account_header_profile_small_elevation">2dp</dimen>
     <dimen name="material_drawer_account_header_secondary">40dp</dimen>
     <dimen name="material_drawer_account_header_selected">56dp</dimen>
-    <dimen name="material_drawer_account_header_subtext">14sp</dimen>
+    <dimen name="material_drawer_account_header_subtext">13sp</dimen>
     <dimen name="material_drawer_account_header_title">20sp</dimen>
-    <dimen name="material_drawer_container_divider">1dp</dimen>
-    <dimen name="material_drawer_item_background_padding_end">@dimen/material_drawer_item_background_padding_start_end</dimen>
-    <dimen name="material_drawer_item_background_padding_start">@dimen/material_drawer_item_background_padding_start_end</dimen>
-    <dimen name="material_drawer_item_background_padding_start_end">12dp</dimen>
-    <dimen name="material_drawer_item_background_padding_top_bottom">0dp</dimen>
-    <dimen name="material_drawer_item_badge_small_text">10sp</dimen>
-    <dimen name="material_drawer_item_badge_text">12sp</dimen>
-    <dimen name="material_drawer_item_corner_radius">28dp</dimen>
+    <dimen name="material_drawer_item_background_padding_start_end">8dp</dimen>
+    <dimen name="material_drawer_item_background_padding_top_bottom">4dp</dimen>
+    <dimen name="material_drawer_item_corner_radius">4dp</dimen>
     <dimen name="material_drawer_item_padding">8dp</dimen>
-    <dimen name="material_drawer_item_primary">56dp</dimen>
+    <dimen name="material_drawer_item_primary">48dp</dimen>
     <dimen name="material_drawer_item_primary_description">14sp</dimen>
-    <dimen name="material_drawer_item_primary_icon">52dp</dimen>
-    <dimen name="material_drawer_item_primary_icon_padding">16dp</dimen>
-    <dimen name="material_drawer_item_primary_icon_padding_left">16dp</dimen>
-    <dimen name="material_drawer_item_primary_icon_padding_right">12dp</dimen>
+    <dimen name="material_drawer_item_primary_icon">56dp</dimen>
+    <dimen name="material_drawer_item_primary_icon_padding">12dp</dimen>
+    <dimen name="material_drawer_item_primary_icon_padding_right">32dp</dimen>
     <dimen name="material_drawer_item_primary_text">14sp</dimen>
-    <dimen name="material_drawer_item_profile">56dp</dimen>
-    <dimen name="material_drawer_item_profile_badge_padding_right">16dp</dimen>
+    <dimen name="material_drawer_item_profile">72dp</dimen>
     <dimen name="material_drawer_item_profile_description">14sp</dimen>
     <dimen name="material_drawer_item_profile_icon">40dp</dimen>
     <dimen name="material_drawer_item_profile_icon_padding">16dp</dimen>
-    <dimen name="material_drawer_item_profile_icon_padding_left">6dp</dimen>
-    <dimen name="material_drawer_item_profile_icon_padding_right">6dp</dimen>
-    <dimen name="material_drawer_item_profile_item_margin">8dp</dimen>
+    <dimen name="material_drawer_item_profile_icon_padding_right">8dp</dimen>
+    <dimen name="material_drawer_item_profile_icon_width">48dp</dimen>
     <dimen name="material_drawer_item_profile_setting_icon_padding">24dp</dimen>
     <dimen name="material_drawer_item_profile_text">14sp</dimen>
-    <dimen name="material_drawer_item_secondary">48dp</dimen>
+    <dimen name="material_drawer_item_secondary">42dp</dimen>
     <dimen name="material_drawer_item_secondary_description">12sp</dimen>
     <dimen name="material_drawer_item_secondary_extra_text">12sp</dimen>
-    <dimen name="material_drawer_item_secondary_icon">52dp</dimen>
+    <dimen name="material_drawer_item_secondary_icon">56dp</dimen>
     <dimen name="material_drawer_item_secondary_icon_padding">12dp</dimen>
-    <dimen name="material_drawer_item_secondary_icon_padding_left">18dp</dimen>
-    <dimen name="material_drawer_item_secondary_icon_padding_right">14dp</dimen>
+    <dimen name="material_drawer_item_secondary_icon_padding_right">36dp</dimen>
     <dimen name="material_drawer_item_secondary_text">14sp</dimen>
     <dimen name="material_drawer_item_section_text">14sp</dimen>
     <dimen name="material_drawer_margin">0dp</dimen>
     <dimen name="material_drawer_padding">8dp</dimen>
-    <dimen name="material_drawer_padding_top_bottom">8dp</dimen>
-    <dimen name="material_drawer_profile_icon_placeholder">56dp</dimen>
-    <dimen name="material_drawer_profile_icon_placeholder_icon">24dp</dimen>
-    <dimen name="material_drawer_sticky_footer_divider">1dp</dimen>
     <dimen name="material_drawer_sticky_footer_elevation">4dp</dimen>
-    <dimen name="material_drawer_sticky_header_elevation">4dp</dimen>
-    <dimen name="material_drawer_vertical_item_padding">28dp</dimen>
-    <dimen name="material_drawer_vertical_padding">12dp</dimen>
+    <dimen name="material_drawer_vertical_padding">16dp</dimen>
     <dimen name="material_drawer_width">320dp</dimen>
     <item format="float" name="material_emphasis_disabled" type="dimen">0.38</item>
     <item format="float" name="material_emphasis_disabled_background" type="dimen">0.12</item>
@@ -1434,6 +1733,7 @@
     <dimen name="material_helper_text_font_1_3_padding_top">8dp</dimen>
     <dimen name="material_input_text_to_prefix_suffix_padding">2dp</dimen>
     <dimen name="material_mini_drawer_item">72dp</dimen>
+    <dimen name="material_mini_drawer_item_badge_text">12sp</dimen>
     <dimen name="material_mini_drawer_item_icon">56dp</dimen>
     <dimen name="material_mini_drawer_item_icon_padding">16dp</dimen>
     <dimen name="material_mini_drawer_item_padding">4dp</dimen>
@@ -1446,6 +1746,35 @@
     <dimen name="material_time_picker_minimum_screen_height">560dp</dimen>
     <dimen name="material_time_picker_minimum_screen_width">340dp</dimen>
     <dimen name="material_timepicker_dialog_buttons_margin_top">24dp</dimen>
+    <dimen name="materialize_avatar">40dp</dimen>
+    <dimen name="materialize_baseline_grid">8dp</dimen>
+    <dimen name="materialize_baseline_grid_small">4dp</dimen>
+    <dimen name="materialize_baseline_grid_x10">80dp</dimen>
+    <dimen name="materialize_baseline_grid_x2">16dp</dimen>
+    <dimen name="materialize_baseline_grid_x3">24dp</dimen>
+    <dimen name="materialize_baseline_grid_x4">32dp</dimen>
+    <dimen name="materialize_baseline_grid_x5">40dp</dimen>
+    <dimen name="materialize_baseline_grid_x6">48dp</dimen>
+    <dimen name="materialize_baseline_grid_x7">56dp</dimen>
+    <dimen name="materialize_baseline_grid_x8">64dp</dimen>
+    <dimen name="materialize_baseline_grid_x9">72dp</dimen>
+    <dimen name="materialize_content_margin_with_icon">72dp</dimen>
+    <dimen name="materialize_icon">24dp</dimen>
+    <dimen name="materialize_listitem">72dp</dimen>
+    <dimen name="materialize_right_side_icon_margin">32dp</dimen>
+    <dimen name="materialize_screen_edge">16dp</dimen>
+    <dimen name="materialize_spacing">8dp</dimen>
+    <dimen name="materialize_statusbar">24dp</dimen>
+    <dimen name="materialize_subtitle">48dp</dimen>
+    <dimen name="materialize_toolbar">56dp</dimen>
+    <dimen name="materialize_touch_target">48dp</dimen>
+    <dimen name="materialize_typography_body1">14sp</dimen>
+    <dimen name="materialize_typography_body2">14sp</dimen>
+    <dimen name="materialize_typography_caption">12sp</dimen>
+    <dimen name="materialize_typography_display1">34sp</dimen>
+    <dimen name="materialize_typography_headline">24sp</dimen>
+    <dimen name="materialize_typography_subheading">16sp</dimen>
+    <dimen name="materialize_typography_title">20sp</dimen>
     <dimen name="mtrl_alert_dialog_background_inset_bottom">80dp</dimen>
     <dimen name="mtrl_alert_dialog_background_inset_end">24dp</dimen>
     <dimen name="mtrl_alert_dialog_background_inset_start">24dp</dimen>
@@ -1656,6 +1985,7 @@
     <dimen name="notification_subtext_size">13sp</dimen>
     <dimen name="notification_top_pad">10dp</dimen>
     <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="tool_bar_top_padding">0dp</dimen>
     <dimen name="tooltip_corner_radius">2dp</dimen>
     <dimen name="tooltip_horizontal_padding">16dp</dimen>
     <dimen name="tooltip_margin">8dp</dimen>
@@ -1740,6 +2070,7 @@
     <item name="material_drawer_sticky_footer" type="id"/>
     <item name="material_drawer_sticky_header" type="id"/>
     <item name="material_value_index" type="id"/>
+    <item name="materialize_root" type="id"/>
     <item name="motion_base" type="id"/>
     <item name="mtrl_anchor_parent" type="id"/>
     <item name="mtrl_card_checked_layer_id" type="id"/>
@@ -1909,6 +2240,10 @@
     <string name="define_AndroidIconics">year;owner</string>
     <string name="define_fastadapter">year;owner</string>
     <string name="define_materialdrawer">year;owner</string>
+    <string name="define_materialize">year;owner</string>
+    <string name="define_processor_blink_alpha">com.mikepenz.iconics.animation.BlinkAlphaProcessor</string>
+    <string name="define_processor_blink_scale">com.mikepenz.iconics.animation.BlinkScaleProcessor</string>
+    <string name="define_processor_spin">com.mikepenz.iconics.animation.SpinProcessor</string>
     <string description="Screen reader announcement for when a checkbox is on error. [CHAR LIMIT=NONE]" name="error_a11y_label">
     Error: invalid
   </string>
@@ -1916,11 +2251,10 @@
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
-    <string name="fastadapter_lib_version" translatable="false">5.6.0</string>
+    <string name="fastadapter_lib_version" translatable="false">4.1.2</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
-    <string name="iconics_lib_version" translatable="false">5.3.3</string>
-    <string name="iconics_typeface_api_version" translatable="false">5.3.3</string>
+    <string name="iconics_lib_version" translatable="false">4.0.2</string>
     <string name="item_view_role_description">Tab</string>
     <string name="library_AndroidIconics_author">Mike Penz</string>
     <string name="library_AndroidIconics_authorWebsite">http://mikepenz.com/</string>
@@ -1967,6 +2301,21 @@
     <string name="library_materialdrawer_owner">Mike Penz</string>
     <string name="library_materialdrawer_repositoryLink">https://github.com/mikepenz/MaterialDrawer</string>
     <string name="library_materialdrawer_year">2018</string>
+    <string name="library_materialize_author">Mike Penz</string>
+    <string name="library_materialize_authorWebsite">http://mikepenz.com/</string>
+    <string name="library_materialize_isOpenSource">true</string>
+    <string name="library_materialize_libraryDescription">
+        <![CDATA[
+        <b>Materialize</b> comes with useful helper classes, the complete material color palette, and many additional utils. Use its theme as base. Let it manage your StatusBar, NavigationBar, Fullscreen behavior&#8230;
+        ]]>
+    </string>
+    <string name="library_materialize_libraryName">Materialize</string>
+    <string name="library_materialize_libraryVersion">@string/materialize_lib_version</string>
+    <string name="library_materialize_libraryWebsite">https://github.com/mikepenz/Materialize</string>
+    <string name="library_materialize_licenseId">apache_2_0</string>
+    <string name="library_materialize_owner">Mike Penz</string>
+    <string name="library_materialize_repositoryLink">https://github.com/mikepenz/Materialize</string>
+    <string name="library_materialize_year">2016</string>
     <string name="m3_sys_motion_easing_emphasized" translatable="false">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="m3_sys_motion_easing_emphasized_accelerate" translatable="false">cubic-bezier(0.3, 0.0, 0.8, 0.2)</string>
     <string name="m3_sys_motion_easing_emphasized_decelerate" translatable="false">cubic-bezier(0.1, 0.7, 0.1, 1.0)</string>
@@ -2003,7 +2352,8 @@
     <string description="Suffix for time in 12-hour standard, after noon. [CHAR_LIMIT=2]" name="material_timepicker_pm">PM</string>
     <string description="Title for the dialog with a time picker. [CHAR_LIMIT=32]" name="material_timepicker_select_time">Select time</string>
     <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
-    <string name="materialdrawer_lib_version" translatable="false">9.0.1</string>
+    <string name="materialdrawer_lib_version" translatable="false">7.0.0</string>
+    <string name="materialize_lib_version" translatable="false">1.2.1</string>
     <string description="Content description for new notification (no number count) [CHAR_LIMIT=NONE]" name="mtrl_badge_numberless_content_description">New notification</string>
     <string name="mtrl_checkbox_button_icon_path_checked" translatable="false">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>
     <string name="mtrl_checkbox_button_icon_path_group_name" translatable="false">icon</string>
@@ -5371,9 +5721,9 @@
   </style>
     <style name="Base.Widget.MaterialComponents.TextView" parent="Widget.AppCompat.TextView"/>
     <style name="BezelImageView">
-        <item name="materialDrawerMaskDrawable">@drawable/material_drawer_circle_mask</item>
-        <item name="materialDrawerDrawCircularShadow">true</item>
-        <item name="materialDrawerSelectorOnPress">?colorOnSurfaceVariant</item>
+        <item name="biv_maskDrawable">@drawable/material_drawer_circle_mask</item>
+        <item name="biv_drawCircularShadow">true</item>
+        <item name="biv_selectorOnPress">@color/material_drawer_primary</item>
         <item name="android:scaleType">centerInside</item>
     </style>
     <style name="CardView" parent="Base.CardView">
@@ -5383,6 +5733,14 @@
     </style>
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
+    </style>
+    <style name="Material.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">false</item>
+        <item name="color">@android:color/white</item>
+    </style>
+    <style name="Material.Light.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">false</item>
+        <item name="color">@android:color/black</item>
     </style>
     <style name="MaterialAlertDialog.Material3" parent="MaterialAlertDialog.MaterialComponents">
     <item name="enforceMaterialTheme">true</item>
@@ -5476,6 +5834,430 @@
     <item name="android:layout_gravity">center</item>
     <item name="android:textAlignment" ns1:ignore="NewApi">center</item>
   </style>
+    <style name="MaterialBaseBaseTheme" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        
+        <item name="drawerArrowStyle">@style/Material.DrawerArrowStyle</item>
+
+        
+        <item name="colorPrimary">@color/materialize_primary</item>
+        <item name="colorPrimaryDark">@color/materialize_primary_dark</item>
+        <item name="colorAccent">@color/materialize_accent</item>
+
+        
+    </style>
+    <style name="MaterialBaseBaseTheme.Light" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        
+        <item name="drawerArrowStyle">@style/Material.Light.DrawerArrowStyle</item>
+
+        
+        <item name="colorPrimary">@color/materialize_primary</item>
+        <item name="colorPrimaryDark">@color/materialize_primary_dark</item>
+        <item name="colorAccent">@color/materialize_accent</item>
+
+        
+    </style>
+    <style name="MaterialBaseBaseTheme.Light.DarkToolbar" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        
+        <item name="drawerArrowStyle">@style/Material.DrawerArrowStyle</item>
+
+
+        
+        <item name="colorPrimary">@color/materialize_primary</item>
+        <item name="colorPrimaryDark">@color/materialize_primary_dark</item>
+        <item name="colorAccent">@color/materialize_accent</item>
+
+        
+    </style>
+    <style name="MaterialBaseTheme" parent="MaterialBaseBaseTheme"/>
+    <style name="MaterialBaseTheme.Light" parent="MaterialBaseBaseTheme.Light"/>
+    <style name="MaterialBaseTheme.Light.DarkToolbar" parent="MaterialBaseBaseTheme.Light.DarkToolbar"/>
+    <style name="MaterialDrawer.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">false</item>
+        <item name="color">@android:color/white</item>
+    </style>
+    <style name="MaterialDrawer.Light.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">false</item>
+        <item name="color">@android:color/black</item>
+    </style>
+    <style name="MaterialDrawerTheme" parent="MaterialTheme">
+        
+        <item name="drawerArrowStyle">@style/MaterialDrawer.DrawerArrowStyle</item>
+
+        
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+
+        
+        <item name="material_drawer_background">@color/material_drawer_dark_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_dark_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_dark_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_dark_secondary_text
+        </item>
+        <item name="material_drawer_hint_text">@color/material_drawer_dark_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_dark_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_dark_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_dark_selected</item>
+        <item name="material_drawer_selected_legacy">@color/material_drawer_dark_selected_legacy
+        </item>
+        <item name="material_drawer_selected_text">@color/material_drawer_dark_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_dark_header_selection_text
+        </item>
+        <item name="material_drawer_header_selection_subtext">
+            @color/material_drawer_dark_header_selection_subtext
+        </item>
+        <item name="material_drawer_legacy_style">false</item>
+    </style>
+    <style name="MaterialDrawerTheme.ActionBar" parent="MaterialTheme.ActionBar">
+        
+        <item name="drawerArrowStyle">@style/MaterialDrawer.DrawerArrowStyle</item>
+
+        
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+
+        
+        <item name="material_drawer_background">@color/material_drawer_dark_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_dark_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_dark_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_dark_secondary_text
+        </item>
+        <item name="material_drawer_hint_text">@color/material_drawer_dark_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_dark_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_dark_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_dark_selected</item>
+        <item name="material_drawer_selected_legacy">@color/material_drawer_dark_selected_legacy
+        </item>
+        <item name="material_drawer_selected_text">@color/material_drawer_dark_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_dark_header_selection_text
+        </item>
+        <item name="material_drawer_header_selection_subtext">
+            @color/material_drawer_dark_header_selection_subtext
+        </item>
+        <item name="material_drawer_legacy_style">false</item>
+    </style>
+    <style name="MaterialDrawerTheme.ActionBar.TranslucentStatus" parent="MaterialTheme.ActionBar.TranslucentStatus">
+        
+        <item name="drawerArrowStyle">@style/MaterialDrawer.DrawerArrowStyle</item>
+
+        
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+
+        
+        <item name="material_drawer_background">@color/material_drawer_dark_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_dark_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_dark_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_dark_secondary_text
+        </item>
+        <item name="material_drawer_hint_text">@color/material_drawer_dark_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_dark_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_dark_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_dark_selected</item>
+        <item name="material_drawer_selected_legacy">@color/material_drawer_dark_selected_legacy
+        </item>
+        <item name="material_drawer_selected_text">@color/material_drawer_dark_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_dark_header_selection_text
+        </item>
+        <item name="material_drawer_header_selection_subtext">
+            @color/material_drawer_dark_header_selection_subtext
+        </item>
+        <item name="material_drawer_legacy_style">false</item>
+    </style>
+    <style name="MaterialDrawerTheme.Light" parent="MaterialTheme.Light">
+        
+        <item name="drawerArrowStyle">@style/MaterialDrawer.Light.DrawerArrowStyle</item>
+
+        
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+
+        
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_selected</item>
+        <item name="material_drawer_selected_legacy">@color/material_drawer_selected_legacy</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+        <item name="material_drawer_header_selection_subtext">
+            @color/material_drawer_header_selection_subtext
+        </item>
+        <item name="material_drawer_legacy_style">false</item>
+    </style>
+    <style name="MaterialDrawerTheme.Light.ActionBar" parent="MaterialTheme.Light.ActionBar">
+        
+        <item name="drawerArrowStyle">@style/MaterialDrawer.Light.DrawerArrowStyle</item>
+
+        
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+
+        
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_selected</item>
+        <item name="material_drawer_selected_legacy">@color/material_drawer_selected_legacy</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+        <item name="material_drawer_header_selection_subtext">
+            @color/material_drawer_header_selection_subtext
+        </item>
+        <item name="material_drawer_legacy_style">false</item>
+    </style>
+    <style name="MaterialDrawerTheme.Light.ActionBar.TranslucentStatus" parent="MaterialTheme.Light.ActionBar.TranslucentStatus">
+        
+        <item name="drawerArrowStyle">@style/MaterialDrawer.Light.DrawerArrowStyle</item>
+
+        
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+
+        
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_selected</item>
+        <item name="material_drawer_selected_legacy">@color/material_drawer_selected_legacy</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+        <item name="material_drawer_header_selection_subtext">
+            @color/material_drawer_header_selection_subtext
+        </item>
+        <item name="material_drawer_legacy_style">false</item>
+    </style>
+    <style name="MaterialDrawerTheme.Light.DarkToolbar" parent="MaterialTheme.Light.DarkToolbar">
+        
+        <item name="drawerArrowStyle">@style/MaterialDrawer.DrawerArrowStyle</item>
+
+        
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+
+        
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_selected</item>
+        <item name="material_drawer_selected_legacy">@color/material_drawer_selected_legacy</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+        <item name="material_drawer_header_selection_subtext">
+            @color/material_drawer_header_selection_subtext
+        </item>
+        <item name="material_drawer_legacy_style">false</item>
+    </style>
+    <style name="MaterialDrawerTheme.Light.DarkToolbar.ActionBar" parent="MaterialTheme.Light.DarkToolbar.ActionBar">
+        
+        <item name="drawerArrowStyle">@style/MaterialDrawer.DrawerArrowStyle</item>
+
+        
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+
+        
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_selected</item>
+        <item name="material_drawer_selected_legacy">@color/material_drawer_selected_legacy</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+        <item name="material_drawer_header_selection_subtext">
+            @color/material_drawer_header_selection_subtext
+        </item>
+        <item name="material_drawer_legacy_style">false</item>
+    </style>
+    <style name="MaterialDrawerTheme.Light.DarkToolbar.ActionBar.TranslucentStatus" parent="MaterialTheme.Light.DarkToolbar.ActionBar.TranslucentStatus">
+        
+        <item name="drawerArrowStyle">@style/MaterialDrawer.DrawerArrowStyle</item>
+
+        
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+
+        
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_selected</item>
+        <item name="material_drawer_selected_legacy">@color/material_drawer_selected_legacy</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+        <item name="material_drawer_header_selection_subtext">
+            @color/material_drawer_header_selection_subtext
+        </item>
+        <item name="material_drawer_legacy_style">false</item>
+    </style>
+    <style name="MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" parent="MaterialTheme.Light.DarkToolbar.TranslucentStatus">
+        
+        <item name="drawerArrowStyle">@style/MaterialDrawer.DrawerArrowStyle</item>
+
+        
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+
+        
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_selected</item>
+        <item name="material_drawer_selected_legacy">@color/material_drawer_selected_legacy</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+        <item name="material_drawer_header_selection_subtext">
+            @color/material_drawer_header_selection_subtext
+        </item>
+        <item name="material_drawer_legacy_style">false</item>
+    </style>
+    <style name="MaterialDrawerTheme.Light.TranslucentStatus" parent="MaterialTheme.Light.TranslucentStatus">
+        
+        <item name="drawerArrowStyle">@style/MaterialDrawer.Light.DrawerArrowStyle</item>
+
+        
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+
+        
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_selected</item>
+        <item name="material_drawer_selected_legacy">@color/material_drawer_selected_legacy</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+        <item name="material_drawer_header_selection_subtext">
+            @color/material_drawer_header_selection_subtext
+        </item>
+        <item name="material_drawer_legacy_style">false</item>
+    </style>
+    <style name="MaterialDrawerTheme.TranslucentStatus" parent="MaterialTheme.TranslucentStatus">
+        
+        <item name="drawerArrowStyle">@style/MaterialDrawer.DrawerArrowStyle</item>
+
+        
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+
+        
+        <item name="material_drawer_background">@color/material_drawer_dark_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_dark_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_dark_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_dark_secondary_text
+        </item>
+        <item name="material_drawer_hint_text">@color/material_drawer_dark_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_dark_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_dark_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_dark_selected</item>
+        <item name="material_drawer_selected_legacy">@color/material_drawer_dark_selected_legacy
+        </item>
+        <item name="material_drawer_selected_text">@color/material_drawer_dark_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_dark_header_selection_text
+        </item>
+        <item name="material_drawer_header_selection_subtext">
+            @color/material_drawer_dark_header_selection_subtext
+        </item>
+        <item name="material_drawer_legacy_style">false</item>
+    </style>
+    <style name="MaterialTheme" parent="MaterialBaseTheme"/>
+    <style name="MaterialTheme.ActionBar" parent="MaterialTheme">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+    <style name="MaterialTheme.ActionBar.DayNight" parent="MaterialTheme.Light.ActionBar"/>
+    <style name="MaterialTheme.ActionBar.TranslucentStatus" parent="MaterialTheme.ActionBar"/>
+    <style name="MaterialTheme.ActionBar.TranslucentStatus.DayNight" parent="MaterialTheme.Light.ActionBar.TranslucentStatus"/>
+    <style name="MaterialTheme.DarkToolbar.ActionBar.DayNight" parent="MaterialTheme.Light.DarkToolbar.ActionBar"/>
+    <style name="MaterialTheme.DarkToolbar.ActionBar.TranslucentStatus.DayNight" parent="MaterialTheme.Light.DarkToolbar.ActionBar.TranslucentStatus"/>
+    <style name="MaterialTheme.DarkToolbar.DayNight" parent="MaterialTheme.Light.DarkToolbar"/>
+    <style name="MaterialTheme.DarkToolbar.TranslucentStatus.DayNight" parent="MaterialTheme.Light.DarkToolbar.TranslucentStatus"/>
+    <style name="MaterialTheme.DayNight" parent="MaterialTheme.Light"/>
+    <style name="MaterialTheme.Light" parent="MaterialBaseTheme.Light"/>
+    <style name="MaterialTheme.Light.ActionBar" parent="MaterialTheme.Light">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+    <style name="MaterialTheme.Light.ActionBar.TranslucentStatus" parent="MaterialTheme.Light.ActionBar"/>
+    <style name="MaterialTheme.Light.DarkToolbar" parent="MaterialBaseTheme.Light.DarkToolbar"/>
+    <style name="MaterialTheme.Light.DarkToolbar.ActionBar" parent="MaterialTheme.Light.DarkToolbar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+        
+        <item name="android:theme">@style/ThemeOverlay.MaterialComponents.Dark</item>
+    </style>
+    <style name="MaterialTheme.Light.DarkToolbar.ActionBar.TranslucentStatus" parent="MaterialTheme.Light.DarkToolbar"/>
+    <style name="MaterialTheme.Light.DarkToolbar.TranslucentStatus" parent="MaterialTheme.Light.DarkToolbar"/>
+    <style name="MaterialTheme.Light.TranslucentStatus" parent="MaterialTheme.Light"/>
+    <style name="MaterialTheme.TranslucentStatus" parent="MaterialTheme"/>
+    <style name="MaterialTheme.TranslucentStatus.DayNight" parent="MaterialTheme.Light.TranslucentStatus"/>
     <style name="Platform.AppCompat" parent="android:Theme.Holo">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
@@ -6229,7 +7011,7 @@
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
   </style>
-    <style name="Theme.Dolbogram" parent="Widget.MaterialDrawerStyle">
+    <style name="Theme.Dolbogram" parent="MaterialDrawerTheme.Light">
         
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
@@ -8860,33 +9642,12 @@
     <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Tooltip</item>
     <item name="shapeAppearance">@style/ShapeAppearance.MaterialComponents.Tooltip</item>
   </style>
-    <style name="Widget.MaterialDrawerHeaderStyle" parent="">
-        <item name="materialDrawerCompactStyle">false</item>
-        <item name="materialDrawerHeaderSelectionText">@color/color_drawer_item_text</item>
-        <item name="materialDrawerHeaderSelectionSubtext">@color/color_drawer_item_text</item>
-    </style>
-    <style name="Widget.MaterialDrawerStyle" parent="">
-        <item name="materialDrawerInsetForeground">#4000</item>
-        
-        <item name="materialDrawerBackground">?colorSurface</item>
-        <item name="materialDrawerPrimaryText">@color/color_drawer_item_text</item>
-        <item name="materialDrawerPrimaryIcon">@color/color_drawer_item_text</item>
-        <item name="materialDrawerSecondaryText">@color/color_drawer_item_text</item>
-        <item name="materialDrawerSecondaryIcon">@color/color_drawer_item_text</item>
-        <item name="materialDrawerDividerColor">?colorOutline</item>
-        <item name="materialDrawerSelectedBackgroundColor">?colorSecondaryContainer</item>
+    <style name="Widget.Materialize.ScrimInsetsRelativeLayout" parent="">
+        <item name="sirl_insetForeground">#4000</item>
     </style>
     <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
         <item name="statusBarBackground">#000000</item>
     </style>
-    <declare-styleable name="AccountHeaderView">
-        <attr format="reference" name="materialDrawerHeaderLayout"/>
-        <attr format="boolean" name="materialDrawerCompactStyle"/>
-
-        
-        <attr format="color|reference" name="materialDrawerHeaderSelectionText"/>
-        <attr format="color|reference" name="materialDrawerHeaderSelectionSubtext"/>
-    </declare-styleable>
     <declare-styleable name="ActionBar">
         
         <attr name="navigationMode">
@@ -9687,9 +10448,9 @@
     <attr format="integer" name="minHideDelay"/>
   </declare-styleable>
     <declare-styleable name="BezelImageView">
-        <attr format="reference" name="materialDrawerMaskDrawable"/>
-        <attr format="boolean" name="materialDrawerDrawCircularShadow"/>
-        <attr format="color|reference" name="materialDrawerSelectorOnPress"/>
+        <attr format="reference" name="biv_maskDrawable"/>
+        <attr format="boolean" name="biv_drawCircularShadow"/>
+        <attr format="color|reference" name="biv_selectorOnPress"/>
     </declare-styleable>
     <declare-styleable name="BottomAppBar">
     
@@ -11682,24 +12443,7 @@
     
     <attr format="boolean" name="lastItemDecorated"/>
   </declare-styleable>
-    <declare-styleable name="MaterialDrawerSliderView">
-        <attr format="color|reference" name="materialDrawerInsetForeground"/>
-
-        <attr format="color|reference" name="materialDrawerBackground"/>
-
-        <attr format="color|reference" name="materialDrawerPrimaryText"/>
-        <attr format="color|reference" name="materialDrawerPrimaryIcon"/>
-        <attr format="color|reference" name="materialDrawerSecondaryText"/>
-        <attr format="color|reference" name="materialDrawerSecondaryIcon"/>
-
-        <attr format="color|reference" name="materialDrawerDividerColor"/>
-
-        <attr format="color|reference" name="materialDrawerSelectedBackgroundColor"/>
-    </declare-styleable>
-    <declare-styleable name="MaterialDrawerTheme">
-        <attr format="reference" name="materialDrawerStyle"/>
-        <attr format="reference" name="materialDrawerHeaderStyle"/>
-    </declare-styleable>
+    <declare-styleable name="MaterialDrawer"><attr format="color|reference" name="material_drawer_window_background"/><attr format="color|reference" name="material_drawer_background"/><attr format="color|reference" name="material_drawer_primary_text"/><attr format="color|reference" name="material_drawer_primary_icon"/><attr format="color|reference" name="material_drawer_secondary_text"/><attr format="color|reference" name="material_drawer_hint_text"/><attr format="color|reference" name="material_drawer_hint_icon"/><attr format="color|reference" name="material_drawer_divider"/><attr format="color|reference" name="material_drawer_selected"/><attr format="color|reference" name="material_drawer_selected_legacy"/><attr format="color|reference" name="material_drawer_selected_text"/><attr format="color|reference" name="material_drawer_header_selection_text"/><attr format="color|reference" name="material_drawer_header_selection_subtext"/><attr format="boolean|reference" name="material_drawer_legacy_style"/></declare-styleable>
     <declare-styleable name="MaterialRadioButton">
     
     <attr name="useMaterialThemeColors"/>
@@ -12080,10 +12824,8 @@
         <attr name="android:id"/>
         <attr format="reference" name="destination"/>
         <attr format="boolean" name="launchSingleTop"/>
-        <attr format="boolean" name="restoreState"/>
         <attr format="reference" name="popUpTo"/>
         <attr format="boolean" name="popUpToInclusive"/>
-        <attr format="boolean" name="popUpToSaveState"/>
         <attr format="reference" name="enterAnim"/>
         <attr format="reference" name="exitAnim"/>
         <attr format="reference" name="popEnterAnim"/>
@@ -12097,8 +12839,6 @@
     </declare-styleable>
     <declare-styleable name="NavDeepLink">
         <attr format="string" name="uri"/>
-        <attr format="string" name="action"/>
-        <attr format="string" name="mimeType"/>
         <attr name="android:autoVerify"/>
     </declare-styleable>
     <declare-styleable name="NavGraphNavigator">
@@ -12250,7 +12990,6 @@
   </declare-styleable>
     <declare-styleable name="Navigator">
         <attr name="android:id"/>
-        <attr format="string" name="route"/>
         <attr name="android:label"/>
     </declare-styleable>
     <declare-styleable name="OnClick">
@@ -12370,6 +13109,12 @@
     <declare-styleable name="ScrimInsetsFrameLayout">
     <attr format="color|reference" name="insetForeground"/>
   </declare-styleable>
+    <declare-styleable name="ScrimInsetsRelativeLayout">
+        <attr format="reference|color" name="sirl_insetForeground"/>
+    </declare-styleable>
+    <declare-styleable name="ScrimInsetsView">
+        <attr format="reference|color" name="siv_insetForeground"/>
+    </declare-styleable>
     <declare-styleable name="ScrollingViewBehavior_Layout">
     
     <attr format="dimension" name="behavior_overlapTop"/>
