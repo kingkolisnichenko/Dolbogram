@@ -6,6 +6,8 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import com.konge.dolbogram.databinding.ActivityMainBinding
+import com.konge.dolbogram.ui.ChatsFragment
+import com.konge.dolbogram.ui.SettingsFragment
 import com.mikepenz.materialdrawer.AccountHeader
 import com.mikepenz.materialdrawer.AccountHeaderBuilder
 import com.mikepenz.materialdrawer.Drawer
@@ -40,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(mToolbar)
 
         supportFragmentManager.beginTransaction()
-//            .replace(R.id.)
+            .replace(R.id.dataContainer, ChatsFragment()).commit()
 
         createHeader()
 
@@ -107,7 +109,11 @@ class MainActivity : AppCompatActivity() {
                     position: Int,
                     drawerItem: IDrawerItem<*>
                 ): Boolean {
-                    Toast.makeText(applicationContext, position.toString(), Toast.LENGTH_SHORT).show()
+                    when(position){
+                        7 -> supportFragmentManager.beginTransaction()
+                            .addToBackStack(null)
+                            .replace(R.id.dataContainer, SettingsFragment()).commit()
+                    }
                     return false
                 }
 

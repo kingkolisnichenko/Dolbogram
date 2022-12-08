@@ -37,11 +37,16 @@ drawable ic_menu_phone
 drawable ic_menu_secret_chat
 drawable ic_menu_settings
 drawable ic_toolbar_find
+id dataContainer
 id mainToolbar
+id textView
 layout activity_main
+layout fragment_chats
+layout fragment_settings
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string hello_blank_fragment
 style Theme.Dolbogram
 xml backup_rules
 xml data_extraction_rules

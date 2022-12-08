@@ -1,118 +1,126 @@
 [
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/drawable_ic_toolbar_find.png.flat",
-        "source": "com.konge.dolbogram.app-main-39:/drawable/ic_toolbar_find.png"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.konge.dolbogram.app-main-39:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/drawable_ic_menu_favorites.png.flat",
-        "source": "com.konge.dolbogram.app-main-39:/drawable/ic_menu_favorites.png"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/drawable_ic_menu_settings.png.flat",
-        "source": "com.konge.dolbogram.app-main-39:/drawable/ic_menu_settings.png"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_menu_phone.png.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_menu_phone.png"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/drawable_ic_menu_phone.png.flat",
-        "source": "com.konge.dolbogram.app-main-39:/drawable/ic_menu_phone.png"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_menu_create_groups.png.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_menu_create_groups.png"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/drawable_ic_menu_secret_chat.png.flat",
-        "source": "com.konge.dolbogram.app-main-39:/drawable/ic_menu_secret_chat.png"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.konge.dolbogram.app-main-39:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.konge.dolbogram.app-main-39:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/drawable_ic_menu_create_groups.png.flat",
-        "source": "com.konge.dolbogram.app-main-39:/drawable/ic_menu_create_groups.png"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_menu_favorites.png.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_menu_favorites.png"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/drawable_ic_menu_invate.png.flat",
-        "source": "com.konge.dolbogram.app-main-39:/drawable/ic_menu_invate.png"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.konge.dolbogram.app-main-39:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.konge.dolbogram.app-main-39:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/xml_data_extraction_rules.xml.flat",
-        "source": "com.konge.dolbogram.app-main-39:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_header.xml.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\header.xml"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/layout_activity_main.xml.flat",
-        "source": "com.konge.dolbogram.app-main-39:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_menu_create_channel.png.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_menu_create_channel.png"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/drawable_ic_menu_create_channel.png.flat",
-        "source": "com.konge.dolbogram.app-main-39:/drawable/ic_menu_create_channel.png"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/drawable_header.xml.flat",
-        "source": "com.konge.dolbogram.app-main-39:/drawable/header.xml"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.konge.dolbogram.app-main-39:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/drawable_ic_header_night.png.flat",
-        "source": "com.konge.dolbogram.app-main-39:/drawable/ic_header_night.png"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_menu_invate.png.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_menu_invate.png"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.konge.dolbogram.app-main-39:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_menu_secret_chat.png.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_menu_secret_chat.png"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.konge.dolbogram.app-main-39:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/drawable_ic_menu_contacts.png.flat",
-        "source": "com.konge.dolbogram.app-main-39:/drawable/ic_menu_contacts.png"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_menu_help.png.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_menu_help.png"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/xml_backup_rules.xml.flat",
-        "source": "com.konge.dolbogram.app-main-39:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.konge.dolbogram.app-main-39:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\layout_fragment_chats.xml.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\layout\\fragment_chats.xml"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.konge.dolbogram.app-main-39:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.konge.dolbogram.app-merged_res-37:/layout_fragment_settings.xml.flat",
+        "source": "com.konge.dolbogram.app-main-39:/layout/fragment_settings.xml"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.konge.dolbogram.app-main-39:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.konge.dolbogram.app-main-39:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_header_night.png.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_header_night.png"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.konge.dolbogram.app-main-39:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.konge.dolbogram.app-main-39:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.konge.dolbogram.app-merged_res-37:/drawable_ic_menu_help.png.flat",
-        "source": "com.konge.dolbogram.app-main-39:/drawable/ic_menu_help.png"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_toolbar_find.png.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_toolbar_find.png"
+    },
+    {
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_menu_contacts.png.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_menu_contacts.png"
+    },
+    {
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_menu_settings.png.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_menu_settings.png"
     }
 ]
