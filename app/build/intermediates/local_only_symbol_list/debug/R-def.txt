@@ -41,6 +41,7 @@ id dataContainer
 id mainToolbar
 id textView
 layout activity_main
+layout fragment_base
 layout fragment_chats
 layout fragment_settings
 mipmap ic_launcher

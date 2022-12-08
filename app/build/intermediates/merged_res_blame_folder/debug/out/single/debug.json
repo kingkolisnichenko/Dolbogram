@@ -28,12 +28,12 @@
         "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
         "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_menu_favorites.png.flat",
         "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_menu_favorites.png"
+    },
+    {
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
@@ -54,6 +54,10 @@
     {
         "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_menu_create_channel.png.flat",
         "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_menu_create_channel.png"
+    },
+    {
+        "merged": "com.konge.dolbogram.app-merged_res-37:/layout_fragment_chats.xml.flat",
+        "source": "com.konge.dolbogram.app-main-39:/layout/fragment_chats.xml"
     },
     {
         "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\xml_backup_rules.xml.flat",
@@ -100,12 +104,20 @@
         "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\layout\\activity_main.xml"
     },
     {
+        "merged": "com.konge.dolbogram.app-merged_res-37:/layout_fragment_base.xml.flat",
+        "source": "com.konge.dolbogram.app-main-39:/layout/fragment_base.xml"
+    },
+    {
         "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\drawable_ic_header_night.png.flat",
         "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\drawable\\ic_header_night.png"
     },
     {
         "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-39:\\layout\\fragment_settings.xml"
     },
     {
         "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-merged_res-37:\\mipmap-hdpi_ic_launcher.webp.flat",

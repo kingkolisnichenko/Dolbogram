@@ -3953,6 +3953,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_base
 layout fragment_chats
 layout fragment_settings
 layout m3_alert_dialog
