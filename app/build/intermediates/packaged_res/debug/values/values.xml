@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="colorAccentDark">#B3FFFFFF</color>
+    <color name="colorGreyLight">#B3B3B3</color>
     <color name="colorPrimary">#0088CC</color>
     <color name="colorPrimaryVariant">#005E8E</color>
     <color name="colorblack">#FF000000</color>
+    <color name="colorgrey">#606060</color>
     <color name="colorwhite">#FFFFFFFF</color>
     <color name="material_drawer_accent">#FF4081</color>
     <color name="material_drawer_background">#F9F9F9</color>
@@ -23,9 +25,33 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+    <dimen name="margin_horizontal">16dp</dimen>
+    <dimen name="margin_vertical">10dp</dimen>
+    <dimen name="margin_vertical_large">16dp</dimen>
+    <dimen name="settings_change_user_photo_height">50dp</dimen>
+    <dimen name="settings_change_user_photo_width">50dp</dimen>
+    <dimen name="settings_ripple_effect_radius">8dp</dimen>
+    <dimen name="settings_user_photo_height">65dp</dimen>
+    <dimen name="settings_user_photo_width">65dp</dimen>
+    <dimen name="text_normal">16sp</dimen>
+    <dimen name="text_small">14sp</dimen>
     <string name="app_name">Dolbogram</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings_default_bio">О себе</string>
+    <string name="settings_default_login">ilyaKolisnichenko</string>
+    <string name="settings_default_number">+37378111111</string>
+    <string name="settings_default_status">В сети</string>
+    <string name="settings_default_user_name">Ilya Kolisnichenko</string>
+    <string name="settings_label_bio">Напишите немного о себе</string>
+    <string name="settings_label_login">Имя пользователя</string>
+    <string name="settings_label_phone">Нажмите чтобы изменить номер телефона</string>
+    <string name="settings_menu_change_name">Изменить имя</string>
+    <string name="settings_menu_exit">Выход</string>
+    <string name="settings_text_account">Аккаунт</string>
     <style name="Theme.Dolbogram" parent="MaterialDrawerTheme">
+
+        <item name="popupTheme">@style/action_menu</item>
+
         
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
@@ -54,5 +80,48 @@
         <item name="material_drawer_header_selection_subtext">@color/material_drawer_dark_header_selection_subtext</item>
         <item name="material_drawer_legacy_style">false</item> 
 
+
+
+    </style>
+    <style name="action_menu" parent="Theme.AppCompat.DayNight">
+        <item name="background">@color/colorwhite</item>
+        <item name="actionMenuTextColor">@color/colorblack</item>
+    </style>
+    <style name="mainToolbar">
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="normal_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:textColor">@color/colorblack</item>
+        <item name="android:layout_marginStart">@dimen/margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/margin_vertical</item>
+    </style>
+    <style name="separator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorgrey</item>
+        <item name="android:layout_marginTop">@dimen/margin_vertical</item>
+        <item name="android:layout_marginStart">@dimen/margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/margin_horizontal</item>
+    </style>
+    <style name="settings_buttons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/ripple_effect</item>
+    </style>
+    <style name="small_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/colorgrey</item>
+        <item name="android:layout_marginStart">@dimen/margin_horizontal</item>
     </style>
 </resources>

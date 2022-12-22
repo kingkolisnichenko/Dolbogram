@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-35:/values-sw/values-sw.xml",
+            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-36:/values-sw/values-sw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\09ae06d1804741e43c03bcdc13a7fe36\\transformed\\material-1.8.0-alpha03\\res\\values-sw\\values-sw.xml",

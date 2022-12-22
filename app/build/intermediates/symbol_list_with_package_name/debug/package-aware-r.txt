@@ -285,6 +285,10 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clearsTag
 attr clickAction
 attr clockFaceBackgroundColor
@@ -1377,11 +1381,13 @@ color cardview_shadow_end_color
 color cardview_shadow_start_color
 color colorAccent
 color colorAccentDark
+color colorGreyLight
 color colorPrimary
 color colorPrimaryDark
 color colorPrimaryLight
 color colorPrimaryVariant
 color colorblack
+color colorgrey
 color colorwhite
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
@@ -2740,6 +2746,9 @@ dimen m3_sys_state_pressed_state_layer_opacity
 dimen m3_timepicker_display_stroke_width
 dimen m3_timepicker_window_elevation
 dimen m3_toolbar_text_size_title
+dimen margin_horizontal
+dimen margin_vertical
+dimen margin_vertical_large
 dimen material_bottom_sheet_max_width
 dimen material_clock_display_height
 dimen material_clock_display_padding
@@ -3069,6 +3078,13 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen settings_change_user_photo_height
+dimen settings_change_user_photo_width
+dimen settings_ripple_effect_radius
+dimen settings_user_photo_height
+dimen settings_user_photo_width
+dimen text_normal
+dimen text_small
 dimen tool_bar_top_padding
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
@@ -3167,6 +3183,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable default_photo
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3174,6 +3191,10 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable header
 drawable ic_arrow_back_black_24
+drawable ic_btn_action_menu
+drawable ic_btn_action_menu_change_name
+drawable ic_btn_action_menu_exit
+drawable ic_camera
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_header_night
@@ -3276,6 +3297,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable ripple_effect
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3721,6 +3743,22 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settings_bio
+id settings_change_bio
+id settings_change_login
+id settings_change_phone
+id settings_change_photo
+id settings_header_bloc
+id settings_label_bio
+id settings_label_login
+id settings_label_phone
+id settings_login
+id settings_menu_change_name
+id settings_menu_exit
+id settings_phone
+id settings_text_account
+id settings_user_name
+id settings_user_photo
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -4039,6 +4077,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu settings_action_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -4256,6 +4295,17 @@ string searchbar_scrolling_view_behavior
 string searchview_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string settings_default_bio
+string settings_default_login
+string settings_default_number
+string settings_default_status
+string settings_default_user_name
+string settings_label_bio
+string settings_label_login
+string settings_label_phone
+string settings_menu_change_name
+string settings_menu_exit
+string settings_text_account
 string side_sheet_behavior
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
@@ -5400,6 +5450,12 @@ style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Materialize_ScrimInsetsRelativeLayout
 style Widget_Support_CoordinatorLayout
+style action_menu
+style mainToolbar
+style normal_text
+style separator
+style settings_buttons
+style small_text
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -5433,6 +5489,7 @@ styleable Carousel carousel_backwardTransition carousel_emptyViewsBehavior carou
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize
