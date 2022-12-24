@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-44:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-53:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\68ee75195f0df5ad8d472ec660be41c8\\transformed\\appcompat-1.5.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\49264c66ab94c95b3de51c683ce3b289\\transformed\\appcompat-1.5.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\0a3eab49f0790e0022f438ba2a965c67\\transformed\\materialdrawer-7.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\64993ced204d1221be975cc1f2900744\\transformed\\materialdrawer-7.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -31,7 +31,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\73bc1838f26e35930684936ab265d890\\transformed\\materialize-1.2.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\3520c3a0c08a151d344b55b4f078d18b\\transformed\\materialize-1.2.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -48,7 +48,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\09ae06d1804741e43c03bcdc13a7fe36\\transformed\\material-1.8.0-alpha03\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\955f392cbb676e0baffad688e5bc31b9\\transformed\\material-1.8.0-beta01\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",

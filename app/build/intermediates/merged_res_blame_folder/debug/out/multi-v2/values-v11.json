@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-44:/values-v11/values-v11.xml",
+            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-53:/values-v11/values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\73bc1838f26e35930684936ab265d890\\transformed\\materialize-1.2.1\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\3520c3a0c08a151d344b55b4f078d18b\\transformed\\materialize-1.2.1\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,8,12,17,23,27,36,41,45,49",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

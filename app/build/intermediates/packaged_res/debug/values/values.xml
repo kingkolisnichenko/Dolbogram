@@ -39,12 +39,19 @@
     <dimen name="text_normal">16sp</dimen>
     <dimen name="text_small">14sp</dimen>
     <string name="app_name">Dolbogram</string>
+    <string name="default_web_client_id" translatable="false">906292388150-1g2puoi6ulvcggbfh94st3jh96ic69r9.apps.googleusercontent.com</string>
     <string name="first_fragment_label">First Fragment</string>
+    <string name="gcm_defaultSenderId" translatable="false">906292388150</string>
+    <string name="google_api_key" translatable="false">AIzaSyBRPJAWbpwaekaRGaPVh-1piee0R8oTTC8</string>
+    <string name="google_app_id" translatable="false">1:906292388150:android:2de4a1dc28bf7758d3d397</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBRPJAWbpwaekaRGaPVh-1piee0R8oTTC8</string>
+    <string name="google_storage_bucket" translatable="false">dolbogram.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="project_id" translatable="false">dolbogram</string>
     <string name="register_hitn_default_code">- - - - - -</string>
     <string name="register_text_enter_code">Введите код</string>
     <string name="register_text_we_send">Мы отправили Вам SMS с кодом проверки на ваш телефон</string>

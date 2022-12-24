@@ -3,10 +3,12 @@ package com.konge.dolbogram
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.google.firebase.auth.FirebaseAuth
 import com.konge.dolbogram.databinding.ActivityMainBinding
 import com.konge.dolbogram.ui.fragments.ChatsFragment
 import com.konge.dolbogram.ui.fragments.activities.RegisterActivity
 import com.konge.dolbogram.ui.objects.AppDrawer
+import com.konge.dolbogram.utilits.AUTH
 import com.konge.dolbogram.utilits.replaceActivity
 import com.konge.dolbogram.utilits.replaceFragment
 
@@ -31,11 +33,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initFunc() {
-        if (true) {
+        if (AUTH.currentUser != null) {
             setSupportActionBar(mToolbar)
             mAppDrawer.create()
 
-            replaceFragment(ChatsFragment())
+            replaceFragment(ChatsFragment(), false)
 
         } else {
             replaceActivity(RegisterActivity())
@@ -46,5 +48,6 @@ class MainActivity : AppCompatActivity() {
     private fun initFields() {
         mToolbar = mBinding.mainToolbar
         mAppDrawer = AppDrawer(this, mToolbar)
+        AUTH = FirebaseAuth.getInstance()
     }
 }
