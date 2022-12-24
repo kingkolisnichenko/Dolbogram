@@ -1,11 +1,14 @@
 package com.konge.dolbogram
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.konge.dolbogram.databinding.ActivityMainBinding
 import com.konge.dolbogram.ui.fragments.ChatsFragment
+import com.konge.dolbogram.ui.fragments.activities.RegisterActivity
 import com.konge.dolbogram.ui.objects.AppDrawer
+import com.konge.dolbogram.utilits.replaceActivity
+import com.konge.dolbogram.utilits.replaceFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,12 +31,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initFunc() {
-        setSupportActionBar(mToolbar)
+        if (true) {
+            setSupportActionBar(mToolbar)
+            mAppDrawer.create()
 
-        mAppDrawer.create()
+            replaceFragment(ChatsFragment())
 
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.dataContainer, ChatsFragment()).commit()
+        } else {
+            replaceActivity(RegisterActivity())
+        }
 
     }
 

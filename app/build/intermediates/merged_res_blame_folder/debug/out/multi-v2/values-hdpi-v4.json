@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-36:/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-44:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\68ee75195f0df5ad8d472ec660be41c8\\transformed\\appcompat-1.5.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",

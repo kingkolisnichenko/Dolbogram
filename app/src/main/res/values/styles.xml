@@ -48,4 +48,17 @@
         <item name="actionMenuTextColor">@color/colorblack</item>
     </style>
 
+    <style name="edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin_horizontal</item>
+        <item name="android:textColor">@color/colorblack</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">phone</item>
+    </style>
+
 </resources>

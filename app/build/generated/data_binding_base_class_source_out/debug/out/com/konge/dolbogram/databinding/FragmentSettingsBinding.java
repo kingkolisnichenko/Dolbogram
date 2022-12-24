@@ -27,13 +27,16 @@ public final class FragmentSettingsBinding implements ViewBinding {
   public final ConstraintLayout settingsChangeBio;
 
   @NonNull
-  public final ConstraintLayout settingsChangeLogin;
-
-  @NonNull
   public final ConstraintLayout settingsChangePhone;
 
   @NonNull
   public final CircleImageView settingsChangePhoto;
+
+  @NonNull
+  public final ConstraintLayout settingsChangeUserName;
+
+  @NonNull
+  public final TextView settingsFullName;
 
   @NonNull
   public final ConstraintLayout settingsHeaderBloc;
@@ -42,13 +45,10 @@ public final class FragmentSettingsBinding implements ViewBinding {
   public final TextView settingsLabelBio;
 
   @NonNull
-  public final TextView settingsLabelLogin;
-
-  @NonNull
   public final TextView settingsLabelPhone;
 
   @NonNull
-  public final TextView settingsLogin;
+  public final TextView settingsLabelUserName;
 
   @NonNull
   public final TextView settingsPhone;
@@ -63,24 +63,24 @@ public final class FragmentSettingsBinding implements ViewBinding {
   public final CircleImageView settingsUserPhoto;
 
   private FragmentSettingsBinding(@NonNull ConstraintLayout rootView, @NonNull TextView settingsBio,
-      @NonNull ConstraintLayout settingsChangeBio, @NonNull ConstraintLayout settingsChangeLogin,
-      @NonNull ConstraintLayout settingsChangePhone, @NonNull CircleImageView settingsChangePhoto,
+      @NonNull ConstraintLayout settingsChangeBio, @NonNull ConstraintLayout settingsChangePhone,
+      @NonNull CircleImageView settingsChangePhoto,
+      @NonNull ConstraintLayout settingsChangeUserName, @NonNull TextView settingsFullName,
       @NonNull ConstraintLayout settingsHeaderBloc, @NonNull TextView settingsLabelBio,
-      @NonNull TextView settingsLabelLogin, @NonNull TextView settingsLabelPhone,
-      @NonNull TextView settingsLogin, @NonNull TextView settingsPhone,
-      @NonNull TextView settingsTextAccount, @NonNull TextView settingsUserName,
-      @NonNull CircleImageView settingsUserPhoto) {
+      @NonNull TextView settingsLabelPhone, @NonNull TextView settingsLabelUserName,
+      @NonNull TextView settingsPhone, @NonNull TextView settingsTextAccount,
+      @NonNull TextView settingsUserName, @NonNull CircleImageView settingsUserPhoto) {
     this.rootView = rootView;
     this.settingsBio = settingsBio;
     this.settingsChangeBio = settingsChangeBio;
-    this.settingsChangeLogin = settingsChangeLogin;
     this.settingsChangePhone = settingsChangePhone;
     this.settingsChangePhoto = settingsChangePhoto;
+    this.settingsChangeUserName = settingsChangeUserName;
+    this.settingsFullName = settingsFullName;
     this.settingsHeaderBloc = settingsHeaderBloc;
     this.settingsLabelBio = settingsLabelBio;
-    this.settingsLabelLogin = settingsLabelLogin;
     this.settingsLabelPhone = settingsLabelPhone;
-    this.settingsLogin = settingsLogin;
+    this.settingsLabelUserName = settingsLabelUserName;
     this.settingsPhone = settingsPhone;
     this.settingsTextAccount = settingsTextAccount;
     this.settingsUserName = settingsUserName;
@@ -126,12 +126,6 @@ public final class FragmentSettingsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.settings_change_login;
-      ConstraintLayout settingsChangeLogin = ViewBindings.findChildViewById(rootView, id);
-      if (settingsChangeLogin == null) {
-        break missingId;
-      }
-
       id = R.id.settings_change_phone;
       ConstraintLayout settingsChangePhone = ViewBindings.findChildViewById(rootView, id);
       if (settingsChangePhone == null) {
@@ -141,6 +135,18 @@ public final class FragmentSettingsBinding implements ViewBinding {
       id = R.id.settings_change_photo;
       CircleImageView settingsChangePhoto = ViewBindings.findChildViewById(rootView, id);
       if (settingsChangePhoto == null) {
+        break missingId;
+      }
+
+      id = R.id.settings_change_user_name;
+      ConstraintLayout settingsChangeUserName = ViewBindings.findChildViewById(rootView, id);
+      if (settingsChangeUserName == null) {
+        break missingId;
+      }
+
+      id = R.id.settings_full_name;
+      TextView settingsFullName = ViewBindings.findChildViewById(rootView, id);
+      if (settingsFullName == null) {
         break missingId;
       }
 
@@ -156,21 +162,15 @@ public final class FragmentSettingsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.settings_label_login;
-      TextView settingsLabelLogin = ViewBindings.findChildViewById(rootView, id);
-      if (settingsLabelLogin == null) {
-        break missingId;
-      }
-
       id = R.id.settings_label_phone;
       TextView settingsLabelPhone = ViewBindings.findChildViewById(rootView, id);
       if (settingsLabelPhone == null) {
         break missingId;
       }
 
-      id = R.id.settings_login;
-      TextView settingsLogin = ViewBindings.findChildViewById(rootView, id);
-      if (settingsLogin == null) {
+      id = R.id.settings_label_user_name;
+      TextView settingsLabelUserName = ViewBindings.findChildViewById(rootView, id);
+      if (settingsLabelUserName == null) {
         break missingId;
       }
 
@@ -199,9 +199,10 @@ public final class FragmentSettingsBinding implements ViewBinding {
       }
 
       return new FragmentSettingsBinding((ConstraintLayout) rootView, settingsBio,
-          settingsChangeBio, settingsChangeLogin, settingsChangePhone, settingsChangePhoto,
-          settingsHeaderBloc, settingsLabelBio, settingsLabelLogin, settingsLabelPhone,
-          settingsLogin, settingsPhone, settingsTextAccount, settingsUserName, settingsUserPhoto);
+          settingsChangeBio, settingsChangePhone, settingsChangePhoto, settingsChangeUserName,
+          settingsFullName, settingsHeaderBloc, settingsLabelBio, settingsLabelPhone,
+          settingsLabelUserName, settingsPhone, settingsTextAccount, settingsUserName,
+          settingsUserPhoto);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

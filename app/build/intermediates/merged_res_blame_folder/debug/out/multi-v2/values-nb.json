@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-36:/values-nb/values-nb.xml",
+            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-44:/values-nb/values-nb.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\68ee75195f0df5ad8d472ec660be41c8\\transformed\\appcompat-1.5.1\\res\\values-nb\\values-nb.xml",
@@ -40,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\30d8f74ca12f32a76eef5dc8bd9d3c06\\transformed\\navigation-ui-2.2.0-rc04\\res\\values-nb\\values-nb.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\f7d7c569730c65fc782b857b9ee23b4d\\transformed\\navigation-ui-2.4.1\\res\\values-nb\\values-nb.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

@@ -28,6 +28,16 @@
         android:testOnly="true"
         android:theme="@style/Theme.Dolbogram" >
         <activity
+            android:name="com.konge.dolbogram.ui.fragments.activities.RegisterActivity"
+            android:exported="false"
+            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.Dolbogram.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.konge.dolbogram.MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -43,6 +53,14 @@
             android:enabled="@bool/is_iconics_content_provider_enabled"
             android:exported="false"
             android:initOrder="100" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.konge.dolbogram.androidx-startup"

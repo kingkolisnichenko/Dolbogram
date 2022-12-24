@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-36:/values-ar/values-ar.xml",
+            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-44:/values-ar/values-ar.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\f7d7c569730c65fc782b857b9ee23b4d\\transformed\\navigation-ui-2.4.1\\res\\values-ar\\values-ar.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,165",
+                        "endColumns": "109,110",
+                        "endOffsets": "160,271"
+                    },
+                    "to": {
+                        "startLines": "98,99",
+                        "startColumns": "4,4",
+                        "startOffsets": "7979,8089",
+                        "endColumns": "109,110",
+                        "endOffsets": "8084,8195"
+                    }
+                },
                 {
                     "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\68ee75195f0df5ad8d472ec660be41c8\\transformed\\appcompat-1.5.1\\res\\values-ar\\values-ar.xml",
                     "from": {
@@ -37,23 +54,6 @@
                         "endLines": "9,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,100",
                         "endColumns": "12,77,75,83,91,82,100,118,76,62,90,68,66,99,62,64,60,67,61,57,113,59,60,56,72,122,80,79,147,80,80,88,52,53,65,77,79,83,71,73,72,69,90,70,89,94,73,82,92,48,68,85,84,61,63,62,108,91,96,92,56,57,79",
                         "endOffsets": "510,3242,3318,3402,3494,3577,3678,3797,3874,3937,4028,4097,4164,4264,4327,4392,4453,4521,4583,4641,4755,4815,4876,4933,5006,5129,5210,5290,5438,5519,5600,5689,5742,5796,5862,5940,6020,6104,6176,6250,6323,6393,6484,6555,6645,6740,6814,6897,6990,7039,7108,7194,7279,7341,7405,7468,7577,7669,7766,7859,7916,7974,8275"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\30d8f74ca12f32a76eef5dc8bd9d3c06\\transformed\\navigation-ui-2.2.0-rc04\\res\\values-ar\\values-ar.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,165",
-                        "endColumns": "109,110",
-                        "endOffsets": "160,271"
-                    },
-                    "to": {
-                        "startLines": "98,99",
-                        "startColumns": "4,4",
-                        "startOffsets": "7979,8089",
-                        "endColumns": "109,110",
-                        "endOffsets": "8084,8195"
                     }
                 },
                 {

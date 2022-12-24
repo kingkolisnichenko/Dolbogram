@@ -22,7 +22,7 @@
 15-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\862a48ada38c28461deadd92c59b2d5c\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:6:5-25:19
+17-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:6:5-37:19
 18        android:allowBackup="true"
 18-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:7:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -45,56 +45,89 @@
 29        android:theme="@style/Theme.Dolbogram" >
 29-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:14:9-47
 30        <activity
-30-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:16:9-24:20
-31            android:name="com.konge.dolbogram.MainActivity"
-31-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:17:13-41
-32            android:exported="true" >
-32-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:18:13-36
-33            <intent-filter>
-33-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:19:13-23:29
-34                <action android:name="android.intent.action.MAIN" />
-34-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:20:17-69
-34-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:20:25-66
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:22:17-77
-36-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:22:27-74
-37            </intent-filter>
-38        </activity>
-39
-40        <provider
-40-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:27:9-32:39
-41            android:name="com.mikepenz.iconics.IconicsContentProvider"
-41-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:28:13-71
-42            android:authorities="com.konge.dolbogram.iconics.core.provider"
-42-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:29:13-73
-43            android:enabled="@bool/is_iconics_content_provider_enabled"
-43-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:30:13-72
-44            android:exported="false"
-44-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:31:13-37
-45            android:initOrder="100" />
-45-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:32:13-36
-46        <provider
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-47            android:name="androidx.startup.InitializationProvider"
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-48            android:authorities="com.konge.dolbogram.androidx-startup"
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-49            android:exported="false" >
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-50            <meta-data
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-51                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-52                android:value="androidx.startup" />
-52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-53            <meta-data
-53-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\025ed7849c6f43c10d9a6c1cd4d240b1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\025ed7849c6f43c10d9a6c1cd4d240b1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-55                android:value="androidx.startup" />
-55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\025ed7849c6f43c10d9a6c1cd4d240b1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-56        </provider>
-57    </application>
-58
-59</manifest>
+30-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:17:9-26:20
+31            android:name="com.konge.dolbogram.ui.fragments.activities.RegisterActivity"
+31-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:18:13-69
+32            android:exported="false"
+32-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:20:13-37
+33            android:label="@string/title_activity_register"
+33-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:21:13-60
+34            android:theme="@style/Theme.Dolbogram.NoActionBar"
+34-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:22:13-63
+35            android:windowSoftInputMode="stateVisible|adjustResize" >
+35-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:19:13-68
+36            <meta-data
+36-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:23:13-25:36
+37                android:name="android.app.lib_name"
+37-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:24:17-52
+38                android:value="" />
+38-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:25:17-33
+39        </activity>
+40        <activity
+40-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:28:9-36:20
+41            android:name="com.konge.dolbogram.MainActivity"
+41-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:29:13-41
+42            android:exported="true" >
+42-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:30:13-36
+43            <intent-filter>
+43-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:31:13-35:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:32:17-69
+44-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:32:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:34:17-77
+46-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:34:27-74
+47            </intent-filter>
+48        </activity>
+49
+50        <provider
+50-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:27:9-32:39
+51            android:name="com.mikepenz.iconics.IconicsContentProvider"
+51-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:28:13-71
+52            android:authorities="com.konge.dolbogram.iconics.core.provider"
+52-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:29:13-73
+53            android:enabled="@bool/is_iconics_content_provider_enabled"
+53-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:30:13-72
+54            android:exported="false"
+54-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:31:13-37
+55            android:initOrder="100" />
+55-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\3bbe67a9b077df72c3d5715396a1879e\transformed\iconics-core-4.0.2\AndroidManifest.xml:32:13-36
+56
+57        <uses-library
+57-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\3c65846e402a3018f0157401bd77d39f\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+58            android:name="androidx.window.extensions"
+58-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\3c65846e402a3018f0157401bd77d39f\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+59            android:required="false" />
+59-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\3c65846e402a3018f0157401bd77d39f\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+60        <uses-library
+60-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\3c65846e402a3018f0157401bd77d39f\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+61            android:name="androidx.window.sidecar"
+61-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\3c65846e402a3018f0157401bd77d39f\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+62            android:required="false" />
+62-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\3c65846e402a3018f0157401bd77d39f\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+63
+64        <provider
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+65            android:name="androidx.startup.InitializationProvider"
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+66            android:authorities="com.konge.dolbogram.androidx-startup"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+67            android:exported="false" >
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+68            <meta-data
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+70                android:value="androidx.startup" />
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\025ed7849c6f43c10d9a6c1cd4d240b1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+72-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\025ed7849c6f43c10d9a6c1cd4d240b1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+73                android:value="androidx.startup" />
+73-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\025ed7849c6f43c10d9a6c1cd4d240b1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+74        </provider>
+75    </application>
+76
+77</manifest>

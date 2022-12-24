@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-36:/values-ne/values-ne.xml",
+            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-44:/values-ne/values-ne.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\f7d7c569730c65fc782b857b9ee23b4d\\transformed\\navigation-ui-2.4.1\\res\\values-ne\\values-ne.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,172",
+                        "endColumns": "116,119",
+                        "endOffsets": "167,287"
+                    },
+                    "to": {
+                        "startLines": "94,95",
+                        "startColumns": "4,4",
+                        "startOffsets": "8023,8140",
+                        "endColumns": "116,119",
+                        "endOffsets": "8135,8255"
+                    }
+                },
                 {
                     "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\68ee75195f0df5ad8d472ec660be41c8\\transformed\\appcompat-1.5.1\\res\\values-ne\\values-ne.xml",
                     "from": {
@@ -54,23 +71,6 @@
                         "startOffsets": "8424",
                         "endColumns": "100",
                         "endOffsets": "8520"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\30d8f74ca12f32a76eef5dc8bd9d3c06\\transformed\\navigation-ui-2.2.0-rc04\\res\\values-ne\\values-ne.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,172",
-                        "endColumns": "116,119",
-                        "endOffsets": "167,287"
-                    },
-                    "to": {
-                        "startLines": "94,95",
-                        "startColumns": "4,4",
-                        "startOffsets": "8023,8140",
-                        "endColumns": "116,119",
-                        "endOffsets": "8135,8255"
                     }
                 }
             ]
