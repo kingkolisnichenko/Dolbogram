@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar
 import com.konge.dolbogram.R
 import com.konge.dolbogram.databinding.ActivityRegisterBinding
 import com.konge.dolbogram.ui.fragments.EnterPhoneNumberFragment
+import com.konge.dolbogram.utilits.initFirebase
 import com.konge.dolbogram.utilits.replaceFragment
 
 
@@ -19,6 +20,9 @@ class RegisterActivity : AppCompatActivity() {
 
         mBinding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
+
+        initFirebase()
+
     }
 
     override fun onStart() {

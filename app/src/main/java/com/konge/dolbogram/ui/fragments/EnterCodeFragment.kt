@@ -4,10 +4,7 @@ import com.google.firebase.auth.PhoneAuthProvider
 import com.konge.dolbogram.MainActivity
 import com.konge.dolbogram.R
 import com.konge.dolbogram.ui.fragments.activities.RegisterActivity
-import com.konge.dolbogram.utilits.AUTH
-import com.konge.dolbogram.utilits.AppTextWatcher
-import com.konge.dolbogram.utilits.replaceActivity
-import com.konge.dolbogram.utilits.showToast
+import com.konge.dolbogram.utilits.*
 import kotlinx.android.synthetic.main.fragment_enter_code.*
 
 class EnterCodeFragment(val phoneNumber: String, val id: String) :
@@ -34,8 +31,25 @@ class EnterCodeFragment(val phoneNumber: String, val id: String) :
 
         AUTH.signInWithCredential(credential).addOnCompleteListener { task ->
             if (task.isSuccessful) {
-                showToast("Wellcome!!")
-                (activity as RegisterActivity).replaceActivity(MainActivity())
+
+                val uuid = AUTH.currentUser?.uid.toString()
+
+                val dateMap = mutableMapOf<String, Any>()
+                dateMap[CHILD_ID] = uuid
+                dateMap[CHILD_PHONE] = phoneNumber
+                dateMap[CHILD_USERNAME] = uuid
+
+                REF_DATABASE_ROOT.child(NODE_USERS).child(uuid).updateChildren(dateMap)
+                    .addOnCompleteListener {
+                        if (it.isSuccessful) {
+                            showToast("Wellcome!!")
+                            (activity as RegisterActivity).replaceActivity(MainActivity())
+                        } else {
+                            showToast(it.exception?.message.toString())
+                        }
+
+                    }
+
             } else {
                 showToast(task.exception?.message.toString())
             }

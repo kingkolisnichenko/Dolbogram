@@ -59,6 +59,7 @@
         <item name="colorControlHighlight">@color/colorPrimary</item>
         <item name="android:maxLines">1</item>
         <item name="android:inputType">phone</item>
+        <item name="android:textColorHint">@color/colorgrey</item>
     </style>
 
 </resources>

@@ -4433,6 +4433,7 @@ string path_password_strike_through
 string previous
 string project_id
 string register_hitn_default_code
+string register_phone_hint
 string register_text_enter_code
 string register_text_we_send
 string register_title_your_phote

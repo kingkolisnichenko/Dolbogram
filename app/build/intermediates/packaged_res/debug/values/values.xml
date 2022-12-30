@@ -53,6 +53,7 @@
     <string name="previous">Previous</string>
     <string name="project_id" translatable="false">dolbogram</string>
     <string name="register_hitn_default_code">- - - - - -</string>
+    <string name="register_phone_hint">+(- - -)- - - - - - - -</string>
     <string name="register_text_enter_code">Введите код</string>
     <string name="register_text_we_send">Мы отправили Вам SMS с кодом проверки на ваш телефон</string>
     <string name="register_title_your_phote">Ваш телефон</string>
@@ -134,6 +135,7 @@
         <item name="colorControlHighlight">@color/colorPrimary</item>
         <item name="android:maxLines">1</item>
         <item name="android:inputType">phone</item>
+        <item name="android:textColorHint">@color/colorgrey</item>
     </style>
     <style name="mainToolbar">
         <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
