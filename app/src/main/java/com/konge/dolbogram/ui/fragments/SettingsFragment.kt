@@ -7,7 +7,10 @@ import com.konge.dolbogram.MainActivity
 import com.konge.dolbogram.R
 import com.konge.dolbogram.ui.fragments.activities.RegisterActivity
 import com.konge.dolbogram.utilits.AUTH
+import com.konge.dolbogram.utilits.USER
 import com.konge.dolbogram.utilits.replaceActivity
+import com.konge.dolbogram.utilits.replaceFragment
+import kotlinx.android.synthetic.main.fragment_settings.*
 
 class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
 
@@ -15,6 +18,8 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
         super.onResume()
 
         setHasOptionsMenu(true)
+
+        initFields()
 
     }
 
@@ -29,8 +34,23 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
                 AUTH.signOut()
                 (activity as MainActivity).replaceActivity(RegisterActivity())
             }
+
+            R.id.settings_menu_change_name ->{
+                replaceFragment(ChangeNameFragment())
+            }
+
         }
 
         return true
+    }
+
+    private fun initFields() {
+
+        settings_bio.text = USER.bio
+        settings_full_name.text = USER.fullname
+        settings_phone.text = USER.phone
+        settings_status.text = USER.status
+        settings_user_name.text = USER.username
+
     }
 }

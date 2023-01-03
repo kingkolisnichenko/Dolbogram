@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../../SDK/icons/material/materialicons/arrow_forward/baseline_arrow_forward_24.xml" />
+                                      <entry key="url" value="file:/$PROJECT_DIR$/../../SDK/icons/material/materialicons/check/baseline_check_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -29,7 +29,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_btn_next" />
+                            <entry key="outputName" value="ic_confirm_change" />
                             <entry key="sourceFile" value="D:\Android\Projects\Dolbogram" />
                           </map>
                         </option>

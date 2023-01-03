@@ -64,13 +64,17 @@
     <string name="settings_default_number">+37378111111</string>
     <string name="settings_default_status">В сети</string>
     <string name="settings_default_user_name">Ilya Kolisnichenko</string>
+    <string name="settings_hint_input_name">Имя</string>
+    <string name="settings_hint_input_surname">Фамилия</string>
     <string name="settings_label_bio">Напишите немного о себе</string>
     <string name="settings_label_login">Имя пользователя</string>
     <string name="settings_label_phone">Нажмите чтобы изменить номер телефона</string>
     <string name="settings_menu_change_name">Изменить имя</string>
     <string name="settings_menu_exit">Выход</string>
     <string name="settings_text_account">Аккаунт</string>
+    <string name="settings_toast_name_is_empty">Имя не может быть пустым</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="toast_data_update">Данные обновлены</string>
     <style name="Theme.Dolbogram" parent="Theme.AppCompat.DayNight">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

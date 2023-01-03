@@ -4,14 +4,15 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
 import com.konge.dolbogram.databinding.ActivityMainBinding
+import com.konge.dolbogram.models.User
 import com.konge.dolbogram.ui.fragments.ChatsFragment
 import com.konge.dolbogram.ui.fragments.activities.RegisterActivity
 import com.konge.dolbogram.ui.objects.AppDrawer
-import com.konge.dolbogram.utilits.AUTH
-import com.konge.dolbogram.utilits.initFirebase
-import com.konge.dolbogram.utilits.replaceActivity
-import com.konge.dolbogram.utilits.replaceFragment
+import com.konge.dolbogram.utilits.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -51,6 +52,17 @@ class MainActivity : AppCompatActivity() {
         mAppDrawer = AppDrawer(this, mToolbar)
 
         initFirebase()
+        initUser()
+
+    }
+
+    private fun initUser() {
+
+        REF_DATABASE_ROOT.child(NODE_USERS).child(UUID)
+            .addListenerForSingleValueEvent(AppValueEventListener {
+
+                USER = it.getValue(User::class.java) ?: User()
+            })
 
     }
 }
