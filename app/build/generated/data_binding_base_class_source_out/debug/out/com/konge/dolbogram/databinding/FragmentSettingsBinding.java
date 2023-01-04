@@ -54,6 +54,9 @@ public final class FragmentSettingsBinding implements ViewBinding {
   public final TextView settingsPhone;
 
   @NonNull
+  public final TextView settingsStatus;
+
+  @NonNull
   public final TextView settingsTextAccount;
 
   @NonNull
@@ -68,8 +71,9 @@ public final class FragmentSettingsBinding implements ViewBinding {
       @NonNull ConstraintLayout settingsChangeUserName, @NonNull TextView settingsFullName,
       @NonNull ConstraintLayout settingsHeaderBloc, @NonNull TextView settingsLabelBio,
       @NonNull TextView settingsLabelPhone, @NonNull TextView settingsLabelUserName,
-      @NonNull TextView settingsPhone, @NonNull TextView settingsTextAccount,
-      @NonNull TextView settingsUserName, @NonNull CircleImageView settingsUserPhoto) {
+      @NonNull TextView settingsPhone, @NonNull TextView settingsStatus,
+      @NonNull TextView settingsTextAccount, @NonNull TextView settingsUserName,
+      @NonNull CircleImageView settingsUserPhoto) {
     this.rootView = rootView;
     this.settingsBio = settingsBio;
     this.settingsChangeBio = settingsChangeBio;
@@ -82,6 +86,7 @@ public final class FragmentSettingsBinding implements ViewBinding {
     this.settingsLabelPhone = settingsLabelPhone;
     this.settingsLabelUserName = settingsLabelUserName;
     this.settingsPhone = settingsPhone;
+    this.settingsStatus = settingsStatus;
     this.settingsTextAccount = settingsTextAccount;
     this.settingsUserName = settingsUserName;
     this.settingsUserPhoto = settingsUserPhoto;
@@ -180,6 +185,12 @@ public final class FragmentSettingsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.settings_status;
+      TextView settingsStatus = ViewBindings.findChildViewById(rootView, id);
+      if (settingsStatus == null) {
+        break missingId;
+      }
+
       id = R.id.settings_text_account;
       TextView settingsTextAccount = ViewBindings.findChildViewById(rootView, id);
       if (settingsTextAccount == null) {
@@ -201,8 +212,8 @@ public final class FragmentSettingsBinding implements ViewBinding {
       return new FragmentSettingsBinding((ConstraintLayout) rootView, settingsBio,
           settingsChangeBio, settingsChangePhone, settingsChangePhoto, settingsChangeUserName,
           settingsFullName, settingsHeaderBloc, settingsLabelBio, settingsLabelPhone,
-          settingsLabelUserName, settingsPhone, settingsTextAccount, settingsUserName,
-          settingsUserPhoto);
+          settingsLabelUserName, settingsPhone, settingsStatus, settingsTextAccount,
+          settingsUserName, settingsUserPhoto);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

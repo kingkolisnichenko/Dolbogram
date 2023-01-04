@@ -8,15 +8,23 @@ open class BaseFragment(private val layout: Int) : Fragment(layout) {
 
     override fun onStart() {
         super.onStart()
+        try {
+            (activity as MainActivity).mAppDrawer.disableDrawer()
+        }catch (e:Exception){
 
-        (activity as MainActivity).mAppDrawer.disableDrawer()
+        }
+
 
     }
 
     override fun onStop() {
         super.onStop()
+        try {
+            (activity as MainActivity).mAppDrawer.enableDrawer()
+        }catch (e:Exception){
 
-        (activity as MainActivity).mAppDrawer.enableDrawer()
+        }
+
 
     }
 }

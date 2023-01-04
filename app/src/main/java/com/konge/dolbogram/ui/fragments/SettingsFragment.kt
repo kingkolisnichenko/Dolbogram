@@ -52,5 +52,8 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
         settings_status.text = USER.status
         settings_user_name.text = USER.username
 
+        settings_change_user_name.setOnClickListener { replaceFragment(ChangeUserNameFragment()) }
+
+
     }
 }
