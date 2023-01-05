@@ -1,5 +1,6 @@
 package com.konge.dolbogram
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -13,6 +14,7 @@ import com.konge.dolbogram.ui.fragments.ChatsFragment
 import com.konge.dolbogram.ui.fragments.activities.RegisterActivity
 import com.konge.dolbogram.ui.objects.AppDrawer
 import com.konge.dolbogram.utilits.*
+import com.theartofdev.edmodo.cropper.CropImage
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +27,8 @@ class MainActivity : AppCompatActivity() {
 
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
+
+        APP_ACTIVITY = this
 
     }
 
@@ -65,4 +69,24 @@ class MainActivity : AppCompatActivity() {
             })
 
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE
+            && resultCode == RESULT_OK
+            && data != null
+        ) {
+            val uri = CropImage.getActivityResult(data).uri
+
+            val path = REF_STORAGE_ROOT.child(FOLDER_PROFILE_IMAGE).child(UUID)
+
+            path.putFile(uri).addOnCompleteListener {
+                if (it.isSuccessful) {
+                    showToast(getString(R.string.toast_data_update))
+                }
+            }
+        }
+    }
+
 }

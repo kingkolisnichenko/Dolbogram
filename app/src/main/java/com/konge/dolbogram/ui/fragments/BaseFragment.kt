@@ -3,24 +3,17 @@ package com.konge.dolbogram.ui.fragments
 import androidx.fragment.app.Fragment
 import com.konge.dolbogram.MainActivity
 import com.konge.dolbogram.ui.fragments.activities.RegisterActivity
+import com.konge.dolbogram.utilits.APP_ACTIVITY
 
 open class BaseFragment(private val layout: Int) : Fragment(layout) {
 
     override fun onStart() {
         super.onStart()
-
-        (activity as MainActivity).mAppDrawer.disableDrawer()
-
-
-
+        APP_ACTIVITY.mAppDrawer.disableDrawer()
     }
 
     override fun onStop() {
         super.onStop()
-
-        (activity as MainActivity).mAppDrawer.enableDrawer()
-
-
-
+        APP_ACTIVITY.mAppDrawer.enableDrawer()
     }
 }
