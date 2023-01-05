@@ -3847,11 +3847,13 @@ id settings_change_bio
 id settings_change_phone
 id settings_change_photo
 id settings_change_user_name
-id settings_confirm_change
+id settings_confirm_change_data
 id settings_full_name
 id settings_header_bloc
+id settings_input_bio
 id settings_input_name
 id settings_input_surname
+id settings_input_username
 id settings_label_bio
 id settings_label_phone
 id settings_label_user_name
@@ -4102,7 +4104,9 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_base
+layout fragment_change_bio
 layout fragment_change_name
+layout fragment_change_user_name
 layout fragment_chats
 layout fragment_enter_code
 layout fragment_enter_phone_number
@@ -4454,8 +4458,10 @@ string settings_default_login
 string settings_default_number
 string settings_default_status
 string settings_default_user_name
+string settings_hint_input_bio
 string settings_hint_input_name
 string settings_hint_input_surname
+string settings_hint_input_username
 string settings_label_bio
 string settings_label_login
 string settings_label_phone
@@ -4463,6 +4469,8 @@ string settings_menu_change_name
 string settings_menu_exit
 string settings_text_account
 string settings_toast_name_is_empty
+string settings_toast_username_is_empty
+string settings_toast_username_is_not_unical
 string side_sheet_behavior
 string status_bar_notification_info_overflow
 string title_activity_register

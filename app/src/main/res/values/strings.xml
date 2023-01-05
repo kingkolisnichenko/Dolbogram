@@ -35,4 +35,5 @@
     <string name="settings_hint_input_username">Новое имя пользователя</string>
     <string name="settings_toast_username_is_empty">Необходимо указать имя пользователя</string>
     <string name="settings_toast_username_is_not_unical">Пользователь с таким именем уже существует!</string>
+    <string name="settings_hint_input_bio">Напишите немного о себе</string>
 </resources>

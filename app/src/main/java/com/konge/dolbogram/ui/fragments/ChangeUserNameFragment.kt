@@ -2,23 +2,19 @@ package com.konge.dolbogram.ui.fragments
 
 import com.konge.dolbogram.R
 import com.konge.dolbogram.utilits.*
-import kotlinx.android.synthetic.main.fragment_change_name.*
 import kotlinx.android.synthetic.main.fragment_change_user_name.*
 
-class ChangeUserNameFragment : BaseFragment(R.layout.fragment_change_user_name) {
+class ChangeUserNameFragment : BaseChangeFragment(R.layout.fragment_change_user_name) {
 
     lateinit var mNewUsername: String
 
-    override fun onStart() {
-        super.onStart()
-
-        settings_confirm_change_username.setOnClickListener { changeUserName() }
-
+    override fun onResume() {
+        super.onResume()
         settings_input_username.setText(USER.username)
-
     }
 
-    private fun changeUserName() {
+    override fun change() {
+        super.change()
 
         mNewUsername = settings_input_username.text.toString().lowercase()
 
@@ -40,7 +36,6 @@ class ChangeUserNameFragment : BaseFragment(R.layout.fragment_change_user_name) 
                             }
                     }
                 })
-
 
         }
     }

@@ -1,5 +1,6 @@
 package com.konge.dolbogram.ui.fragments
 
+import androidx.fragment.app.Fragment
 import com.google.firebase.auth.PhoneAuthProvider
 import com.konge.dolbogram.MainActivity
 import com.konge.dolbogram.R
@@ -8,7 +9,7 @@ import com.konge.dolbogram.utilits.*
 import kotlinx.android.synthetic.main.fragment_enter_code.*
 
 class EnterCodeFragment(val phoneNumber: String, val id: String) :
-    BaseFragment(R.layout.fragment_enter_code) {
+    Fragment(R.layout.fragment_enter_code) {
 
     override fun onStart() {
         super.onStart()

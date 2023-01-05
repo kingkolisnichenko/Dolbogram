@@ -4,24 +4,12 @@
         "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-57:\\layout\\activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-mergeDebugResources-54:\\layout\\fragment_settings.xml",
-        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-57:\\layout\\fragment_settings.xml"
-    },
-    {
-        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-mergeDebugResources-54:\\layout\\fragment_chats.xml",
-        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-57:\\layout\\fragment_chats.xml"
-    },
-    {
         "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-mergeDebugResources-54:\\layout\\fragment_enter_phone_number.xml",
         "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-57:\\layout\\fragment_enter_phone_number.xml"
     },
     {
-        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-mergeDebugResources-54:\\layout\\fragment_change_name.xml",
-        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-57:\\layout\\fragment_change_name.xml"
-    },
-    {
-        "merged": "com.konge.dolbogram.app-mergeDebugResources-54:/layout/fragment_settings.xml",
-        "source": "com.konge.dolbogram.app-main-57:/layout/fragment_settings.xml"
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-mergeDebugResources-54:\\layout\\fragment_change_user_name.xml",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-57:\\layout\\fragment_change_user_name.xml"
     },
     {
         "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-mergeDebugResources-54:\\layout\\fragment_base.xml",
@@ -34,5 +22,29 @@
     {
         "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-mergeDebugResources-54:\\layout\\activity_main.xml",
         "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-57:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.konge.dolbogram.app-mergeDebugResources-54:/layout/fragment_change_name.xml",
+        "source": "com.konge.dolbogram.app-main-57:/layout/fragment_change_name.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-mergeDebugResources-54:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-57:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-mergeDebugResources-54:\\layout\\fragment_chats.xml",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-57:\\layout\\fragment_chats.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-mergeDebugResources-54:\\layout\\fragment_change_name.xml",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.4\\com.konge.dolbogram.app-main-57:\\layout\\fragment_change_name.xml"
+    },
+    {
+        "merged": "com.konge.dolbogram.app-mergeDebugResources-54:/layout/fragment_change_bio.xml",
+        "source": "com.konge.dolbogram.app-main-57:/layout/fragment_change_bio.xml"
+    },
+    {
+        "merged": "com.konge.dolbogram.app-mergeDebugResources-54:/layout/fragment_change_user_name.xml",
+        "source": "com.konge.dolbogram.app-main-57:/layout/fragment_change_user_name.xml"
     }
 ]
