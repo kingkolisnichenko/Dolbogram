@@ -65,6 +65,7 @@ MERGED from [androidx.customview:customview:1.1.0] C:\Users\Ilya\.gradle\caches\
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\0059d11f3d3897f891304da12ebe98aa\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\0ac51f20f5605b155aef109eeb7cab3d\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\16394bb83bdbda72e8e44e0e000cf951\transformed\core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\4a7f7871c816899983947a7f9649571a\transformed\picasso-2.8\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\3a23ec0df3362f9a40c1dd21a5a21dee\transformed\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\8fadf856278e84cbdf9e38656595812c\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\728b62d12c9db44065ff7164afa0cab9\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:17:1-37:12
@@ -161,6 +162,8 @@ MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transfor
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\5bcc2672b133595331a1eba9379315a2\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\0ac51f20f5605b155aef109eeb7cab3d\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\0ac51f20f5605b155aef109eeb7cab3d\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\4a7f7871c816899983947a7f9649571a\transformed\picasso-2.8\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\4a7f7871c816899983947a7f9649571a\transformed\picasso-2.8\AndroidManifest.xml:7:5-12:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\728b62d12c9db44065ff7164afa0cab9\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\728b62d12c9db44065ff7164afa0cab9\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Ilya\.gradle\caches\transforms-3\a517ba8cc3714d720ba4322dc2b5fe28\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
@@ -357,6 +360,8 @@ MERGED from [androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3
 MERGED from [androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\0ac51f20f5605b155aef109eeb7cab3d\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\16394bb83bdbda72e8e44e0e000cf951\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\16394bb83bdbda72e8e44e0e000cf951\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\4a7f7871c816899983947a7f9649571a\transformed\picasso-2.8\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\4a7f7871c816899983947a7f9649571a\transformed\picasso-2.8\AndroidManifest.xml:5:5-44
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\3a23ec0df3362f9a40c1dd21a5a21dee\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\3a23ec0df3362f9a40c1dd21a5a21dee\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\8fadf856278e84cbdf9e38656595812c\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -613,6 +618,14 @@ uses-permission#com.konge.dolbogram.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\0ac51f20f5605b155aef109eeb7cab3d\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\0ac51f20f5605b155aef109eeb7cab3d\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\4a7f7871c816899983947a7f9649571a\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\4a7f7871c816899983947a7f9649571a\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\4a7f7871c816899983947a7f9649571a\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\4a7f7871c816899983947a7f9649571a\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
 meta-data#androidx.lifecycle.ProcessLifecycleInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\728b62d12c9db44065ff7164afa0cab9\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
 	android:value

@@ -299,6 +299,14 @@
 161                android:value="androidx.startup" />
 161-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\728b62d12c9db44065ff7164afa0cab9\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
 162        </provider>
-163    </application>
-164
-165</manifest>
+163        <provider
+163-->[com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\4a7f7871c816899983947a7f9649571a\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
+164            android:name="com.squareup.picasso.PicassoProvider"
+164-->[com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\4a7f7871c816899983947a7f9649571a\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
+165            android:authorities="com.konge.dolbogram.com.squareup.picasso"
+165-->[com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\4a7f7871c816899983947a7f9649571a\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
+166            android:exported="false" />
+166-->[com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\4a7f7871c816899983947a7f9649571a\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
+167    </application>
+168
+169</manifest>

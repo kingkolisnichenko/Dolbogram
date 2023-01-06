@@ -10,6 +10,7 @@ import com.konge.dolbogram.MainActivity
 import com.konge.dolbogram.R
 import com.konge.dolbogram.ui.fragments.activities.RegisterActivity
 import com.konge.dolbogram.utilits.*
+import com.squareup.picasso.Picasso
 import com.theartofdev.edmodo.cropper.CropImage
 import com.theartofdev.edmodo.cropper.CropImageView
 import kotlinx.android.synthetic.main.fragment_settings.*
@@ -64,7 +65,45 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
             .setRequestedSize(600, 600)
             .setCropShape(CropImageView.CropShape.OVAL)
             .setOutputCompressFormat(Bitmap.CompressFormat.PNG)
-            .start(APP_ACTIVITY)
+            .start(APP_ACTIVITY, this)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE
+            && resultCode == RESULT_OK
+            && data != null
+        ) {
+            val uri = CropImage.getActivityResult(data).uri
+
+            val path = REF_STORAGE_ROOT.child(FOLDER_PROFILE_IMAGE).child(UUID)
+
+            path.putFile(uri).addOnCompleteListener { t1 ->
+                if (t1.isSuccessful) {
+
+                    path.downloadUrl.addOnCompleteListener { t2 ->
+                        if (t2.isSuccessful) {
+                            val photoUrl = t2.result.toString()
+
+                            REF_DATABASE_ROOT.child(NODE_USERS).child(UUID).child(CHILD_PHOTO_URL)
+                                .setValue(photoUrl).addOnCompleteListener { t3 ->
+                                    if (t3.isSuccessful) {
+
+                                        settings_user_photo.downloadAndSetImage(photoUrl)
+
+                                        showToast(getString(R.string.toast_data_update))
+                                        USER.photoUrl = photoUrl
+
+                                    }
+                                }
+
+                        }
+                    }
+
+                }
+            }
+        }
     }
 
 }
