@@ -26,6 +26,7 @@ const val CHILD_USERNAME = "username"
 const val CHILD_FULLNAME = "fullname"
 const val CHILD_BIO = "bio"
 const val CHILD_PHOTO_URL = "photoUrl"
+const val CHILD_STATE = "state"
 
 fun initFirebase() {
     AUTH = FirebaseAuth.getInstance()
@@ -55,4 +56,20 @@ inline fun putImageToStorage(uri: Uri, path: StorageReference, crossinline funct
     path.putFile(uri)
         .addOnSuccessListener { function() }
         .addOnFailureListener { showToast(it.message.toString()) }
+}
+
+inline fun initUser(crossinline function: () -> Unit) {
+
+    REF_DATABASE_ROOT.child(NODE_USERS).child(UUID)
+        .addListenerForSingleValueEvent(AppValueEventListener {
+
+            USER = it.getValue(User::class.java) ?: User()
+
+            if(USER.username.isEmpty()){
+                USER.username = USER.id
+            }
+
+            function()
+        })
+
 }

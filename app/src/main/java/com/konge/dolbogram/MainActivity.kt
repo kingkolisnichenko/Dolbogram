@@ -30,11 +30,23 @@ class MainActivity : AppCompatActivity() {
 
         APP_ACTIVITY = this
 
-        initFields()
-        initFunc()
+        initFirebase()
+        initUser {
+            initFields()
+            initFunc()
+        }
 
     }
 
+    override fun onStart() {
+        super.onStart()
+        AppStates.updadeState(AppStates.ONLINE)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        AppStates.updadeState(AppStates.OFFLINE)
+    }
 
     private fun initFunc() {
         if (AUTH.currentUser != null) {
@@ -52,19 +64,6 @@ class MainActivity : AppCompatActivity() {
     private fun initFields() {
         mToolbar = mBinding.mainToolbar
         mAppDrawer = AppDrawer(this, mToolbar)
-
-        initFirebase()
-        initUser()
-
-    }
-
-    private fun initUser() {
-
-        REF_DATABASE_ROOT.child(NODE_USERS).child(UUID)
-            .addListenerForSingleValueEvent(AppValueEventListener {
-
-                USER = it.getValue(User::class.java) ?: User()
-            })
 
     }
 
