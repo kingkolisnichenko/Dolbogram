@@ -1,5 +1,6 @@
 package com.konge.dolbogram.utilits
 
+import android.net.Uri
 import com.google.android.gms.auth.api.signin.internal.Storage
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -35,5 +36,23 @@ fun initFirebase() {
     USER = User()
     UUID = AUTH.currentUser?.uid.toString()
 
+}
 
+inline fun putUrlToDataBase(url: String, crossinline function: () -> Unit) {
+    REF_DATABASE_ROOT.child(NODE_USERS).child(UUID).child(CHILD_PHOTO_URL)
+        .setValue(url)
+        .addOnSuccessListener { function() }
+        .addOnFailureListener { showToast(it.message.toString()) }
+}
+
+inline fun getUrlFromStorage(path: StorageReference, crossinline function: (url: String) -> Unit) {
+    path.downloadUrl
+        .addOnSuccessListener { function(it.toString()) }
+        .addOnFailureListener { showToast(it.message.toString()) }
+}
+
+inline fun putImageToStorage(uri: Uri, path: StorageReference, crossinline function: () -> Unit) {
+    path.putFile(uri)
+        .addOnSuccessListener { function() }
+        .addOnFailureListener { showToast(it.message.toString()) }
 }

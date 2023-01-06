@@ -3,9 +3,11 @@ package com.konge.dolbogram.ui.fragments
 import android.app.Activity.RESULT_OK
 import android.content.Intent
 import android.graphics.Bitmap
+import android.net.Uri
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import com.google.firebase.storage.StorageReference
 import com.konge.dolbogram.MainActivity
 import com.konge.dolbogram.R
 import com.konge.dolbogram.ui.fragments.activities.RegisterActivity
@@ -54,6 +56,8 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
         settings_status.text = USER.status
         settings_user_name.text = USER.username
 
+        settings_user_photo.downloadAndSetImage(USER.photoUrl)
+
         settings_change_user_name.setOnClickListener { replaceFragment(ChangeUserNameFragment()) }
         settings_change_bio.setOnClickListener { replaceFragment(ChangeBioFragment()) }
         settings_change_photo.setOnClickListener { changeUserPhoto() }
@@ -79,31 +83,18 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
 
             val path = REF_STORAGE_ROOT.child(FOLDER_PROFILE_IMAGE).child(UUID)
 
-            path.putFile(uri).addOnCompleteListener { t1 ->
-                if (t1.isSuccessful) {
-
-                    path.downloadUrl.addOnCompleteListener { t2 ->
-                        if (t2.isSuccessful) {
-                            val photoUrl = t2.result.toString()
-
-                            REF_DATABASE_ROOT.child(NODE_USERS).child(UUID).child(CHILD_PHOTO_URL)
-                                .setValue(photoUrl).addOnCompleteListener { t3 ->
-                                    if (t3.isSuccessful) {
-
-                                        settings_user_photo.downloadAndSetImage(photoUrl)
-
-                                        showToast(getString(R.string.toast_data_update))
-                                        USER.photoUrl = photoUrl
-
-                                    }
-                                }
-
-                        }
+            putImageToStorage(uri, path) {
+                getUrlFromStorage(path) {
+                    putUrlToDataBase(it) {
+                        settings_user_photo.downloadAndSetImage(it)
+                        showToast(getString(R.string.toast_data_update))
+                        USER.photoUrl = it
                     }
-
                 }
             }
+
         }
     }
+
 
 }
