@@ -1,10 +1,10 @@
 # Project exclude paths
-/.gradle/
+\.gradle\
 *.iml
-/local.properties
-/build
-/app/build
-/.idea
+\local.properties
+\build
+\app\build
+\.idea
 .cxx
 google-services.json
-/compileDebugKotlin
+\compileDebugKotlin
