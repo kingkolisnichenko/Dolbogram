@@ -39,6 +39,7 @@ fun initFirebase() {
 
 }
 
+// Заполнить ссылку на изображение в базе данных
 inline fun putUrlToDataBase(url: String, crossinline function: () -> Unit) {
     REF_DATABASE_ROOT.child(NODE_USERS).child(UUID).child(CHILD_PHOTO_URL)
         .setValue(url)
@@ -46,12 +47,14 @@ inline fun putUrlToDataBase(url: String, crossinline function: () -> Unit) {
         .addOnFailureListener { showToast(it.message.toString()) }
 }
 
+// Получить ссылку на изображение из хранилища
 inline fun getUrlFromStorage(path: StorageReference, crossinline function: (url: String) -> Unit) {
     path.downloadUrl
         .addOnSuccessListener { function(it.toString()) }
         .addOnFailureListener { showToast(it.message.toString()) }
 }
 
+// Отправить изображение в хранилище
 inline fun putImageToStorage(uri: Uri, path: StorageReference, crossinline function: () -> Unit) {
     path.putFile(uri)
         .addOnSuccessListener { function() }

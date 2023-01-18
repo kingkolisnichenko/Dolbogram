@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.konge.dolbogram.ui.fragments
 
 import androidx.fragment.app.Fragment
@@ -23,7 +25,7 @@ class EnterPhoneNumberFragment : Fragment(R.layout.fragment_enter_phone_number) 
         mCallback = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
 
             override fun onVerificationCompleted(credential: PhoneAuthCredential) {
-                AUTH.signInWithCredential(credential).addOnCompleteListener { task ->
+                /*AUTH.signInWithCredential(credential).addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         val uuid = AUTH.currentUser?.uid.toString()
 
@@ -35,8 +37,8 @@ class EnterPhoneNumberFragment : Fragment(R.layout.fragment_enter_phone_number) 
                         REF_DATABASE_ROOT.child(NODE_USERS).child(uuid).updateChildren(dateMap)
                             .addOnCompleteListener {
                                 if (it.isSuccessful) {
-                                    showToast("Wellcome!!")
-                                    (activity as RegisterActivity).replaceActivity(MainActivity())
+                                    //showToast("Wellcome!!")
+                                    //(activity as RegisterActivity).replaceActivity(MainActivity())
                                 } else {
                                     showToast(it.exception?.message.toString())
                                 }
@@ -45,7 +47,7 @@ class EnterPhoneNumberFragment : Fragment(R.layout.fragment_enter_phone_number) 
                     } else {
                         showToast(task.exception?.message.toString())
                     }
-                }
+                }*/
             }
 
             override fun onVerificationFailed(p0: FirebaseException) {

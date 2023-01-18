@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "906292388150",
+    "firebase_url": "https://dolbogram-default-rtdb.firebaseio.com",
+    "project_id": "dolbogram",
+    "storage_bucket": "dolbogram.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906292388150:android:2de4a1dc28bf7758d3d397",
+        "android_client_info": {
+          "package_name": "com.konge.dolbogram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906292388150-6eq82mlj0srrbvorh6hhtjmfjd1ohast.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.konge.dolbogram",
+            "certificate_hash": "3eed1f35e7d74a7448e220978b6c8d11b3e66321"
+          }
+        },
+        {
+          "client_id": "906292388150-1g2puoi6ulvcggbfh94st3jh96ic69r9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRPJAWbpwaekaRGaPVh-1piee0R8oTTC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906292388150-1g2puoi6ulvcggbfh94st3jh96ic69r9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

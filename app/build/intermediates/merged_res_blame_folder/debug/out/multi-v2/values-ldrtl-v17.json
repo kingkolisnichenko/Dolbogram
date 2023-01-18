@@ -4,7 +4,7 @@
             "outputFile": "com.konge.dolbogram.app-mergeDebugResources-54:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\955f392cbb676e0baffad688e5bc31b9\\transformed\\material-1.8.0-beta01\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\d7019f56a17d6f775d28a68a92cb2d4c\\transformed\\material-1.8.0-rc01\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

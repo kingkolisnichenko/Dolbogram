@@ -1,9 +1,11 @@
 package com.konge.dolbogram
 
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.content.ContextCompat
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -32,8 +34,16 @@ class MainActivity : AppCompatActivity() {
 
         initFirebase()
         initUser {
+            initContacts()
             initFields()
             initFunc()
+        }
+
+    }
+
+    private fun initContacts() {
+        if (checkPermissions(READ_CONTACTS)) {
+            showToast("Read contacts")
         }
 
     }
@@ -67,4 +77,18 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (ContextCompat.checkSelfPermission(
+                APP_ACTIVITY,
+                READ_CONTACTS
+            ) == PackageManager.PERMISSION_GRANTED
+        ){
+            initContacts()
+        }
+    }
 }

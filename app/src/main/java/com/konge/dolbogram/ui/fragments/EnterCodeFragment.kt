@@ -35,21 +35,28 @@ class EnterCodeFragment(val phoneNumber: String, val id: String) :
 
                 val uuid = AUTH.currentUser?.uid.toString()
 
-                val dateMap = mutableMapOf<String, Any>()
-                dateMap[CHILD_ID] = uuid
-                dateMap[CHILD_PHONE] = phoneNumber
-                dateMap[CHILD_USERNAME] = uuid
-
-                REF_DATABASE_ROOT.child(NODE_USERS).child(uuid).updateChildren(dateMap)
-                    .addOnCompleteListener {
-                        if (it.isSuccessful) {
-                            showToast("Wellcome!!")
+                REF_DATABASE_ROOT.child(NODE_USERS)
+                    .addListenerForSingleValueEvent(AppValueEventListener {
+                        if (it.hasChild(uuid)) {
                             (activity as RegisterActivity).replaceActivity(MainActivity())
                         } else {
-                            showToast(it.exception?.message.toString())
-                        }
 
-                    }
+                            val dateMap = mutableMapOf<String, Any>()
+                            dateMap[CHILD_ID] = uuid
+                            dateMap[CHILD_PHONE] = phoneNumber
+                            dateMap[CHILD_USERNAME] = uuid
+
+                            REF_DATABASE_ROOT.child(NODE_USERS).child(uuid).updateChildren(dateMap)
+                                .addOnCompleteListener {
+                                    if (it.isSuccessful) {
+                                        (activity as RegisterActivity).replaceActivity(MainActivity())
+                                    } else {
+                                        showToast(it.exception?.message.toString())
+                                    }
+
+                                }
+                        }
+                    })
 
             } else {
                 showToast(task.exception?.message.toString())

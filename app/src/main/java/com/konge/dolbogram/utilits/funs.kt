@@ -1,10 +1,18 @@
+
 package com.konge.dolbogram.utilits
 
+import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.view.Window
+import android.view.WindowManager
+import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import com.konge.dolbogram.R
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
@@ -31,7 +39,6 @@ fun AppCompatActivity.replaceFragment(fragment: Fragment, addStack: Boolean = tr
             .replace(R.id.dataContainer, fragment)
             .commit()
     }
-
 
 }
 
