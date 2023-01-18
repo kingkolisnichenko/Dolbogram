@@ -1,24 +1,29 @@
 package com.konge.dolbogram.utilits
 
+import android.annotation.SuppressLint
 import android.net.Uri
+import android.provider.ContactsContract
 import com.google.android.gms.auth.api.signin.internal.Storage
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
+import com.konge.dolbogram.models.CommonModel
 import com.konge.dolbogram.models.User
 
 lateinit var AUTH: FirebaseAuth
 lateinit var REF_DATABASE_ROOT: DatabaseReference
 lateinit var REF_STORAGE_ROOT: StorageReference
 lateinit var USER: User
-lateinit var UUID:String
+lateinit var UUID: String
 
 const val FOLDER_PROFILE_IMAGE = "profile_image"
 
 const val NODE_USERS = "users"
 const val NODE_USERNAMES = "usernames"
+const val NODE_PHONES = "phones"
+const val NODE_PHONES_CONTACTS = "phones_contacts"
 
 const val CHILD_ID = "id"
 const val CHILD_PHONE = "phone"
@@ -37,6 +42,58 @@ fun initFirebase() {
     USER = User()
     UUID = AUTH.currentUser?.uid.toString()
 
+}
+
+fun initContacts() {
+    if (checkPermissions(READ_CONTACTS)) {
+        var arrayContacts = arrayListOf<CommonModel>()
+        val cursor = APP_ACTIVITY.contentResolver.query(
+            ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+            null, null, null, null
+        )
+        cursor?.let {
+            while (it.moveToNext()) {
+                val fullName = it.getString(
+                    it.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME) ?: 0
+                )
+                val phone = it.getString(
+                    it.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER) ?: 0
+                )
+                arrayContacts.add(
+                    CommonModel(
+                        fullname = fullName,
+                        phone = phone.replace(Regex("[\\s,-]"), "")
+                    )
+                )
+
+            }
+        }
+        cursor?.close()
+
+        updatePhonesToDatabase(arrayContacts)
+
+    }
+
+}
+
+fun updatePhonesToDatabase(arrayContacts: ArrayList<CommonModel>) {
+    REF_DATABASE_ROOT.child(NODE_PHONES).addListenerForSingleValueEvent(AppValueEventListener {
+        it.children.forEach { snapshot ->
+
+            arrayContacts.forEach { contact ->
+                if (contact.phone == snapshot.key.toString()) {
+                    REF_DATABASE_ROOT
+                        .child(NODE_PHONES_CONTACTS)
+                        .child(UUID)
+                        .child(snapshot.value.toString())
+                        .child(CHILD_ID)
+                        .setValue(snapshot.value.toString())
+                        .addOnFailureListener { showToast(it.message.toString()) }
+                }
+            }
+
+        }
+    })
 }
 
 // Заполнить ссылку на изображение в базе данных
@@ -68,7 +125,7 @@ inline fun initUser(crossinline function: () -> Unit) {
 
             USER = it.getValue(User::class.java) ?: User()
 
-            if(USER.username.isEmpty()){
+            if (USER.username.isEmpty()) {
                 USER.username = USER.id
             }
 

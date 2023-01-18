@@ -38,7 +38,12 @@ class EnterCodeFragment(val phoneNumber: String, val id: String) :
                 REF_DATABASE_ROOT.child(NODE_USERS)
                     .addListenerForSingleValueEvent(AppValueEventListener {
                         if (it.hasChild(uuid)) {
-                            (activity as RegisterActivity).replaceActivity(MainActivity())
+                            REF_DATABASE_ROOT.child(NODE_PHONES).child(phoneNumber).setValue(uuid)
+                                .addOnFailureListener { showToast(it.message.toString()) }
+                                .addOnSuccessListener {
+                                    (activity as RegisterActivity).replaceActivity(MainActivity())
+                                }
+
                         } else {
 
                             val dateMap = mutableMapOf<String, Any>()
@@ -46,14 +51,17 @@ class EnterCodeFragment(val phoneNumber: String, val id: String) :
                             dateMap[CHILD_PHONE] = phoneNumber
                             dateMap[CHILD_USERNAME] = uuid
 
-                            REF_DATABASE_ROOT.child(NODE_USERS).child(uuid).updateChildren(dateMap)
-                                .addOnCompleteListener {
-                                    if (it.isSuccessful) {
-                                        (activity as RegisterActivity).replaceActivity(MainActivity())
-                                    } else {
-                                        showToast(it.exception?.message.toString())
-                                    }
-
+                            REF_DATABASE_ROOT.child(NODE_PHONES).child(phoneNumber).setValue(uuid)
+                                .addOnFailureListener { showToast(it.message.toString()) }
+                                .addOnSuccessListener {
+                                    REF_DATABASE_ROOT.child(NODE_USERS).child(uuid)
+                                        .updateChildren(dateMap)
+                                        .addOnSuccessListener {
+                                            (activity as RegisterActivity).replaceActivity(
+                                                MainActivity()
+                                            )
+                                        }
+                                        .addOnFailureListener { showToast(it.message.toString()) }
                                 }
                         }
                     })

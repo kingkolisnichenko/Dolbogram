@@ -17,6 +17,7 @@ import com.konge.dolbogram.ui.fragments.activities.RegisterActivity
 import com.konge.dolbogram.ui.objects.AppDrawer
 import com.konge.dolbogram.utilits.*
 import com.theartofdev.edmodo.cropper.CropImage
+import kotlinx.coroutines.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,16 +35,13 @@ class MainActivity : AppCompatActivity() {
 
         initFirebase()
         initUser {
-            initContacts()
+
+            CoroutineScope(Dispatchers.IO).launch {
+                initContacts()
+            }
+
             initFields()
             initFunc()
-        }
-
-    }
-
-    private fun initContacts() {
-        if (checkPermissions(READ_CONTACTS)) {
-            showToast("Read contacts")
         }
 
     }
@@ -87,7 +85,7 @@ class MainActivity : AppCompatActivity() {
                 APP_ACTIVITY,
                 READ_CONTACTS
             ) == PackageManager.PERMISSION_GRANTED
-        ){
+        ) {
             initContacts()
         }
     }
