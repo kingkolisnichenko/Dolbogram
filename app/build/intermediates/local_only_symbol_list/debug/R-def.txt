@@ -61,6 +61,10 @@ drawable ic_menu_settings
 drawable ic_register_image
 drawable ic_toolbar_find
 drawable ripple_effect
+id contact_item_fullname
+id contact_item_photo
+id contact_item_state
+id contact_recycler_view
 id dataContainer
 id mainToolbar
 id registerToolbar
@@ -95,11 +99,13 @@ id settings_user_photo
 id textView
 layout activity_main
 layout activity_register
+layout contact_item
 layout fragment_base
 layout fragment_change_bio
 layout fragment_change_name
 layout fragment_change_user_name
 layout fragment_chats
+layout fragment_contacts
 layout fragment_enter_code
 layout fragment_enter_phone_number
 layout fragment_settings
@@ -107,6 +113,9 @@ menu settings_action_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string app_title_contacts
+string default_contact_item_fullname
+string default_contact_item_state
 string default_web_client_id
 string firebase_database_url
 string first_fragment_label

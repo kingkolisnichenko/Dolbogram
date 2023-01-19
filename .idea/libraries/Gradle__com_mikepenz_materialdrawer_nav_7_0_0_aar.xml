@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.mikepenz:materialdrawer-nav:7.0.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/27304a90a5733ac8c5297fd46a030015/transformed/materialdrawer-nav-7.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/27304a90a5733ac8c5297fd46a030015/transformed/materialdrawer-nav-7.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9e3b0164f7f1b99e160c8c7649a6225b/transformed/materialdrawer-nav-7.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9e3b0164f7f1b99e160c8c7649a6225b/transformed/materialdrawer-nav-7.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/materialdrawer-nav/7.0.0/227fdad0511a2946301db359f1b5a5398b8a081e/materialdrawer-nav-7.0.0-javadoc.jar!/" />

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-54:/values-port/values-port.xml",
+            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-56:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\4c27c1007f7ed8bd7efabfa6cc349353\\transformed\\appcompat-1.6.0\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\73475af3016450b94e56e3565be17df6\\transformed\\appcompat-1.6.0\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
