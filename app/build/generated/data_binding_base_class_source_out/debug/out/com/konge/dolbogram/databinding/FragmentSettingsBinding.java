@@ -30,9 +30,6 @@ public final class FragmentSettingsBinding implements ViewBinding {
   public final ConstraintLayout settingsChangePhone;
 
   @NonNull
-  public final CircleImageView settingsChangePhoto;
-
-  @NonNull
   public final ConstraintLayout settingsChangeUserName;
 
   @NonNull
@@ -67,7 +64,6 @@ public final class FragmentSettingsBinding implements ViewBinding {
 
   private FragmentSettingsBinding(@NonNull ConstraintLayout rootView, @NonNull TextView settingsBio,
       @NonNull ConstraintLayout settingsChangeBio, @NonNull ConstraintLayout settingsChangePhone,
-      @NonNull CircleImageView settingsChangePhoto,
       @NonNull ConstraintLayout settingsChangeUserName, @NonNull TextView settingsFullName,
       @NonNull ConstraintLayout settingsHeaderBloc, @NonNull TextView settingsLabelBio,
       @NonNull TextView settingsLabelPhone, @NonNull TextView settingsLabelUserName,
@@ -78,7 +74,6 @@ public final class FragmentSettingsBinding implements ViewBinding {
     this.settingsBio = settingsBio;
     this.settingsChangeBio = settingsChangeBio;
     this.settingsChangePhone = settingsChangePhone;
-    this.settingsChangePhoto = settingsChangePhoto;
     this.settingsChangeUserName = settingsChangeUserName;
     this.settingsFullName = settingsFullName;
     this.settingsHeaderBloc = settingsHeaderBloc;
@@ -134,12 +129,6 @@ public final class FragmentSettingsBinding implements ViewBinding {
       id = R.id.settings_change_phone;
       ConstraintLayout settingsChangePhone = ViewBindings.findChildViewById(rootView, id);
       if (settingsChangePhone == null) {
-        break missingId;
-      }
-
-      id = R.id.settings_change_photo;
-      CircleImageView settingsChangePhoto = ViewBindings.findChildViewById(rootView, id);
-      if (settingsChangePhoto == null) {
         break missingId;
       }
 
@@ -210,10 +199,9 @@ public final class FragmentSettingsBinding implements ViewBinding {
       }
 
       return new FragmentSettingsBinding((ConstraintLayout) rootView, settingsBio,
-          settingsChangeBio, settingsChangePhone, settingsChangePhoto, settingsChangeUserName,
-          settingsFullName, settingsHeaderBloc, settingsLabelBio, settingsLabelPhone,
-          settingsLabelUserName, settingsPhone, settingsStatus, settingsTextAccount,
-          settingsUserName, settingsUserPhoto);
+          settingsChangeBio, settingsChangePhone, settingsChangeUserName, settingsFullName,
+          settingsHeaderBloc, settingsLabelBio, settingsLabelPhone, settingsLabelUserName,
+          settingsPhone, settingsStatus, settingsTextAccount, settingsUserName, settingsUserPhoto);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
