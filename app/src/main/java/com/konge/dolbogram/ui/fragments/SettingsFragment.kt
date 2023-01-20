@@ -20,6 +20,8 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
 
         setHasOptionsMenu(true)
 
+        APP_ACTIVITY.title = getString(R.string.app_title_settings)
+
         initFields()
 
     }
@@ -36,9 +38,6 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
                 APP_ACTIVITY.replaceActivity(RegisterActivity())
             }
 
-            R.id.settings_menu_change_name -> {
-                replaceFragment(ChangeNameFragment())
-            }
         }
 
         return true
@@ -56,7 +55,9 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
 
         settings_change_user_name.setOnClickListener { replaceFragment(ChangeUserNameFragment()) }
         settings_change_bio.setOnClickListener { replaceFragment(ChangeBioFragment()) }
-        settings_change_photo.setOnClickListener { changeUserPhoto() }
+        settings_full_name.setOnClickListener { replaceFragment(ChangeNameFragment()) }
+        settings_user_photo.setOnClickListener { changeUserPhoto() }
+
     }
 
     private fun changeUserPhoto() {

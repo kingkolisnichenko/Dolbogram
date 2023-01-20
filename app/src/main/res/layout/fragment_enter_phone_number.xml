@@ -7,13 +7,23 @@
     tools:context=".ui.fragments.EnterPhoneNumberFragment">
 
     <EditText
-        android:id="@+id/register_input_phone_number"
-        android:hint="@string/register_phone_hint"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/register_input_country_code"
+        android:hint="@string/register_country_code_hint"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
         style="@style/edit_text"
         android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/register_input_phone_number"
+        style="@style/edit_text"
+        android:layout_width="0dp"
+        android:autofillHints=""
+        android:hint="@string/register_phone_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/register_input_country_code"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

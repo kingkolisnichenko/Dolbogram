@@ -4,7 +4,7 @@
             "outputFile": "com.konge.dolbogram.app-mergeDebugResources-56:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\b82ff256d72adeb21fb71b176be76459\\transformed\\material-1.8.0-rc01\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\7533936bb5547377573f09853b5f1b01\\transformed\\material-1.9.0-alpha01\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,17 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\68906d70cc85400f626ad671f98a05ec\\transformed\\materialize-1.2.1\\res\\values-night-v8\\values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,141,263,361,495,573,687,753",
-                        "endColumns": "85,121,97,133,77,113,65,101",
-                        "endOffsets": "136,258,356,490,568,682,748,850"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\73475af3016450b94e56e3565be17df6\\transformed\\appcompat-1.6.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\50da1ae9dbf7ce506dae54b36c1be459\\transformed\\appcompat-1.6.0\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -48,14 +38,24 @@
                     }
                 },
                 {
-                    "source": "E:\\Dev\\Android\\Kotlin\\Dolbogram\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\31c95a787d8fd6e05492ea17051a4987\\transformed\\materialize-1.2.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,141,263,361,495,573,687,753",
+                        "endColumns": "85,121,97,133,77,113,65,101",
+                        "endOffsets": "136,258,356,490,568,682,748,850"
+                    }
+                },
+                {
+                    "source": "D:\\Android\\Projects\\Dolbogram\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "55",
+                        "startOffsets": "53",
                         "endLines": "17",
                         "endColumns": "12",
-                        "endOffsets": "856"
+                        "endOffsets": "839"
                     },
                     "to": {
                         "startLines": "17",

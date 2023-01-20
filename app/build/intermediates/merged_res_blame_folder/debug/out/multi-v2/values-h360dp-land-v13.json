@@ -4,7 +4,7 @@
             "outputFile": "com.konge.dolbogram.app-mergeDebugResources-56:/values-h360dp-land-v13/values-h360dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\b82ff256d72adeb21fb71b176be76459\\transformed\\material-1.8.0-rc01\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\7533936bb5547377573f09853b5f1b01\\transformed\\material-1.9.0-alpha01\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

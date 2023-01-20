@@ -148,8 +148,8 @@ class AppDrawer (){
             .withActivity(APP_ACTIVITY)
             .withHeaderBackground(R.drawable.header)
             .addProfiles(mCurrentProfile)
-            .withProfileImagesVisible(true)
             .build()
+
     }
 
     fun updateHeader(){

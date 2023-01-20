@@ -1,22 +1,15 @@
 package com.konge.dolbogram
 
-import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.ValueEventListener
 import com.konge.dolbogram.databinding.ActivityMainBinding
-import com.konge.dolbogram.models.User
 import com.konge.dolbogram.ui.fragments.ChatsFragment
 import com.konge.dolbogram.ui.fragments.activities.RegisterActivity
 import com.konge.dolbogram.ui.objects.AppDrawer
 import com.konge.dolbogram.utilits.*
-import com.theartofdev.edmodo.cropper.CropImage
 import kotlinx.coroutines.*
 
 class MainActivity : AppCompatActivity() {

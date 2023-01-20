@@ -71,13 +71,13 @@ id registerToolbar
 id register_btn_next
 id register_image
 id register_input_code
+id register_input_country_code
 id register_input_phone_number
 id register_text_enter_code
 id register_text_we_send
 id settings_bio
 id settings_change_bio
 id settings_change_phone
-id settings_change_photo
 id settings_change_user_name
 id settings_confirm_change_data
 id settings_full_name
@@ -89,7 +89,6 @@ id settings_input_username
 id settings_label_bio
 id settings_label_phone
 id settings_label_user_name
-id settings_menu_change_name
 id settings_menu_exit
 id settings_phone
 id settings_status
@@ -113,9 +112,12 @@ menu settings_action_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string app_title_chats
 string app_title_contacts
+string app_title_settings
 string default_contact_item_fullname
 string default_contact_item_state
+string default_country_phone_code
 string default_web_client_id
 string firebase_database_url
 string first_fragment_label
@@ -130,6 +132,7 @@ string hello_second_fragment
 string next
 string previous
 string project_id
+string register_country_code_hint
 string register_hitn_default_code
 string register_phone_hint
 string register_text_enter_code
@@ -150,7 +153,6 @@ string settings_label_bio
 string settings_label_login
 string settings_label_phone
 string settings_menu_change_name
-string settings_menu_exit
 string settings_text_account
 string settings_toast_name_is_empty
 string settings_toast_username_is_empty

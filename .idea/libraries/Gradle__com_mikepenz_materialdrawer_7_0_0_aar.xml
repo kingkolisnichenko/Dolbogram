@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.mikepenz:materialdrawer:7.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/41a5abeb29ce050f2c1a6e6d11844039/transformed/materialdrawer-7.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/41a5abeb29ce050f2c1a6e6d11844039/transformed/materialdrawer-7.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/41a5abeb29ce050f2c1a6e6d11844039/transformed/materialdrawer-7.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8bda4cf2173c48fe5fee0f8af610b2e6/transformed/materialdrawer-7.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8bda4cf2173c48fe5fee0f8af610b2e6/transformed/materialdrawer-7.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8bda4cf2173c48fe5fee0f8af610b2e6/transformed/materialdrawer-7.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/materialdrawer/7.0.0/11d083e914c34fa7ad1a1497cdcb4f1e719d14a3/materialdrawer-7.0.0-javadoc.jar!/" />

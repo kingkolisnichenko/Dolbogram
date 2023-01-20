@@ -1,15 +1,14 @@
 package com.konge.dolbogram.utilits
 
-import android.annotation.SuppressLint
 import android.net.Uri
 import android.provider.ContactsContract
-import com.google.android.gms.auth.api.signin.internal.Storage
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
+import com.konge.dolbogram.R
 import com.konge.dolbogram.models.CommonModel
 import com.konge.dolbogram.models.User
 
@@ -57,13 +56,18 @@ fun initContacts() {
                 val fullName = it.getString(
                     it.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME) ?: 0
                 )
-                val phone = it.getString(
+                var phone = it.getString(
                     it.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER) ?: 0
-                )
+                ).replace(Regex("[\\s,-]"), "")
+
+                if (phone.length == 9){
+                    phone = APP_ACTIVITY.getString(R.string.default_country_phone_code) + phone.substringAfter("0")
+                }else if(phone.substring(0,3) == "022") continue
+
                 arrayContacts.add(
                     CommonModel(
                         fullname = fullName,
-                        phone = phone.replace(Regex("[\\s,-]"), "")
+                        phone = phone
                     )
                 )
 

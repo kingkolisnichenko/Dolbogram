@@ -12,7 +12,6 @@
     <string name="settings_default_bio">О себе</string>
     <string name="settings_label_bio">Напишите немного о себе</string>
     <string name="settings_menu_change_name">Изменить имя</string>
-    <string name="settings_menu_exit">Выход</string>
     <string name="title_activity_register">RegisterActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -27,7 +26,7 @@
     <string name="register_hitn_default_code">- - - - - -</string>
     <string name="register_title_your_phote">Ваш телефон</string>
     <string name="register_toast_enter_phone">Введите номер телефона</string>
-    <string name="register_phone_hint">+(- - -)- - - - - - - -</string>
+    <string name="register_phone_hint">- - - - - - - -</string>
     <string name="settings_hint_input_name">Имя</string>
     <string name="settings_hint_input_surname">Фамилия</string>
     <string name="settings_toast_name_is_empty">Имя не может быть пустым</string>
@@ -39,4 +38,8 @@
     <string name="app_title_contacts">Контакты</string>
     <string name="default_contact_item_fullname">Имя контакта</string>
     <string name="default_contact_item_state">в сети</string>
+    <string name="app_title_chats">Чаты</string>
+    <string name="app_title_settings">Настройки</string>
+    <string name="register_country_code_hint">+ - - -</string>
+    <string name="default_country_phone_code">+373</string>
 </resources>

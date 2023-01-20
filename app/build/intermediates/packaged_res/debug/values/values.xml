@@ -33,15 +33,18 @@
     <dimen name="settings_change_user_photo_height">50dp</dimen>
     <dimen name="settings_change_user_photo_width">50dp</dimen>
     <dimen name="settings_ripple_effect_radius">8dp</dimen>
-    <dimen name="settings_user_photo_height">65dp</dimen>
-    <dimen name="settings_user_photo_width">65dp</dimen>
+    <dimen name="settings_user_photo_height">70dp</dimen>
+    <dimen name="settings_user_photo_width">70dp</dimen>
     <dimen name="text_large">18sp</dimen>
     <dimen name="text_normal">16sp</dimen>
     <dimen name="text_small">14sp</dimen>
     <string name="app_name">Dolbogram</string>
+    <string name="app_title_chats">Чаты</string>
     <string name="app_title_contacts">Контакты</string>
+    <string name="app_title_settings">Настройки</string>
     <string name="default_contact_item_fullname">Имя контакта</string>
     <string name="default_contact_item_state">в сети</string>
+    <string name="default_country_phone_code">+373</string>
     <string name="default_web_client_id" translatable="false">906292388150-1g2puoi6ulvcggbfh94st3jh96ic69r9.apps.googleusercontent.com</string>
     <string name="firebase_database_url" translatable="false">https://dolbogram-default-rtdb.firebaseio.com</string>
     <string name="first_fragment_label">First Fragment</string>
@@ -56,8 +59,9 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="project_id" translatable="false">dolbogram</string>
+    <string name="register_country_code_hint">+ - - -</string>
     <string name="register_hitn_default_code">- - - - - -</string>
-    <string name="register_phone_hint">+(- - -)- - - - - - - -</string>
+    <string name="register_phone_hint">- - - - - - - -</string>
     <string name="register_text_enter_code">Введите код</string>
     <string name="register_text_we_send">Мы отправили Вам SMS с кодом проверки на ваш телефон</string>
     <string name="register_title_your_phote">Ваш телефон</string>
@@ -76,7 +80,6 @@
     <string name="settings_label_login">Имя пользователя</string>
     <string name="settings_label_phone">Нажмите чтобы изменить номер телефона</string>
     <string name="settings_menu_change_name">Изменить имя</string>
-    <string name="settings_menu_exit">Выход</string>
     <string name="settings_text_account">Аккаунт</string>
     <string name="settings_toast_name_is_empty">Имя не может быть пустым</string>
     <string name="settings_toast_username_is_empty">Необходимо указать имя пользователя</string>

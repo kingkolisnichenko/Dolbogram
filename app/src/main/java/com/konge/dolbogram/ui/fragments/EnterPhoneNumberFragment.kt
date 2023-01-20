@@ -17,37 +17,19 @@ import java.util.concurrent.TimeUnit
 class EnterPhoneNumberFragment : Fragment(R.layout.fragment_enter_phone_number) {
 
     private lateinit var mPhoneNumber: String
+    private lateinit var mCountryCode: String
     private lateinit var mCallback: PhoneAuthProvider.OnVerificationStateChangedCallbacks
 
     override fun onStart() {
         super.onStart()
 
+        register_input_country_code.setText(getString(R.string.default_country_phone_code))
+        register_input_country_code.isEnabled = false
+
         mCallback = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
 
             override fun onVerificationCompleted(credential: PhoneAuthCredential) {
-                /*AUTH.signInWithCredential(credential).addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        val uuid = AUTH.currentUser?.uid.toString()
 
-                        val dateMap = mutableMapOf<String, Any>()
-                        dateMap[CHILD_ID] = uuid
-                        dateMap[CHILD_PHONE] = mPhoneNumber
-                        dateMap[CHILD_USERNAME] = uuid
-
-                        REF_DATABASE_ROOT.child(NODE_USERS).child(uuid).updateChildren(dateMap)
-                            .addOnCompleteListener {
-                                if (it.isSuccessful) {
-                                    //showToast("Wellcome!!")
-                                    //(activity as RegisterActivity).replaceActivity(MainActivity())
-                                } else {
-                                    showToast(it.exception?.message.toString())
-                                }
-
-                            }
-                    } else {
-                        showToast(task.exception?.message.toString())
-                    }
-                }*/
             }
 
             override fun onVerificationFailed(p0: FirebaseException) {
@@ -79,7 +61,13 @@ class EnterPhoneNumberFragment : Fragment(R.layout.fragment_enter_phone_number) 
     }
 
     private fun authUser() {
+        mCountryCode = register_input_country_code.text.toString()
         mPhoneNumber = register_input_phone_number.text.toString()
+
+        if(mPhoneNumber[0] == '0'){
+            mPhoneNumber = mPhoneNumber.substringAfter("0")
+        }
+        mPhoneNumber = mCountryCode + mPhoneNumber
 
         PhoneAuthProvider.getInstance().verifyPhoneNumber(
             mPhoneNumber,

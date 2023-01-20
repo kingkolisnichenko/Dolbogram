@@ -25,7 +25,7 @@ class ChangeBioFragment : BaseChangeFragment(R.layout.fragment_change_bio) {
                 showToast(getString(R.string.toast_data_update))
 
                 USER.bio = settings_input_bio.text.toString()
-                FragmentActivity().supportFragmentManager.popBackStack()
+                fragmentManager?.popBackStack()
 
             }
         }

@@ -22,7 +22,7 @@
             android:layout_height="@dimen/settings_user_photo_height"
             android:layout_marginStart="@dimen/margin_horizontal"
             android:layout_marginTop="@dimen/margin_horizontal"
-
+            android:clickable="true"
             android:src="@drawable/default_photo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -35,7 +35,8 @@
             android:layout_marginTop="@dimen/margin_vertical"
             tools:text="@string/settings_default_user_name"
             android:textColor="@color/colorwhite"
-            android:textSize="@dimen/text_normal"
+            android:textSize="@dimen/text_large"
+            android:clickable="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/settings_user_photo"
             app:layout_constraintTop_toTopOf="@id/settings_user_photo" />
@@ -159,15 +160,5 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/settings_change_photo"
-        android:layout_width="@dimen/settings_change_user_photo_width"
-        android:layout_height="@dimen/settings_change_user_photo_height"
-        android:layout_marginEnd="@dimen/margin_horizontal"
-        android:src="@drawable/ic_camera"
-        app:civ_border_color="@color/colorgrey"
-        app:layout_constraintBottom_toBottomOf="@id/settings_header_bloc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_header_bloc" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
