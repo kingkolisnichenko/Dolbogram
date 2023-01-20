@@ -11,305 +11,346 @@
 9-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-11-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:6:5-79
+11-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:6:5-80
 11-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:6:22-77
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:7:5-80
+12-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:7:5-81
 12-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:7:22-78
 13    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
-13-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:8:5-81
+13-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:8:5-82
 13-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:8:22-79
 14    <uses-permission android:name="android.permission.READ_CONTACTS" />
-14-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:9:5-71
+14-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:9:5-72
 14-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:9:22-69
 15
 16    <queries>
-16-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:12:5-14:15
+16-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:11:5-13:15
 17        <package android:name="com.google.android.apps.photos" />
-17-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:13:9-66
-17-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:13:18-63
+17-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:12:9-66
+17-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:12:18-63
 18    </queries>
 19
 20    <uses-permission android:name="android.permission.INTERNET" />
-20-->[com.firebaseui:firebase-ui-database:8.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\0c441dc916a941a5822eca8d407a167d\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:9:5-67
-20-->[com.firebaseui:firebase-ui-database:8.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\0c441dc916a941a5822eca8d407a167d\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:9:22-64
+20-->[com.firebaseui:firebase-ui-database:8.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\8e88b7d6c5691f5c8a5bad18aed6cc3a\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:9:5-67
+20-->[com.firebaseui:firebase-ui-database:8.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\8e88b7d6c5691f5c8a5bad18aed6cc3a\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:9:22-64
 21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-21-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
-21-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:22-76
+21-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
+21-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:22-76
 22
 23    <permission
-23-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\08a19a553b6cb5bba33bf3f103661a1a\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+23-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\c5f078cbba498609cbf7a26ea050a803\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 24        android:name="com.konge.dolbogram.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-24-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\08a19a553b6cb5bba33bf3f103661a1a\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+24-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\c5f078cbba498609cbf7a26ea050a803\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 25        android:protectionLevel="signature" />
-25-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\08a19a553b6cb5bba33bf3f103661a1a\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+25-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\c5f078cbba498609cbf7a26ea050a803\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 26
 27    <uses-permission android:name="com.konge.dolbogram.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-27-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\08a19a553b6cb5bba33bf3f103661a1a\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-27-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\08a19a553b6cb5bba33bf3f103661a1a\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+27-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\c5f078cbba498609cbf7a26ea050a803\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\c5f078cbba498609cbf7a26ea050a803\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 28
 29    <application
-29-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:16:5-52:19
+29-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:15:5-53:19
 30        android:allowBackup="true"
-30-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:17:9-35
+30-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:16:9-35
 31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-31-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\08a19a553b6cb5bba33bf3f103661a1a\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+31-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\c5f078cbba498609cbf7a26ea050a803\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 32        android:dataExtractionRules="@xml/data_extraction_rules"
-32-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:18:9-65
+32-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:17:9-65
 33        android:debuggable="true"
 34        android:extractNativeLibs="false"
 35        android:fullBackupContent="@xml/backup_rules"
-35-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:19:9-54
+35-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:18:9-54
 36        android:icon="@mipmap/ic_launcher"
-36-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:20:9-43
+36-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:19:9-43
 37        android:label="@string/app_name"
-37-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:21:9-41
+37-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:20:9-41
 38        android:roundIcon="@mipmap/ic_launcher_round"
-38-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:22:9-54
+38-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:21:9-54
 39        android:supportsRtl="true"
-39-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:23:9-35
-40        android:testOnly="true"
-41        android:theme="@style/Theme.Dolbogram" >
-41-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:24:9-47
-42        <activity
-42-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:27:9-36:20
-43            android:name="com.konge.dolbogram.ui.fragments.activities.RegisterActivity"
-43-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:28:13-69
-44            android:exported="false"
-44-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:30:13-37
-45            android:label="@string/title_activity_register"
-45-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:31:13-60
-46            android:theme="@style/Theme.Dolbogram.NoActionBar"
-46-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:32:13-63
-47            android:windowSoftInputMode="stateVisible|adjustResize" >
-47-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:29:13-68
-48            <meta-data
-48-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:33:13-35:36
-49                android:name="android.app.lib_name"
-49-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:34:17-52
-50                android:value="" />
-50-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:35:17-33
-51        </activity>
-52        <activity
-52-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:38:9-47:20
-53            android:name="com.konge.dolbogram.MainActivity"
-53-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:39:13-41
-54            android:exported="true"
-54-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:41:13-36
-55            android:windowSoftInputMode="stateVisible|adjustResize" >
-55-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:40:13-68
-56            <intent-filter>
-56-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:42:13-46:29
-57                <action android:name="android.intent.action.MAIN" />
-57-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:43:17-69
-57-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:43:25-66
-58
-59                <category android:name="android.intent.category.LAUNCHER" />
-59-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:45:17-77
-59-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:45:27-74
-60            </intent-filter>
-61        </activity>
-62        <activity
-62-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:49:9-50:58
-63            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-63-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:49:19-82
-64            android:theme="@style/Base.Theme.AppCompat" />
-64-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:50:13-56
-65
-66        <provider
-66-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\f4b918fb530aed75465964b695e6c56b\transformed\iconics-core-4.0.2\AndroidManifest.xml:27:9-32:39
-67            android:name="com.mikepenz.iconics.IconicsContentProvider"
-67-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\f4b918fb530aed75465964b695e6c56b\transformed\iconics-core-4.0.2\AndroidManifest.xml:28:13-71
-68            android:authorities="com.konge.dolbogram.iconics.core.provider"
-68-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\f4b918fb530aed75465964b695e6c56b\transformed\iconics-core-4.0.2\AndroidManifest.xml:29:13-73
-69            android:enabled="@bool/is_iconics_content_provider_enabled"
-69-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\f4b918fb530aed75465964b695e6c56b\transformed\iconics-core-4.0.2\AndroidManifest.xml:30:13-72
-70            android:exported="false"
-70-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\f4b918fb530aed75465964b695e6c56b\transformed\iconics-core-4.0.2\AndroidManifest.xml:31:13-37
-71            android:initOrder="100" />
-71-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\f4b918fb530aed75465964b695e6c56b\transformed\iconics-core-4.0.2\AndroidManifest.xml:32:13-36
-72
-73        <service
-73-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\7ca1be78a6a245ce8fe44b8993386509\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:8:9-14:19
-74            android:name="com.google.firebase.components.ComponentDiscoveryService"
-74-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\7ca1be78a6a245ce8fe44b8993386509\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:9:13-84
-75            android:directBootAware="true"
-75-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\0cd45239626e2a76ecf383c726620a47\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
-76            android:exported="false" >
-76-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\7ca1be78a6a245ce8fe44b8993386509\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:10:13-37
-77            <meta-data
-77-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\7ca1be78a6a245ce8fe44b8993386509\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:11:13-13:85
-78                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
-78-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\7ca1be78a6a245ce8fe44b8993386509\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:12:17-116
-79                android:value="com.google.firebase.components.ComponentRegistrar" />
-79-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\7ca1be78a6a245ce8fe44b8993386509\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:13:17-82
-80            <meta-data
-80-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
-81                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-81-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
-82                android:value="com.google.firebase.components.ComponentRegistrar" />
-82-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
-83            <meta-data
-83-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\ff13a1d32d3a643d327b25ab22c63654\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
-84                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-84-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\ff13a1d32d3a643d327b25ab22c63654\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
-85                android:value="com.google.firebase.components.ComponentRegistrar" />
-85-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\ff13a1d32d3a643d327b25ab22c63654\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
-86            <meta-data
-86-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\ea9d47250882f9f94773e6f1eddfef97\transformed\firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
-87                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-87-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\ea9d47250882f9f94773e6f1eddfef97\transformed\firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
-88                android:value="com.google.firebase.components.ComponentRegistrar" />
-88-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\ea9d47250882f9f94773e6f1eddfef97\transformed\firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
-89            <meta-data
-89-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\bbb0a4eb38604dbed3b004dbc77d058a\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:14:13-16:85
-90                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-90-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\bbb0a4eb38604dbed3b004dbc77d058a\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:15:17-113
-91                android:value="com.google.firebase.components.ComponentRegistrar" />
-91-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\bbb0a4eb38604dbed3b004dbc77d058a\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:16:17-82
-92        </service>
-93
-94        <activity
-94-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
-95            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-95-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
-96            android:excludeFromRecents="true"
-96-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
-97            android:exported="true"
-97-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
-98            android:launchMode="singleTask"
-98-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
-99            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-99-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
-100            <intent-filter>
-100-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
-101                <action android:name="android.intent.action.VIEW" />
-101-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
-101-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
-102
-103                <category android:name="android.intent.category.DEFAULT" />
-103-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
-103-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
-104                <category android:name="android.intent.category.BROWSABLE" />
-104-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
-104-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
-105
-106                <data
-106-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
-107                    android:host="firebase.auth"
-107-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
-108                    android:path="/"
-108-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
-109                    android:scheme="genericidp" />
-109-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
-110            </intent-filter>
-111        </activity>
-112        <activity
-112-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
-113            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-113-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
-114            android:excludeFromRecents="true"
-114-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
-115            android:exported="true"
-115-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
-116            android:launchMode="singleTask"
-116-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
-117            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-117-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
-118            <intent-filter>
-118-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
-119                <action android:name="android.intent.action.VIEW" />
-119-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
-119-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
-120
-121                <category android:name="android.intent.category.DEFAULT" />
-121-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
-121-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
-122                <category android:name="android.intent.category.BROWSABLE" />
-122-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
-122-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
-123
-124                <data
-124-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
-125                    android:host="firebase.auth"
-125-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
-126                    android:path="/"
-126-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
-127                    android:scheme="recaptcha" />
-127-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\813d77deb2cf762897fe3407d4cdc2c8\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
-128            </intent-filter>
-129        </activity>
-130        <activity
-130-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Ilya\.gradle\caches\transforms-3\97fdc597807b4d926d9ba0f344b8ff46\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-131            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-131-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Ilya\.gradle\caches\transforms-3\97fdc597807b4d926d9ba0f344b8ff46\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-132            android:exported="false"
-132-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Ilya\.gradle\caches\transforms-3\97fdc597807b4d926d9ba0f344b8ff46\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-133            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-133-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Ilya\.gradle\caches\transforms-3\97fdc597807b4d926d9ba0f344b8ff46\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-134
-135        <provider
-135-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\0cd45239626e2a76ecf383c726620a47\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
-136            android:name="com.google.firebase.provider.FirebaseInitProvider"
-136-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\0cd45239626e2a76ecf383c726620a47\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
-137            android:authorities="com.konge.dolbogram.firebaseinitprovider"
-137-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\0cd45239626e2a76ecf383c726620a47\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
-138            android:directBootAware="true"
-138-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\0cd45239626e2a76ecf383c726620a47\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
-139            android:exported="false"
-139-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\0cd45239626e2a76ecf383c726620a47\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
-140            android:initOrder="100" />
-140-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\0cd45239626e2a76ecf383c726620a47\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
-141
-142        <uses-library
-142-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\35f0f783200d1c5acf17581e8db2c09f\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-143            android:name="androidx.window.extensions"
-143-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\35f0f783200d1c5acf17581e8db2c09f\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-144            android:required="false" />
-144-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\35f0f783200d1c5acf17581e8db2c09f\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-145        <uses-library
-145-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\35f0f783200d1c5acf17581e8db2c09f\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-146            android:name="androidx.window.sidecar"
-146-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\35f0f783200d1c5acf17581e8db2c09f\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-147            android:required="false" />
-147-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\35f0f783200d1c5acf17581e8db2c09f\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-148
-149        <meta-data
-149-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\af26fc9bcfb5579f978a9e77504c3531\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-150            android:name="com.google.android.gms.version"
-150-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\af26fc9bcfb5579f978a9e77504c3531\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-151            android:value="@integer/google_play_services_version" />
-151-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\af26fc9bcfb5579f978a9e77504c3531\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+39-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:22:9-35
+40        android:theme="@style/Theme.Dolbogram" >
+40-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:23:9-47
+41        <activity
+41-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:25:9-29:54
+42            android:name="com.konge.dolbogram.TestActivity"
+42-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:26:13-41
+43            android:exported="false"
+43-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:27:13-37
+44            android:label="@string/title_activity_test"
+44-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:28:13-56
+45            android:theme="@style/Theme.Dolbogram" />
+45-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:29:13-51
+46        <activity
+46-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:30:9-39:20
+47            android:name="com.konge.dolbogram.ui.fragments.activities.RegisterActivity"
+47-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:31:13-69
+48            android:exported="false"
+48-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:32:13-37
+49            android:label="@string/title_activity_register"
+49-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:33:13-60
+50            android:theme="@style/Theme.Dolbogram.NoActionBar"
+50-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:34:13-63
+51            android:windowSoftInputMode="stateVisible|adjustResize" >
+51-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:35:13-68
+52            <meta-data
+52-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:36:13-38:36
+53                android:name="android.app.lib_name"
+53-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:37:17-52
+54                android:value="" />
+54-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:38:17-33
+55        </activity>
+56        <activity
+56-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:40:9-49:20
+57            android:name="com.konge.dolbogram.MainActivity"
+57-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:41:13-41
+58            android:exported="true"
+58-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:42:13-36
+59            android:windowSoftInputMode="stateVisible|adjustResize" >
+59-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:43:13-68
+60            <intent-filter>
+60-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:44:13-48:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:45:17-69
+61-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:45:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:47:17-77
+63-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:47:27-74
+64            </intent-filter>
+65        </activity>
+66        <activity
+66-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:50:9-52:59
+67            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+67-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:51:13-76
+68            android:theme="@style/Base.Theme.AppCompat" />
+68-->D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:52:13-56
+69
+70        <provider
+70-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\c080bd8a4413c05861579da69793fef9\transformed\iconics-core-4.0.2\AndroidManifest.xml:27:9-32:39
+71            android:name="com.mikepenz.iconics.IconicsContentProvider"
+71-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\c080bd8a4413c05861579da69793fef9\transformed\iconics-core-4.0.2\AndroidManifest.xml:28:13-71
+72            android:authorities="com.konge.dolbogram.iconics.core.provider"
+72-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\c080bd8a4413c05861579da69793fef9\transformed\iconics-core-4.0.2\AndroidManifest.xml:29:13-73
+73            android:enabled="@bool/is_iconics_content_provider_enabled"
+73-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\c080bd8a4413c05861579da69793fef9\transformed\iconics-core-4.0.2\AndroidManifest.xml:30:13-72
+74            android:exported="false"
+74-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\c080bd8a4413c05861579da69793fef9\transformed\iconics-core-4.0.2\AndroidManifest.xml:31:13-37
+75            android:initOrder="100" />
+75-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\c080bd8a4413c05861579da69793fef9\transformed\iconics-core-4.0.2\AndroidManifest.xml:32:13-36
+76
+77        <service
+77-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\dc032f77b1be8ea4a4344f3bc90d30cd\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:8:9-14:19
+78            android:name="com.google.firebase.components.ComponentDiscoveryService"
+78-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\dc032f77b1be8ea4a4344f3bc90d30cd\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:9:13-84
+79            android:directBootAware="true"
+79-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\765a9d3ed67f0cb949ffe15f6360d604\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+80            android:exported="false" >
+80-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\dc032f77b1be8ea4a4344f3bc90d30cd\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:10:13-37
+81            <meta-data
+81-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\dc032f77b1be8ea4a4344f3bc90d30cd\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:11:13-13:85
+82                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+82-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\dc032f77b1be8ea4a4344f3bc90d30cd\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:12:17-116
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[com.google.firebase:firebase-auth-ktx:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\dc032f77b1be8ea4a4344f3bc90d30cd\transformed\firebase-auth-ktx-21.1.0\AndroidManifest.xml:13:17-82
+84            <meta-data
+84-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
+85                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+85-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
+87            <meta-data
+87-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\27370549a71d148fd9f3b1b95e915259\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
+88                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+88-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\27370549a71d148fd9f3b1b95e915259\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\27370549a71d148fd9f3b1b95e915259\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
+90            <meta-data
+90-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\5b48359271519b3633fe67510c0401f0\transformed\firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
+91                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+91-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\5b48359271519b3633fe67510c0401f0\transformed\firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
+92                android:value="com.google.firebase.components.ComponentRegistrar" />
+92-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\5b48359271519b3633fe67510c0401f0\transformed\firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
+93            <meta-data
+93-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\36b9eaf189e6fbf42e41894235e09a3f\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:14:13-16:85
+94                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+94-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\36b9eaf189e6fbf42e41894235e09a3f\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:15:17-113
+95                android:value="com.google.firebase.components.ComponentRegistrar" />
+95-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\36b9eaf189e6fbf42e41894235e09a3f\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:16:17-82
+96        </service>
+97
+98        <activity
+98-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
+99            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+99-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
+100            android:excludeFromRecents="true"
+100-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
+101            android:exported="true"
+101-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
+102            android:launchMode="singleTask"
+102-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
+103            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+103-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
+104            <intent-filter>
+104-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
+105                <action android:name="android.intent.action.VIEW" />
+105-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+105-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+106
+107                <category android:name="android.intent.category.DEFAULT" />
+107-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
+107-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
+108                <category android:name="android.intent.category.BROWSABLE" />
+108-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+108-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+109
+110                <data
+110-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
+111                    android:host="firebase.auth"
+111-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
+112                    android:path="/"
+112-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
+113                    android:scheme="genericidp" />
+113-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
+114            </intent-filter>
+115        </activity>
+116        <activity
+116-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
+117            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+117-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
+118            android:excludeFromRecents="true"
+118-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
+119            android:exported="true"
+119-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
+120            android:launchMode="singleTask"
+120-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
+121            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+121-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
+122            <intent-filter>
+122-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
+123                <action android:name="android.intent.action.VIEW" />
+123-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+123-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+124
+125                <category android:name="android.intent.category.DEFAULT" />
+125-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
+125-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
+126                <category android:name="android.intent.category.BROWSABLE" />
+126-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+126-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+127
+128                <data
+128-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
+129                    android:host="firebase.auth"
+129-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
+130                    android:path="/"
+130-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
+131                    android:scheme="recaptcha" />
+131-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\18157ba33ac23b4a5cea9b3e6462556a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
+132            </intent-filter>
+133        </activity>
+134        <activity
+134-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Ilya\.gradle\caches\transforms-3\d1dac104e414c0198bf91533879f0d38\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+135            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+135-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Ilya\.gradle\caches\transforms-3\d1dac104e414c0198bf91533879f0d38\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+136            android:exported="false"
+136-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Ilya\.gradle\caches\transforms-3\d1dac104e414c0198bf91533879f0d38\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+137            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+137-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Ilya\.gradle\caches\transforms-3\d1dac104e414c0198bf91533879f0d38\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+138
+139        <provider
+139-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\765a9d3ed67f0cb949ffe15f6360d604\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+140            android:name="com.google.firebase.provider.FirebaseInitProvider"
+140-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\765a9d3ed67f0cb949ffe15f6360d604\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+141            android:authorities="com.konge.dolbogram.firebaseinitprovider"
+141-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\765a9d3ed67f0cb949ffe15f6360d604\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+142            android:directBootAware="true"
+142-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\765a9d3ed67f0cb949ffe15f6360d604\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+143            android:exported="false"
+143-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\765a9d3ed67f0cb949ffe15f6360d604\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+144            android:initOrder="100" />
+144-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\765a9d3ed67f0cb949ffe15f6360d604\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+145
+146        <uses-library
+146-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\c292cc18cadf1b1d2f308ad1aecda5c3\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+147            android:name="androidx.window.extensions"
+147-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\c292cc18cadf1b1d2f308ad1aecda5c3\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+148            android:required="false" />
+148-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\c292cc18cadf1b1d2f308ad1aecda5c3\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+149        <uses-library
+149-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\c292cc18cadf1b1d2f308ad1aecda5c3\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+150            android:name="androidx.window.sidecar"
+150-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\c292cc18cadf1b1d2f308ad1aecda5c3\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+151            android:required="false" />
+151-->[androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\c292cc18cadf1b1d2f308ad1aecda5c3\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 152
-153        <provider
-153-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\99993c634c01f40d38c21454f758beaf\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-154            android:name="androidx.startup.InitializationProvider"
-154-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\99993c634c01f40d38c21454f758beaf\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-155            android:authorities="com.konge.dolbogram.androidx-startup"
-155-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\99993c634c01f40d38c21454f758beaf\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-156            android:exported="false" >
-156-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\99993c634c01f40d38c21454f758beaf\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-157            <meta-data
-157-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\99993c634c01f40d38c21454f758beaf\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-158                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-158-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\99993c634c01f40d38c21454f758beaf\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-159                android:value="androidx.startup" />
-159-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\99993c634c01f40d38c21454f758beaf\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-160            <meta-data
-160-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\7660386f94cb8f2289233c5411ca789d\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-161                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-161-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\7660386f94cb8f2289233c5411ca789d\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-162                android:value="androidx.startup" />
-162-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\7660386f94cb8f2289233c5411ca789d\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-163        </provider>
-164        <provider
-164-->[com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\49dfc73ff6b6fbbbe06359cdf754310f\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
-165            android:name="com.squareup.picasso.PicassoProvider"
-165-->[com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\49dfc73ff6b6fbbbe06359cdf754310f\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
-166            android:authorities="com.konge.dolbogram.com.squareup.picasso"
-166-->[com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\49dfc73ff6b6fbbbe06359cdf754310f\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
-167            android:exported="false" />
-167-->[com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\49dfc73ff6b6fbbbe06359cdf754310f\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
-168    </application>
-169
-170</manifest>
+153        <meta-data
+153-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\2f54f83c63a25585126e802ecd623ab5\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+154            android:name="com.google.android.gms.version"
+154-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\2f54f83c63a25585126e802ecd623ab5\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+155            android:value="@integer/google_play_services_version" />
+155-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\2f54f83c63a25585126e802ecd623ab5\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+156
+157        <provider
+157-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\03463262aa9f27d311fc5e8e4f693b5b\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+158            android:name="androidx.startup.InitializationProvider"
+158-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\03463262aa9f27d311fc5e8e4f693b5b\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+159            android:authorities="com.konge.dolbogram.androidx-startup"
+159-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\03463262aa9f27d311fc5e8e4f693b5b\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+160            android:exported="false" >
+160-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\03463262aa9f27d311fc5e8e4f693b5b\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+161            <meta-data
+161-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\03463262aa9f27d311fc5e8e4f693b5b\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+162                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+162-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\03463262aa9f27d311fc5e8e4f693b5b\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+163                android:value="androidx.startup" />
+163-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\03463262aa9f27d311fc5e8e4f693b5b\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+164            <meta-data
+164-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\da27e79c177dddefa773ae7d9d0746f4\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+165                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+165-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\da27e79c177dddefa773ae7d9d0746f4\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+166                android:value="androidx.startup" />
+166-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Ilya\.gradle\caches\transforms-3\da27e79c177dddefa773ae7d9d0746f4\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+167            <meta-data
+167-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:30:13-32:52
+168                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+168-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:31:17-85
+169                android:value="androidx.startup" />
+169-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:32:17-49
+170        </provider>
+171        <provider
+171-->[com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\6fba9eeb0f0266da915ce9924dc54d2c\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
+172            android:name="com.squareup.picasso.PicassoProvider"
+172-->[com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\6fba9eeb0f0266da915ce9924dc54d2c\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
+173            android:authorities="com.konge.dolbogram.com.squareup.picasso"
+173-->[com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\6fba9eeb0f0266da915ce9924dc54d2c\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
+174            android:exported="false" />
+174-->[com.squareup.picasso:picasso:2.8] C:\Users\Ilya\.gradle\caches\transforms-3\6fba9eeb0f0266da915ce9924dc54d2c\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
+175
+176        <receiver
+176-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:35:9-47:20
+177            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+177-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:36:13-76
+178            android:directBootAware="false"
+178-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:37:13-44
+179            android:enabled="true"
+179-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:38:13-35
+180            android:exported="true"
+180-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:39:13-36
+181            android:permission="android.permission.DUMP" >
+181-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:40:13-57
+182            <intent-filter>
+182-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:41:13-43:29
+183                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+183-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:17-91
+183-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:25-88
+184            </intent-filter>
+185            <intent-filter>
+185-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:44:13-46:29
+186                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+186-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:17-85
+186-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\445090e9e310857b9ed4842c7d9d6bad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:25-82
+187            </intent-filter>
+188        </receiver>
+189    </application>
+190
+191</manifest>

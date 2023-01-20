@@ -25,6 +25,8 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <dimen name="app_padding">5dp</dimen>
+    <dimen name="contact_item_user_photo_height">60dp</dimen>
+    <dimen name="contact_item_user_photo_width">60dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="margin_horizontal">16dp</dimen>
     <dimen name="margin_vertical">10dp</dimen>
@@ -85,6 +87,7 @@
     <string name="settings_toast_username_is_empty">Необходимо указать имя пользователя</string>
     <string name="settings_toast_username_is_not_unical">Пользователь с таким именем уже существует!</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_test">TestActivity</string>
     <string name="toast_data_update">Данные обновлены</string>
     <style name="Theme.Dolbogram" parent="Theme.AppCompat.DayNight">
         <item name="windowActionBar">false</item>

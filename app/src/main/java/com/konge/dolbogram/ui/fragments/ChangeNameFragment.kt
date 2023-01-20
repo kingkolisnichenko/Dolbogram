@@ -13,6 +13,7 @@ class ChangeNameFragment : BaseChangeFragment(R.layout.fragment_change_name) {
 
     }
 
+
     private fun initFullnameList() {
         var fullnamelist = USER.fullname.split(" ")
         if (fullnamelist.size > 1) {

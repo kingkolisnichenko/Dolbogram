@@ -42,4 +42,5 @@
     <string name="app_title_settings">Настройки</string>
     <string name="register_country_code_hint">+ - - -</string>
     <string name="default_country_phone_code">+373</string>
+    <string name="title_activity_test">TestActivity</string>
 </resources>

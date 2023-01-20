@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-56:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-76:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\7533936bb5547377573f09853b5f1b01\\transformed\\material-1.9.0-alpha01\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\9b734d6770f78eb52fa626b45608a6fe\\transformed\\material-1.9.0-alpha01\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

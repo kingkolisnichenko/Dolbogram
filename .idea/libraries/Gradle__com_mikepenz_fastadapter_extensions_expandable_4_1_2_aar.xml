@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.mikepenz:fastadapter-extensions-expandable:4.1.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/210da4e58aa1a5edc2ef0198bbaa5a05/transformed/fastadapter-extensions-expandable-4.1.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/210da4e58aa1a5edc2ef0198bbaa5a05/transformed/fastadapter-extensions-expandable-4.1.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bbef5d1ee78bd72a4eb7bc27747edee6/transformed/fastadapter-extensions-expandable-4.1.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/bbef5d1ee78bd72a4eb7bc27747edee6/transformed/fastadapter-extensions-expandable-4.1.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/fastadapter-extensions-expandable/4.1.2/7c6c5861c33eb5edac9bbc6e32e6c8443608666b/fastadapter-extensions-expandable-4.1.2-javadoc.jar!/" />

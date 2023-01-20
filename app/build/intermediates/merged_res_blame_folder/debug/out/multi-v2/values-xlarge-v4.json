@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-56:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-76:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\50da1ae9dbf7ce506dae54b36c1be459\\transformed\\appcompat-1.6.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\36aebade1894aaf2ccafeb11edf604f8\\transformed\\appcompat-1.6.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

@@ -25,6 +25,8 @@ color purple_700
 color teal_200
 color teal_700
 dimen app_padding
+dimen contact_item_user_photo_height
+dimen contact_item_user_photo_width
 dimen fab_margin
 dimen margin_horizontal
 dimen margin_vertical
@@ -158,6 +160,7 @@ string settings_toast_name_is_empty
 string settings_toast_username_is_empty
 string settings_toast_username_is_not_unical
 string title_activity_register
+string title_activity_test
 string toast_data_update
 style Theme.Dolbogram
 style Theme.Dolbogram.AppBarOverlay
