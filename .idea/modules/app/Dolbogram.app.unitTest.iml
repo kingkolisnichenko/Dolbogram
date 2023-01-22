@@ -14,6 +14,7 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
+                <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar</arg>
                 <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_app_classes_jar/debug/classes.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/8e59d27fbda2d0d6ee85be95ab787945/transformed/android-image-cropper-2.8.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/e2aa09f9f69643a968954e6b49f1528e/transformed/viewbinding-7.4.0-api.jar</arg>
