@@ -45,6 +45,7 @@ dimen single_chat_toolbar_image_width
 dimen text_large
 dimen text_normal
 dimen text_small
+dimen text_very_small
 drawable bg_receiving_message
 drawable bg_user_message
 drawable default_photo

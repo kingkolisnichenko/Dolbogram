@@ -4,25 +4,6 @@
             "outputFile": "com.konge.dolbogram.app-mergeDebugResources-76:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\Android\\Kotlin\\Dolbogram\\app\\src\\main\\res\\values-night\\themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "17",
-                        "endColumns": "12",
-                        "endOffsets": "856"
-                    },
-                    "to": {
-                        "startLines": "17",
-                        "startColumns": "4",
-                        "startOffsets": "1487",
-                        "endLines": "32",
-                        "endColumns": "12",
-                        "endOffsets": "2151"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\7abaed1ec3db93f1466f7782b351e341\\transformed\\materialize-1.2.1\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
@@ -64,6 +45,25 @@
                         "startOffsets": "2156,2231,2342,2431,2532,2639,2746,2845,2952,3055,3143,3267,3369,3471,3587,3689,3803,3931,4047,4169,4305,4425,4559,4679,4791,5006,5123,5247,5377,5499,5637,5771,5887",
                         "endColumns": "74,110,88,100,106,106,98,106,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
                         "endOffsets": "2226,2337,2426,2527,2634,2741,2840,2947,3050,3138,3262,3364,3466,3582,3684,3798,3926,4042,4164,4300,4420,4554,4674,4786,4912,5118,5242,5372,5494,5632,5766,5882,6002"
+                    }
+                },
+                {
+                    "source": "E:\\Dev\\Android\\Kotlin\\Dolbogram\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "17",
+                        "endColumns": "12",
+                        "endOffsets": "856"
+                    },
+                    "to": {
+                        "startLines": "17",
+                        "startColumns": "4",
+                        "startOffsets": "1487",
+                        "endLines": "32",
+                        "endColumns": "12",
+                        "endOffsets": "2151"
                     }
                 }
             ]

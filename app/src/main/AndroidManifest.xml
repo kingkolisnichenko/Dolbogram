@@ -28,7 +28,7 @@
             android:label="@string/title_activity_test"
             android:theme="@style/Theme.Dolbogram" />
         <activity
-            android:name=".ui.fragments.activities.RegisterActivity"
+            android:name="com.konge.dolbogram.activities.RegisterActivity"
             android:exported="false"
             android:label="@string/title_activity_register"
             android:theme="@style/Theme.Dolbogram.NoActionBar"

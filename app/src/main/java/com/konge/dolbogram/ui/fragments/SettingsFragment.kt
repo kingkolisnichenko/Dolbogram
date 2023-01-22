@@ -7,7 +7,7 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import com.konge.dolbogram.R
-import com.konge.dolbogram.ui.fragments.activities.RegisterActivity
+import com.konge.dolbogram.activities.RegisterActivity
 import com.konge.dolbogram.utilits.*
 import com.theartofdev.edmodo.cropper.CropImage
 import com.theartofdev.edmodo.cropper.CropImageView

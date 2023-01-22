@@ -138,8 +138,6 @@ fun sendMessage(message: String, receivingUserID: String, typeText: String, func
     REF_DATABASE_ROOT.updateChildren(mapDialogs)
         .addOnSuccessListener { function() }
         .addOnFailureListener { showToast(it.message.toString()) }
-
-
 }
 
 fun DataSnapshot.getCommonModel(): CommonModel =

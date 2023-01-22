@@ -7,7 +7,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import com.konge.dolbogram.databinding.ActivityMainBinding
 import com.konge.dolbogram.ui.fragments.ChatsFragment
-import com.konge.dolbogram.ui.fragments.activities.RegisterActivity
+import com.konge.dolbogram.activities.RegisterActivity
 import com.konge.dolbogram.ui.objects.AppDrawer
 import com.konge.dolbogram.utilits.*
 import kotlinx.coroutines.*

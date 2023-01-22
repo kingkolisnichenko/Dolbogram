@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment
 import com.konge.dolbogram.R
 import com.konge.dolbogram.models.CommonModel
 import com.squareup.picasso.Picasso
+import java.text.SimpleDateFormat
+import java.util.*
 
 fun showToast(msg: String) {
     Toast.makeText(APP_ACTIVITY, msg, Toast.LENGTH_SHORT).show()
@@ -90,4 +92,10 @@ fun initContacts() {
 
     }
 
+}
+
+fun String.asTime(): String {
+    val time = Date(this.toLong())
+    val timeFormat = SimpleDateFormat("HH:mm", Locale.getDefault())
+    return timeFormat.format(time)
 }

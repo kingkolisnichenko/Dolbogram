@@ -10,6 +10,7 @@ import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.database.DatabaseReference
 import com.konge.dolbogram.R
 import com.konge.dolbogram.models.CommonModel
+import com.konge.dolbogram.ui.fragments.single_chat.SingleChatFragment
 import com.konge.dolbogram.utilits.*
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.contact_item.view.*

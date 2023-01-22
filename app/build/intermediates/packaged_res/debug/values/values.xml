@@ -45,6 +45,7 @@
     <dimen name="text_large">18sp</dimen>
     <dimen name="text_normal">16sp</dimen>
     <dimen name="text_small">14sp</dimen>
+    <dimen name="text_very_small">11sp</dimen>
     <string name="app_name">Dolbogram</string>
     <string name="app_title_chats">Чаты</string>
     <string name="app_title_contacts">Контакты</string>

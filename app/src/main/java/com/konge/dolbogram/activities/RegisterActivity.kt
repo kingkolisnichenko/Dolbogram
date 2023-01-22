@@ -1,4 +1,4 @@
-package com.konge.dolbogram.ui.fragments.activities
+package com.konge.dolbogram.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

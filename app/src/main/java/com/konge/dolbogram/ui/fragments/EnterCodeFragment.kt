@@ -4,7 +4,7 @@ import androidx.fragment.app.Fragment
 import com.google.firebase.auth.PhoneAuthProvider
 import com.konge.dolbogram.MainActivity
 import com.konge.dolbogram.R
-import com.konge.dolbogram.ui.fragments.activities.RegisterActivity
+import com.konge.dolbogram.activities.RegisterActivity
 import com.konge.dolbogram.utilits.*
 import kotlinx.android.synthetic.main.fragment_enter_code.*
 
