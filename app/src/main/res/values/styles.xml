@@ -4,7 +4,7 @@
     <style name="settings_buttons">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">@dimen/margin_vertical</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
         <item name="android:background">@drawable/ripple_effect</item>
@@ -15,8 +15,8 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_normal</item>
         <item name="android:textColor">@color/colorblack</item>
-        <item name="android:layout_marginStart">@dimen/margin_horizontal</item>
-        <item name="android:layout_marginTop">@dimen/margin_vertical</item>
+        <item name="android:layout_marginStart">@dimen/margin_standart</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
     </style>
 
     <style name="small_text">
@@ -24,16 +24,16 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_small</item>
         <item name="android:textColor">@color/colorgrey</item>
-        <item name="android:layout_marginStart">@dimen/margin_horizontal</item>
+        <item name="android:layout_marginStart">@dimen/margin_standart</item>
     </style>
 
     <style name="separator">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
         <item name="android:background">@color/colorgrey</item>
-        <item name="android:layout_marginTop">@dimen/margin_vertical</item>
-        <item name="android:layout_marginStart">@dimen/margin_horizontal</item>
-        <item name="android:layout_marginEnd">@dimen/margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_marginStart">@dimen/margin_standart</item>
+        <item name="android:layout_marginEnd">@dimen/margin_standart</item>
     </style>
 
     <style name="mainToolbar">
@@ -51,7 +51,7 @@
     <style name="edit_text">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">@dimen/margin_horizontal</item>
+        <item name="android:layout_margin">@dimen/margin_standart</item>
         <item name="android:textColor">@color/colorblack</item>
         <item name="android:textSize">@dimen/text_large</item>
         <item name="colorControlNormal">@color/colorPrimary</item>

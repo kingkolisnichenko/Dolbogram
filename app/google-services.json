@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "906292388150-esqvuja8amq90bhekmq7igkad9n3570j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.konge.dolbogram",
+            "certificate_hash": "567332185173c2cd49b542d94204757fc891f720"
+          }
+        },
+        {
           "client_id": "906292388150-1g2puoi6ulvcggbfh94st3jh96ic69r9.apps.googleusercontent.com",
           "client_type": 3
         }

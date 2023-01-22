@@ -9,7 +9,6 @@
         android:id="@+id/single_chat_toolbar_image"
         android:layout_width="@dimen/single_chat_toolbar_image_width"
         android:layout_height="@dimen/single_chat_toolbar_image_heigth"
-        android:layout_marginStart="@dimen/margin_vertical"
         android:src="@drawable/default_photo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +27,7 @@
         android:id="@+id/single_chat_toolbar_state"
         style="@style/small_text"
         android:text="@string/default_contact_item_state"
-        android:textColor="@color/colorgrey"
+        android:textColor="@color/colorGreyLight"
         app:layout_constraintStart_toEndOf="@id/single_chat_toolbar_image"
         app:layout_constraintTop_toBottomOf="@id/single_chat_toolbar_fullname" />
 

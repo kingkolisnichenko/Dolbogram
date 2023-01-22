@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorAccentDark">#B3FFFFFF</color>
+    <color name="colorBlueLight">#C0C7CD</color>
+    <color name="colorBlueMedium">#8BC6C2</color>
+    <color name="colorGreenLight">#ABFCD2</color>
     <color name="colorGreyLight">#B3B3B3</color>
     <color name="colorPrimary">#0088CC</color>
     <color name="colorPrimaryVariant">#005E8E</color>
@@ -28,8 +31,8 @@
     <dimen name="contact_item_user_photo_height">60dp</dimen>
     <dimen name="contact_item_user_photo_width">60dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="margin_horizontal">16dp</dimen>
-    <dimen name="margin_vertical">10dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_standart">16dp</dimen>
     <dimen name="margin_vertical_large">16dp</dimen>
     <dimen name="register_image_width_height">80dp</dimen>
     <dimen name="settings_change_user_photo_height">50dp</dimen>
@@ -37,6 +40,8 @@
     <dimen name="settings_ripple_effect_radius">8dp</dimen>
     <dimen name="settings_user_photo_height">70dp</dimen>
     <dimen name="settings_user_photo_width">70dp</dimen>
+    <dimen name="single_chat_toolbar_image_heigth">50dp</dimen>
+    <dimen name="single_chat_toolbar_image_width">50dp</dimen>
     <dimen name="text_large">18sp</dimen>
     <dimen name="text_normal">16sp</dimen>
     <dimen name="text_small">14sp</dimen>
@@ -145,7 +150,7 @@
     <style name="edit_text">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">@dimen/margin_horizontal</item>
+        <item name="android:layout_margin">@dimen/margin_standart</item>
         <item name="android:textColor">@color/colorblack</item>
         <item name="android:textSize">@dimen/text_large</item>
         <item name="colorControlNormal">@color/colorPrimary</item>
@@ -166,21 +171,21 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_normal</item>
         <item name="android:textColor">@color/colorblack</item>
-        <item name="android:layout_marginStart">@dimen/margin_horizontal</item>
-        <item name="android:layout_marginTop">@dimen/margin_vertical</item>
+        <item name="android:layout_marginStart">@dimen/margin_standart</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
     </style>
     <style name="separator">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
         <item name="android:background">@color/colorgrey</item>
-        <item name="android:layout_marginTop">@dimen/margin_vertical</item>
-        <item name="android:layout_marginStart">@dimen/margin_horizontal</item>
-        <item name="android:layout_marginEnd">@dimen/margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_marginStart">@dimen/margin_standart</item>
+        <item name="android:layout_marginEnd">@dimen/margin_standart</item>
     </style>
     <style name="settings_buttons">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">@dimen/margin_vertical</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
         <item name="android:background">@drawable/ripple_effect</item>
@@ -190,6 +195,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_small</item>
         <item name="android:textColor">@color/colorgrey</item>
-        <item name="android:layout_marginStart">@dimen/margin_horizontal</item>
+        <item name="android:layout_marginStart">@dimen/margin_standart</item>
     </style>
 </resources>

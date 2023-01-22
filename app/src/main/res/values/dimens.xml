@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin_horizontal">16dp</dimen>
+    <dimen name="margin_standart">16dp</dimen>
     <dimen name="text_normal">16sp</dimen>
     <dimen name="text_large">18sp</dimen>
-    <dimen name="margin_vertical">10dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
     <dimen name="text_small">14sp</dimen>
     <dimen name="margin_vertical_large">16dp</dimen>
 

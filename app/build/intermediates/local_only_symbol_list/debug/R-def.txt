@@ -1,6 +1,9 @@
 R_DEF: Internal format may change without notice
 local
 color colorAccentDark
+color colorBlueLight
+color colorBlueMedium
+color colorGreenLight
 color colorGreyLight
 color colorPrimary
 color colorPrimaryVariant
@@ -28,8 +31,8 @@ dimen app_padding
 dimen contact_item_user_photo_height
 dimen contact_item_user_photo_width
 dimen fab_margin
-dimen margin_horizontal
-dimen margin_vertical
+dimen margin_small
+dimen margin_standart
 dimen margin_vertical_large
 dimen register_image_width_height
 dimen settings_change_user_photo_height
@@ -37,9 +40,13 @@ dimen settings_change_user_photo_width
 dimen settings_ripple_effect_radius
 dimen settings_user_photo_height
 dimen settings_user_photo_width
+dimen single_chat_toolbar_image_heigth
+dimen single_chat_toolbar_image_width
 dimen text_large
 dimen text_normal
 dimen text_small
+drawable bg_receiving_message
+drawable bg_user_message
 drawable default_photo
 drawable header
 drawable ic_btn_action_menu
@@ -61,8 +68,15 @@ drawable ic_menu_phone
 drawable ic_menu_secret_chat
 drawable ic_menu_settings
 drawable ic_register_image
+drawable ic_send
 drawable ic_toolbar_find
 drawable ripple_effect
+id block_received_message
+id block_user_message
+id chat_received_message
+id chat_received_message_time
+id chat_user_message
+id chat_user_message_time
 id contact_item_fullname
 id contact_item_photo
 id contact_item_state
@@ -97,7 +111,14 @@ id settings_status
 id settings_text_account
 id settings_user_name
 id settings_user_photo
+id single_chat_image_send
+id single_chat_input_message
+id single_chat_recycler_view
+id single_chat_toolbar_fullname
+id single_chat_toolbar_image
+id single_chat_toolbar_state
 id textView
+id toolbar_info
 layout activity_main
 layout activity_register
 layout contact_item
@@ -110,6 +131,9 @@ layout fragment_contacts
 layout fragment_enter_code
 layout fragment_enter_phone_number
 layout fragment_settings
+layout fragment_single_chat
+layout message_item
+layout toolbar_info
 menu settings_action_menu
 mipmap ic_launcher
 mipmap ic_launcher_round

@@ -12,7 +12,7 @@
         android:hint="@string/settings_hint_input_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_vertical"
+        android:layout_margin="@dimen/margin_small"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -27,7 +27,7 @@
         android:src="@drawable/ic_btn_confirm_change"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="@dimen/margin_horizontal"
+        android:layout_margin="@dimen/margin_standart"
         app:borderWidth="0dp"
         android:contentDescription="cd_settings_confirm_change_username">
 

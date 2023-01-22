@@ -25,11 +25,16 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final Toolbar mainToolbar;
 
+  @NonNull
+  public final ToolbarInfoBinding toolbarInfo;
+
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout dataContainer, @NonNull Toolbar mainToolbar) {
+      @NonNull ConstraintLayout dataContainer, @NonNull Toolbar mainToolbar,
+      @NonNull ToolbarInfoBinding toolbarInfo) {
     this.rootView = rootView;
     this.dataContainer = dataContainer;
     this.mainToolbar = mainToolbar;
+    this.toolbarInfo = toolbarInfo;
   }
 
   @Override
@@ -71,7 +76,15 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, dataContainer, mainToolbar);
+      id = R.id.toolbar_info;
+      View toolbarInfo = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarInfo == null) {
+        break missingId;
+      }
+      ToolbarInfoBinding binding_toolbarInfo = ToolbarInfoBinding.bind(toolbarInfo);
+
+      return new ActivityMainBinding((ConstraintLayout) rootView, dataContainer, mainToolbar,
+          binding_toolbarInfo);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
