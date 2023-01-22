@@ -10,12 +10,12 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.konge.dolbogram.R
 import com.konge.dolbogram.models.CommonModel
-import com.konge.dolbogram.models.User
+import com.konge.dolbogram.models.UserModel
 
 lateinit var AUTH: FirebaseAuth
 lateinit var REF_DATABASE_ROOT: DatabaseReference
 lateinit var REF_STORAGE_ROOT: StorageReference
-lateinit var USER: User
+lateinit var USER: UserModel
 lateinit var UUID: String
 
 const val FOLDER_PROFILE_IMAGE = "profile_image"
@@ -39,7 +39,7 @@ fun initFirebase() {
     REF_DATABASE_ROOT = FirebaseDatabase.getInstance().reference
     REF_STORAGE_ROOT = FirebaseStorage.getInstance().reference
 
-    USER = User()
+    USER = UserModel()
     UUID = AUTH.currentUser?.uid.toString()
 
 }
@@ -128,7 +128,7 @@ inline fun initUser(crossinline function: () -> Unit) {
     REF_DATABASE_ROOT.child(NODE_USERS).child(UUID)
         .addListenerForSingleValueEvent(AppValueEventListener {
 
-            USER = it.getValue(User::class.java) ?: User()
+            USER = it.getValue(UserModel::class.java) ?: UserModel()
 
             if (USER.username.isEmpty()) {
                 USER.username = USER.id
@@ -141,3 +141,6 @@ inline fun initUser(crossinline function: () -> Unit) {
 
 fun DataSnapshot.getCommonModel(): CommonModel =
     this.getValue(CommonModel::class.java) ?: CommonModel()
+fun DataSnapshot.getUserModel(): UserModel =
+    this.getValue(UserModel::class.java) ?: UserModel()
+

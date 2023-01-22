@@ -81,9 +81,8 @@ id contact_item_fullname
 id contact_item_photo
 id contact_item_state
 id contact_recycler_view
-id dataContainer
-id mainToolbar
-id registerToolbar
+id data_container
+id main_toolbar
 id register_btn_next
 id register_image
 id register_input_code
@@ -91,6 +90,7 @@ id register_input_country_code
 id register_input_phone_number
 id register_text_enter_code
 id register_text_we_send
+id register_toolbar
 id settings_bio
 id settings_change_bio
 id settings_change_phone

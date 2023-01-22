@@ -64,13 +64,13 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.dataContainer;
+      id = R.id.data_container;
       ConstraintLayout dataContainer = ViewBindings.findChildViewById(rootView, id);
       if (dataContainer == null) {
         break missingId;
       }
 
-      id = R.id.mainToolbar;
+      id = R.id.main_toolbar;
       Toolbar mainToolbar = ViewBindings.findChildViewById(rootView, id);
       if (mainToolbar == null) {
         break missingId;
