@@ -34,6 +34,7 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
 
         when (item.itemId) {
             R.id.settings_menu_exit -> {
+                AppStates.updadeState(AppStates.OFFLINE )
                 AUTH.signOut()
                 APP_ACTIVITY.replaceActivity(RegisterActivity())
             }

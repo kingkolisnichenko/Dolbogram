@@ -10,7 +10,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.toolbar_info.view.*
 
-class SingleChatFragment(private val contact: CommonModel) : BaseFragment(R.layout.fragment_single_chat) {
+class SingleChatFragment(private val contact: CommonModel) :
+    BaseFragment(R.layout.fragment_single_chat) {
 
     private lateinit var mListenerInfoToolbar: AppValueEventListener
     private lateinit var mReceivingUser: UserModel
@@ -34,10 +35,13 @@ class SingleChatFragment(private val contact: CommonModel) : BaseFragment(R.layo
     }
 
     private fun initToolbarInfo() {
-        mToolbarInfo.single_chat_toolbar_image.downloadAndSetImage(mReceivingUser.photoUrl)
-        mToolbarInfo.single_chat_toolbar_fullname.text = mReceivingUser.fullname
-        mToolbarInfo.single_chat_toolbar_state.text = mReceivingUser.state
 
+        mToolbarInfo.single_chat_toolbar_image.downloadAndSetImage(mReceivingUser.photoUrl)
+        mToolbarInfo.single_chat_toolbar_fullname.text =
+            if (mReceivingUser.fullname.isEmpty()) contact.fullname
+            else mReceivingUser.fullname
+
+        mToolbarInfo.single_chat_toolbar_state.text = mReceivingUser.state
 
     }
 

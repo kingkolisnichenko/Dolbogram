@@ -44,43 +44,6 @@ fun initFirebase() {
 
 }
 
-fun initContacts() {
-    if (checkPermissions(READ_CONTACTS)) {
-        var arrayContacts = arrayListOf<CommonModel>()
-        val cursor = APP_ACTIVITY.contentResolver.query(
-            ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
-            null, null, null, null
-        )
-        cursor?.let {
-            while (it.moveToNext()) {
-                val fullName = it.getString(
-                    it.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME) ?: 0
-                )
-                var phone = it.getString(
-                    it.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER) ?: 0
-                ).replace(Regex("[\\s,-]"), "")
-
-                if (phone.length == 9){
-                    phone = APP_ACTIVITY.getString(R.string.default_country_phone_code) + phone.substringAfter("0")
-                }else if(phone.substring(0,3) == "022") continue
-
-                arrayContacts.add(
-                    CommonModel(
-                        fullname = fullName,
-                        phone = phone
-                    )
-                )
-
-            }
-        }
-        cursor?.close()
-
-        updatePhonesToDatabase(arrayContacts)
-
-    }
-
-}
-
 fun updatePhonesToDatabase(arrayContacts: ArrayList<CommonModel>) {
     REF_DATABASE_ROOT.child(NODE_PHONES).addListenerForSingleValueEvent(AppValueEventListener {
         it.children.forEach { snapshot ->
@@ -93,6 +56,14 @@ fun updatePhonesToDatabase(arrayContacts: ArrayList<CommonModel>) {
                         .child(snapshot.value.toString())
                         .child(CHILD_ID)
                         .setValue(snapshot.value.toString())
+                        .addOnFailureListener { showToast(it.message.toString()) }
+
+                    REF_DATABASE_ROOT
+                        .child(NODE_PHONES_CONTACTS)
+                        .child(UUID)
+                        .child(snapshot.value.toString())
+                        .child(CHILD_FULLNAME)
+                        .setValue(contact.fullname)
                         .addOnFailureListener { showToast(it.message.toString()) }
                 }
             }
