@@ -6,28 +6,28 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="29"
-8-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
+8-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
+9-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-11-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:6:5-80
-11-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:6:22-77
+11-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:6:5-80
+11-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:6:22-77
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:7:5-81
-12-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:7:22-78
+12-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:7:5-81
+12-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:7:22-78
 13    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
-13-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:8:5-82
-13-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:8:22-79
+13-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:8:5-82
+13-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:8:22-79
 14    <uses-permission android:name="android.permission.READ_CONTACTS" />
-14-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:9:5-72
-14-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:9:22-69
+14-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:9:5-72
+14-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:9:22-69
 15
 16    <queries>
-16-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:11:5-13:15
+16-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:11:5-13:15
 17        <package android:name="com.google.android.apps.photos" />
-17-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:12:9-66
-17-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:12:18-63
+17-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:12:9-66
+17-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:12:18-63
 18    </queries>
 19
 20    <uses-permission android:name="android.permission.INTERNET" />
@@ -49,82 +49,82 @@
 27-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\c5f078cbba498609cbf7a26ea050a803\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 28
 29    <application
-29-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:15:5-53:19
+29-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:15:5-53:19
 30        android:allowBackup="true"
-30-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:16:9-35
+30-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:16:9-35
 31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 31-->[androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\c5f078cbba498609cbf7a26ea050a803\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 32        android:dataExtractionRules="@xml/data_extraction_rules"
-32-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:17:9-65
+32-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:17:9-65
 33        android:debuggable="true"
 34        android:extractNativeLibs="false"
 35        android:fullBackupContent="@xml/backup_rules"
-35-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:18:9-54
+35-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:18:9-54
 36        android:icon="@mipmap/ic_launcher"
-36-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:19:9-43
+36-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:19:9-43
 37        android:label="@string/app_name"
-37-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:20:9-41
+37-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:20:9-41
 38        android:roundIcon="@mipmap/ic_launcher_round"
-38-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:21:9-54
+38-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:21:9-54
 39        android:supportsRtl="true"
-39-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:22:9-35
+39-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:22:9-35
 40        android:testOnly="true"
 41        android:theme="@style/Theme.Dolbogram" >
-41-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:23:9-47
+41-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:23:9-47
 42        <activity
-42-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:25:9-29:54
+42-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:25:9-29:54
 43            android:name="com.konge.dolbogram.TestActivity"
-43-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:26:13-41
+43-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:26:13-41
 44            android:exported="false"
-44-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:27:13-37
+44-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:27:13-37
 45            android:label="@string/title_activity_test"
-45-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:28:13-56
+45-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:28:13-56
 46            android:theme="@style/Theme.Dolbogram" />
-46-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:29:13-51
+46-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:29:13-51
 47        <activity
-47-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:30:9-39:20
+47-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:30:9-39:20
 48            android:name="com.konge.dolbogram.ui.fragments.activities.RegisterActivity"
-48-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:31:13-69
+48-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:31:13-69
 49            android:exported="false"
-49-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:32:13-37
+49-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:32:13-37
 50            android:label="@string/title_activity_register"
-50-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:33:13-60
+50-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:33:13-60
 51            android:theme="@style/Theme.Dolbogram.NoActionBar"
-51-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:34:13-63
+51-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:34:13-63
 52            android:windowSoftInputMode="stateVisible|adjustResize" >
-52-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:35:13-68
+52-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:35:13-68
 53            <meta-data
-53-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:36:13-38:36
+53-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:36:13-38:36
 54                android:name="android.app.lib_name"
-54-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:37:17-52
+54-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:37:17-52
 55                android:value="" />
-55-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:38:17-33
+55-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:38:17-33
 56        </activity>
 57        <activity
-57-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:40:9-49:20
+57-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:40:9-49:20
 58            android:name="com.konge.dolbogram.MainActivity"
-58-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:41:13-41
+58-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:41:13-41
 59            android:exported="true"
-59-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:42:13-36
+59-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:42:13-36
 60            android:windowSoftInputMode="stateVisible|adjustResize" >
-60-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:43:13-68
+60-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:43:13-68
 61            <intent-filter>
-61-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:44:13-48:29
+61-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:44:13-48:29
 62                <action android:name="android.intent.action.MAIN" />
-62-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:45:17-69
-62-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:45:25-66
+62-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:45:17-69
+62-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:45:25-66
 63
 64                <category android:name="android.intent.category.LAUNCHER" />
-64-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:47:17-77
-64-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:47:27-74
+64-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:47:17-77
+64-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:47:27-74
 65            </intent-filter>
 66        </activity>
 67        <activity
-67-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:50:9-52:59
+67-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:50:9-52:59
 68            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-68-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:51:13-76
+68-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:51:13-76
 69            android:theme="@style/Base.Theme.AppCompat" />
-69-->D:\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:52:13-56
+69-->E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:52:13-56
 70
 71        <provider
 71-->[com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\c080bd8a4413c05861579da69793fef9\transformed\iconics-core-4.0.2\AndroidManifest.xml:27:9-32:39

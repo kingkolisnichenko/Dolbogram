@@ -8,6 +8,7 @@ import com.konge.dolbogram.models.UserModel
 import com.konge.dolbogram.utilits.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
+import kotlinx.android.synthetic.main.fragment_single_chat.*
 import kotlinx.android.synthetic.main.toolbar_info.view.*
 
 class SingleChatFragment(private val contact: CommonModel) :
@@ -32,6 +33,16 @@ class SingleChatFragment(private val contact: CommonModel) :
         mRefUser = REF_DATABASE_ROOT.child(NODE_USERS).child(contact.id)
 
         mRefUser.addValueEventListener(mListenerInfoToolbar)
+
+        single_chat_image_send.setOnClickListener {
+            val message = single_chat_input_message.text.toString()
+            if(message.isNotEmpty()){
+                sendMessage(message, contact.id, TYPE_TEXT){
+                    single_chat_input_message.setText("")
+                }
+            }
+        }
+
     }
 
     private fun initToolbarInfo() {
