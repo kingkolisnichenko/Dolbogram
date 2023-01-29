@@ -16,12 +16,12 @@
         "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.5\\com.konge.dolbogram.app-main-80:\\layout\\toolbar_info.xml"
     },
     {
-        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.5\\com.konge.dolbogram.app-mergeDebugResources-77:\\layout\\activity_register.xml",
-        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.5\\com.konge.dolbogram.app-main-80:\\layout\\activity_register.xml"
-    },
-    {
         "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.5\\com.konge.dolbogram.app-mergeDebugResources-77:\\layout\\fragment_base.xml",
         "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.5\\com.konge.dolbogram.app-main-80:\\layout\\fragment_base.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.5\\com.konge.dolbogram.app-mergeDebugResources-77:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\Ilya\\.gradle\\daemon\\7.5\\com.konge.dolbogram.app-main-80:\\layout\\activity_register.xml"
     },
     {
         "merged": "C:\\Users\\Ilya\\.gradle\\daemon\\7.5\\com.konge.dolbogram.app-mergeDebugResources-77:\\layout\\activity_main.xml",

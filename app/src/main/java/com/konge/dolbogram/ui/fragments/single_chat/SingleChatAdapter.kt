@@ -5,9 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.konge.dolbogram.R
 import com.konge.dolbogram.models.CommonModel
+import com.konge.dolbogram.utilits.DiffUtilCallback
 import com.konge.dolbogram.utilits.UUID
 import com.konge.dolbogram.utilits.asTime
 import kotlinx.android.synthetic.main.message_item.view.*
@@ -15,6 +17,7 @@ import kotlinx.android.synthetic.main.message_item.view.*
 class SingleChatAdapter : RecyclerView.Adapter<SingleChatAdapter.SingleChatHolder>() {
 
     private var mListMessagesCash = emptyList<CommonModel>()
+    private lateinit var mDiffUtilResult: DiffUtil.DiffResult
 
     class SingleChatHolder(view: View) : RecyclerView.ViewHolder(view) {
 
@@ -55,10 +58,13 @@ class SingleChatAdapter : RecyclerView.Adapter<SingleChatAdapter.SingleChatHolde
 
     }
 
-    fun setList(list: List<CommonModel>) {
-        mListMessagesCash = list
-        notifyDataSetChanged()
+    fun adItem(item: CommonModel){
+        val newList = mutableListOf<CommonModel>()
+        newList.addAll(mListMessagesCash)
+        newList.add(item)
+        mDiffUtilResult = DiffUtil.calculateDiff(DiffUtilCallback(mListMessagesCash, newList))
+        mDiffUtilResult.dispatchUpdatesTo(this)
+        mListMessagesCash = newList
     }
-
 }
 

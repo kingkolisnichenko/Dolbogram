@@ -1,11 +1,13 @@
 package com.konge.dolbogram.utilits
 
+import android.content.Context
 import android.content.Intent
 import android.provider.ContactsContract
+import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.konge.dolbogram.activities.MainActivity
 import com.konge.dolbogram.R
 import com.konge.dolbogram.models.CommonModel
 import com.squareup.picasso.Picasso
@@ -16,32 +18,24 @@ fun showToast(msg: String) {
     Toast.makeText(APP_ACTIVITY, msg, Toast.LENGTH_SHORT).show()
 }
 
-fun AppCompatActivity.replaceActivity(activity: AppCompatActivity) {
-    val intent = Intent(this, activity::class.java)
-    startActivity(intent)
-    this.finish()
+fun restartActivity() {
+    val intent = Intent(APP_ACTIVITY, MainActivity::class.java)
+    APP_ACTIVITY.startActivity(intent)
+    APP_ACTIVITY.finish()
 }
 
-fun AppCompatActivity.replaceFragment(fragment: Fragment, addStack: Boolean = true) {
+fun replaceFragment(fragment: Fragment, addStack: Boolean = true) {
 
     when (addStack) {
-        true -> supportFragmentManager.beginTransaction()
+        true -> APP_ACTIVITY.supportFragmentManager.beginTransaction()
             .addToBackStack(null)
             .replace(R.id.data_container, fragment)
             .commit()
-        false -> supportFragmentManager.beginTransaction()
+        false -> APP_ACTIVITY.supportFragmentManager.beginTransaction()
             .replace(R.id.data_container, fragment)
             .commit()
     }
 
-}
-
-fun Fragment.replaceFragment(fragment: Fragment) {
-
-    this.fragmentManager?.beginTransaction()
-        ?.addToBackStack(null)
-        ?.replace(R.id.data_container, fragment)
-        ?.commit()
 }
 
 fun ImageView.downloadAndSetImage(url: String) {
@@ -92,6 +86,13 @@ fun initContacts() {
 
     }
 
+}
+
+fun hideKeyboard() {
+    /* Функция скрывает клавиатуру */
+    val imm: InputMethodManager = APP_ACTIVITY.getSystemService(Context.INPUT_METHOD_SERVICE)
+            as InputMethodManager
+    imm.hideSoftInputFromWindow(APP_ACTIVITY.window.decorView.windowToken, 0)
 }
 
 fun String.asTime(): String {

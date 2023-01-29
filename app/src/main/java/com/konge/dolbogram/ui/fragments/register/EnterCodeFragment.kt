@@ -1,10 +1,8 @@
-package com.konge.dolbogram.ui.fragments
+package com.konge.dolbogram.ui.fragments.register
 
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.PhoneAuthProvider
-import com.konge.dolbogram.MainActivity
 import com.konge.dolbogram.R
-import com.konge.dolbogram.activities.RegisterActivity
 import com.konge.dolbogram.utilits.*
 import kotlinx.android.synthetic.main.fragment_enter_code.*
 
@@ -14,7 +12,7 @@ class EnterCodeFragment(val phoneNumber: String, val id: String) :
     override fun onStart() {
         super.onStart()
 
-        (activity as RegisterActivity).title = phoneNumber
+        APP_ACTIVITY.title = phoneNumber
 
         register_input_code.addTextChangedListener(AppTextWatcher {
             val string = register_input_code.text.toString()
@@ -41,11 +39,10 @@ class EnterCodeFragment(val phoneNumber: String, val id: String) :
                             REF_DATABASE_ROOT.child(NODE_PHONES).child(phoneNumber).setValue(uuid)
                                 .addOnFailureListener { showToast(it.message.toString()) }
                                 .addOnSuccessListener {
-                                    (activity as RegisterActivity).replaceActivity(MainActivity())
+                                    restartActivity()
                                 }
 
                         } else {
-
                             val dateMap = mutableMapOf<String, Any>()
                             dateMap[CHILD_ID] = uuid
                             dateMap[CHILD_PHONE] = phoneNumber
@@ -57,9 +54,7 @@ class EnterCodeFragment(val phoneNumber: String, val id: String) :
                                     REF_DATABASE_ROOT.child(NODE_USERS).child(uuid)
                                         .updateChildren(dateMap)
                                         .addOnSuccessListener {
-                                            (activity as RegisterActivity).replaceActivity(
-                                                MainActivity()
-                                            )
+                                            restartActivity()
                                         }
                                         .addOnFailureListener { showToast(it.message.toString()) }
                                 }

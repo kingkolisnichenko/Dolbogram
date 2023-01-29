@@ -1,4 +1,4 @@
-package com.konge.dolbogram
+package com.konge.dolbogram.activities
 
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -6,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import com.konge.dolbogram.databinding.ActivityMainBinding
-import com.konge.dolbogram.ui.fragments.ChatsFragment
-import com.konge.dolbogram.activities.RegisterActivity
+import com.konge.dolbogram.ui.fragments.MainFragment
+import com.konge.dolbogram.ui.fragments.register.EnterPhoneNumberFragment
 import com.konge.dolbogram.ui.objects.AppDrawer
 import com.konge.dolbogram.utilits.*
 import kotlinx.coroutines.*
@@ -50,14 +50,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initFunc() {
+        setSupportActionBar(mToolbar)
+
         if (AUTH.currentUser != null) {
-            setSupportActionBar(mToolbar)
             mAppDrawer.create()
 
-            replaceFragment(ChatsFragment(), false)
+            replaceFragment(MainFragment(), false)
 
         } else {
-            replaceActivity(RegisterActivity())
+            replaceFragment(EnterPhoneNumberFragment(), false)
         }
 
     }

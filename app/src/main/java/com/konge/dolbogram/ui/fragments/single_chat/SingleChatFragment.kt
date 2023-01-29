@@ -2,6 +2,9 @@ package com.konge.dolbogram.ui.fragments.single_chat
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.database.ChildEventListener
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.konge.dolbogram.R
 import com.konge.dolbogram.models.CommonModel
@@ -23,9 +26,7 @@ class SingleChatFragment(private val contact: CommonModel) :
     private lateinit var mRefMessages: DatabaseReference
     private lateinit var mAdapter: SingleChatAdapter
     private lateinit var mRecyclerView: RecyclerView
-    private lateinit var mRefMessagesListener: AppValueEventListener
-    private var mListMessages = emptyList<CommonModel>()
-
+    private lateinit var mRefMessagesListener: ChildEventListener
 
     override fun onResume() {
         super.onResume()
@@ -44,14 +45,12 @@ class SingleChatFragment(private val contact: CommonModel) :
 
         mRecyclerView.adapter = mAdapter
 
-        mRefMessagesListener = AppValueEventListener { dataSnapshot ->
-            mListMessages = dataSnapshot.children.map {it.getCommonModel()}
-            mAdapter.setList(mListMessages)
+        mRefMessagesListener = AppChildEventListener {
+            mAdapter.adItem(it.getCommonModel())
             mRecyclerView.smoothScrollToPosition(mAdapter.itemCount)
         }
 
-        mRefMessages.addValueEventListener(mRefMessagesListener)
-
+        mRefMessages.addChildEventListener(mRefMessagesListener)
 
     }
 
@@ -98,4 +97,7 @@ class SingleChatFragment(private val contact: CommonModel) :
         mRefMessages.removeEventListener(mRefMessagesListener)
 
     }
+
+
+
 }

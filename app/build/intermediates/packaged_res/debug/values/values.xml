@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorAccentDark">#B3FFFFFF</color>
-    <color name="colorBlueLight">#C0C7CD</color>
+    <color name="colorBlueLight">#DEE2E6</color>
     <color name="colorBlueMedium">#8BC6C2</color>
     <color name="colorGreenLight">#ABFCD2</color>
     <color name="colorGreyLight">#B3B3B3</color>
@@ -47,7 +47,7 @@
     <dimen name="text_small">14sp</dimen>
     <dimen name="text_very_small">11sp</dimen>
     <string name="app_name">Dolbogram</string>
-    <string name="app_title_chats">Чаты</string>
+    <string name="app_title_chats">Dolbogram</string>
     <string name="app_title_contacts">Контакты</string>
     <string name="app_title_settings">Настройки</string>
     <string name="default_contact_item_fullname">Имя контакта</string>

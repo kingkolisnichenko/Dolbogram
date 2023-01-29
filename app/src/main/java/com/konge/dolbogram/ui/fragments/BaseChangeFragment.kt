@@ -1,8 +1,6 @@
 package com.konge.dolbogram.ui.fragments
 
 import androidx.fragment.app.Fragment
-import com.konge.dolbogram.MainActivity
-import com.konge.dolbogram.R
 import com.konge.dolbogram.utilits.APP_ACTIVITY
 import kotlinx.android.synthetic.main.fragment_change_bio.*
 

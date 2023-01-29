@@ -38,7 +38,7 @@
     <string name="app_title_contacts">Контакты</string>
     <string name="default_contact_item_fullname">Имя контакта</string>
     <string name="default_contact_item_state">в сети</string>
-    <string name="app_title_chats">Чаты</string>
+    <string name="app_title_chats">Dolbogram</string>
     <string name="app_title_settings">Настройки</string>
     <string name="register_country_code_hint">+ - - -</string>
     <string name="default_country_phone_code">+373</string>
