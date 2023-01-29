@@ -91,7 +91,6 @@ id register_input_country_code
 id register_input_phone_number
 id register_text_enter_code
 id register_text_we_send
-id register_toolbar
 id settings_bio
 id settings_change_bio
 id settings_change_phone
@@ -121,7 +120,6 @@ id single_chat_toolbar_state
 id textView
 id toolbar_info
 layout activity_main
-layout activity_register
 layout contact_item
 layout fragment_base
 layout fragment_change_bio
