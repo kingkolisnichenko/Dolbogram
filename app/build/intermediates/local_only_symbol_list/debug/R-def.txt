@@ -114,6 +114,7 @@ id settings_user_photo
 id single_chat_image_send
 id single_chat_input_message
 id single_chat_recycler_view
+id single_chat_swipe_refresh
 id single_chat_toolbar_fullname
 id single_chat_toolbar_image
 id single_chat_toolbar_state

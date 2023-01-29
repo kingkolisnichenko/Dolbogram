@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.message_item.view.*
 
 class SingleChatAdapter : RecyclerView.Adapter<SingleChatAdapter.SingleChatHolder>() {
 
-    private var mListMessagesCash = emptyList<CommonModel>()
+    private var mListMessagesCash = mutableListOf<CommonModel>()
     private lateinit var mDiffUtilResult: DiffUtil.DiffResult
 
     class SingleChatHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -47,7 +47,7 @@ class SingleChatAdapter : RecyclerView.Adapter<SingleChatAdapter.SingleChatHolde
             holder.chatUserMessageTime.text =
                 mListMessagesCash[position].timeStamp.toString().asTime()
 
-        }else{
+        } else {
             holder.blockUserMessage.visibility = View.GONE
             holder.blockReceivedMessage.visibility = View.VISIBLE
 
@@ -58,17 +58,20 @@ class SingleChatAdapter : RecyclerView.Adapter<SingleChatAdapter.SingleChatHolde
 
     }
 
-    fun adItem(item: CommonModel){
-        val newList = mutableListOf<CommonModel>()
-        newList.addAll(mListMessagesCash)
+    fun adItem(item: CommonModel, toBottom: Boolean, onSuccess:() ->Unit) {
+        if (!mListMessagesCash.contains(item)) {
+            if (toBottom) {
+                mListMessagesCash.add(item)
+                notifyItemChanged(mListMessagesCash.size)
+            } else {
+                mListMessagesCash.add(item)
+                mListMessagesCash.sortBy { it.timeStamp.toString() }
+                notifyItemChanged(mListMessagesCash.indexOf(item))
+            }
+        }
 
-        if(!newList.contains(item)) newList.add(item)
+        onSuccess()
 
-        newList.sortBy { it.timeStamp.toString() }
-
-        mDiffUtilResult = DiffUtil.calculateDiff(DiffUtilCallback(mListMessagesCash, newList))
-        mDiffUtilResult.dispatchUpdatesTo(this)
-        mListMessagesCash = newList
     }
 }
 

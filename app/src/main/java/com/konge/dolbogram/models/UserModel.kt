@@ -7,5 +7,6 @@ data class UserModel (
     var fullname:String = "",
     var state:String = "",
     var photoUrl:String = "empty",
-    var phone:String = ""
+    var phone:String = "",
+    var messaging_token:String = ""
     )

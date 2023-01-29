@@ -6,6 +6,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ServerValue
+import com.google.firebase.messaging.FirebaseMessaging
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.konge.dolbogram.R
@@ -15,6 +16,7 @@ import com.konge.dolbogram.models.UserModel
 lateinit var AUTH: FirebaseAuth
 lateinit var REF_DATABASE_ROOT: DatabaseReference
 lateinit var REF_STORAGE_ROOT: StorageReference
+
 lateinit var USER: UserModel
 lateinit var UUID: String
 
@@ -35,6 +37,7 @@ const val CHILD_FULLNAME = "fullname"
 const val CHILD_BIO = "bio"
 const val CHILD_PHOTO_URL = "photoUrl"
 const val CHILD_STATE = "state"
+const val CHILD_MESSAGING_TOKEN = "messaging_token"
 
 const val CHILD_TEXT = "text"
 const val CHILD_TYPE = "type"
@@ -204,6 +207,23 @@ fun sendMessage(message: String, receivingUserID: String, typeText: String, func
     REF_DATABASE_ROOT.updateChildren(mapDialogs)
         .addOnSuccessListener { function() }
         .addOnFailureListener { showToast(it.message.toString()) }
+}
+
+fun updateMessageToken() {
+
+    FirebaseMessaging.getInstance().token.addOnCompleteListener { task ->
+
+        if (!task.isSuccessful) {
+            showToast(task.exception.toString())
+        } else {
+
+            REF_DATABASE_ROOT.child(NODE_USERS).child(UUID).child(CHILD_MESSAGING_TOKEN)
+                .setValue(task.result)
+                .addOnSuccessListener { showToast("Token updated") }
+                .addOnFailureListener { showToast(it.message.toString()) }
+        }
+    }
+
 }
 
 fun DataSnapshot.getCommonModel(): CommonModel =

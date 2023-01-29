@@ -8,9 +8,11 @@ data class CommonModel(
     var state: String = "",
     var photoUrl: String = "empty",
     var phone: String = "",
+    var messaging_token:String = "",
 
     var text: String = "",
     var type: String = "",
     var from: String = "",
-    var timeStamp: Any = ""
+    var timeStamp: Any = "",
+    var isRead: Boolean = false
 )

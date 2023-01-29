@@ -6,24 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.single_chat.SingleChatFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/single_chat_recycler_view"
-        android:layout_width="match_parent"
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/single_chat_swipe_refresh"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@id/single_chat_input_message"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/message_item" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/single_chat_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/message_item" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <EditText
         android:id="@+id/single_chat_input_message"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:inputType="text|textCapSentences"
         android:hint="Собщение"
+        android:inputType="text|textCapSentences"
         android:textColor="@color/md_black_1000"
         android:textColorHint="@color/colorGreyLight"
         android:textSize="@dimen/text_large"
