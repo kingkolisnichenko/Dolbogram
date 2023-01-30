@@ -48,14 +48,14 @@
                     }
                 },
                 {
-                    "source": "E:\\Dev\\Android\\Kotlin\\Dolbogram\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "D:\\Android\\Projects\\Dolbogram\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "55",
+                        "startOffsets": "53",
                         "endLines": "17",
                         "endColumns": "12",
-                        "endOffsets": "856"
+                        "endOffsets": "839"
                     },
                     "to": {
                         "startLines": "17",

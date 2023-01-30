@@ -27,15 +27,8 @@ class MainActivity : AppCompatActivity() {
         APP_ACTIVITY = this
 
         initFirebase()
-        initUser {
-
-            CoroutineScope(Dispatchers.IO).launch {
-                initContacts()
-            }
-
-            initFields()
-            initFunc()
-        }
+        initFields()
+        initFunc()
 
     }
 
@@ -53,7 +46,15 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(mToolbar)
 
         if (AUTH.currentUser != null) {
+            initUser {
+                CoroutineScope(Dispatchers.IO).launch {
+                    initContacts()
+                }
+                mAppDrawer.updateHeader()
+            }
+
             mAppDrawer.create()
+
 
             replaceFragment(MainFragment(), false)
 

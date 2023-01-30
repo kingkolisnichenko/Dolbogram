@@ -33,13 +33,13 @@
                     }
                 },
                 {
-                    "source": "E:\\Dev\\Android\\Kotlin\\Dolbogram\\app\\src\\main\\res\\values-land\\dimens.xml",
+                    "source": "D:\\Android\\Projects\\Dolbogram\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "17",
+                        "startOffsets": "16",
                         "endColumns": "41",
-                        "endOffsets": "54"
+                        "endOffsets": "53"
                     },
                     "to": {
                         "startLines": "5",

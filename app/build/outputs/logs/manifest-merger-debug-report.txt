@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:2:1-41:12
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:2:1-50:12
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.8.0] C:\Users\Ilya\.gradle\caches\transforms-3\d8f0736849519ab6bdecb1f142cfd560\transformed\android-image-cropper-2.8.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.databinding:viewbinding:7.4.0] C:\Users\Ilya\.gradle\caches\transforms-3\4589cc5461cf5330b6b3610a59ebadb5\transformed\viewbinding-7.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.mikepenz:materialdrawer-nav:7.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\ea187be4862066bfa49c05b61c03600b\transformed\materialdrawer-nav-7.0.0\AndroidManifest.xml:2:1-11:12
@@ -45,6 +45,7 @@ MERGED from [androidx.activity:activity-ktx:1.6.0] C:\Users\Ilya\.gradle\caches\
 MERGED from [androidx.navigation:navigation-common-ktx:2.5.3] C:\Users\Ilya\.gradle\caches\transforms-3\53a8dbfa953ca092b8b37b9a21337a48\transformed\navigation-common-ktx-2.5.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\Ilya\.gradle\caches\transforms-3\ac8bbf2b44c73506f4c1f08015a86640\transformed\navigation-common-2.5.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\Ilya\.gradle\caches\transforms-3\f0d0279f91df5b1c11a8c3e5aa0f2e81\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\Ilya\.gradle\caches\transforms-3\9f16502fe951e7c4749a12224e4b16da\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.firebaseui:firebase-ui-common:8.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\934d0209511c423d4b6816746e978cdc\transformed\firebase-ui-common-8.0.2\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.compose.material:material:1.2.1] C:\Users\Ilya\.gradle\caches\transforms-3\2aca0b4fe5fba245183c5bb58f317583\transformed\material-1.2.1\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\30ebc378774b367fd0d89a38e407fff1\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -66,7 +67,6 @@ MERGED from [androidx.compose.ui:ui-unit:1.2.1] C:\Users\Ilya\.gradle\caches\tra
 MERGED from [androidx.compose.runtime:runtime-saveable:1.2.1] C:\Users\Ilya\.gradle\caches\transforms-3\fed7448b4d60d908b31bf0e02aa3af7e\transformed\runtime-saveable-1.2.1\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.compose.ui:ui-geometry:1.2.1] C:\Users\Ilya\.gradle\caches\transforms-3\6c4a62c1378d5376336f69896333634b\transformed\ui-geometry-1.2.1\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.compose.runtime:runtime:1.2.1] C:\Users\Ilya\.gradle\caches\transforms-3\c6143e3787dcb3a0e9db71f14df61711\transformed\runtime-1.2.1\AndroidManifest.xml:17:1-23:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\Ilya\.gradle\caches\transforms-3\9f16502fe951e7c4749a12224e4b16da\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\037cc54a98ee6351ee7ea2688698618e\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\c292cc18cadf1b1d2f308ad1aecda5c3\transformed\window-1.0.0\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.paging:paging-rxjava3:3.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\fa94701ee25896f52324e529412ff4ab\transformed\paging-rxjava3-3.0.0\AndroidManifest.xml:17:1-24:12
@@ -115,49 +115,49 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Ilya\.gradle\caches\transforms
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Ilya\.gradle\caches\transforms-3\75947f3739795635f1db1daf13d28dad\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.compose.ui:ui-util:1.2.1] C:\Users\Ilya\.gradle\caches\transforms-3\dfee5cc14913db9b875408e182b1160c\transformed\ui-util-1.2.1\AndroidManifest.xml:17:1-23:12
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\ae652ff573b7d09d39093579f2794230\transformed\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
-INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:2:1-50:12
 	package
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:4:5-34
-		INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:4:5-34
+		INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:2:1-41:12
-		INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:2:1-50:12
+		INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:2:1-41:12
-		INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:2:1-50:12
+		INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:6:5-80
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:6:5-80
 	android:name
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:6:22-77
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:6:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:7:5-81
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
-ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:8:5-82
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:8:5-82
 	android:name
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:8:22-79
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:8:22-79
 uses-permission#android.permission.READ_CONTACTS
-ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:9:5-72
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:9:5-72
 	android:name
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:9:22-69
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:9:22-69
 queries
-ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:11:5-13:15
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:11:5-13:15
 package#com.google.android.apps.photos
-ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:12:9-66
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:12:9-66
 	android:name
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:12:18-63
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:12:18-63
 application
-ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:15:5-39:19
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:15:5-48:19
 MERGED from [com.google.android.material:material:1.9.0-alpha01] C:\Users\Ilya\.gradle\caches\transforms-3\9b734d6770f78eb52fa626b45608a6fe\transformed\material-1.9.0-alpha01\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0-alpha01] C:\Users\Ilya\.gradle\caches\transforms-3\9b734d6770f78eb52fa626b45608a6fe\transformed\material-1.9.0-alpha01\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Ilya\.gradle\caches\transforms-3\eea0ab214b7e74f95aaece6a1f7d9555\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -209,51 +209,63 @@ MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Ilya\.gradle\caches\tr
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\Ilya\.gradle\caches\transforms-3\c5f078cbba498609cbf7a26ea050a803\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:22:9-35
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:20:9-41
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:20:9-41
 	android:fullBackupContent
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:18:9-54
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:18:9-54
 	android:roundIcon
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:21:9-54
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:21:9-54
 	tools:targetApi
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:24:9-29
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:24:9-29
 	android:icon
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:19:9-43
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:19:9-43
 	android:allowBackup
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:16:9-35
 	android:theme
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:23:9-47
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:23:9-47
 	android:dataExtractionRules
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:17:9-65
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:17:9-65
 activity#com.konge.dolbogram.activities.MainActivity
-ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:26:9-35:20
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:26:9-35:20
 	android:windowSoftInputMode
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:29:13-55
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:29:13-55
 	android:exported
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:28:13-36
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:28:13-36
 	android:name
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:27:13-52
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:27:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:30:13-34:29
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:31:17-69
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:31:25-66
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:33:17-77
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:33:27-74
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:33:27-74
 activity#com.theartofdev.edmodo.cropper.CropImageActivity
-ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:36:9-38:59
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:36:9-38:59
 	android:theme
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:38:13-56
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:38:13-56
 	android:name
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml:37:13-76
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:37:13-76
+service#com.konge.dolbogram.notifications.PushService
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:40:9-46:19
+	android:exported
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:42:13-36
+	android:name
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:41:13-54
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:43:13-45:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:44:17-77
+	android:name
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml:44:25-75
 uses-sdk
-INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
-INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.8.0] C:\Users\Ilya\.gradle\caches\transforms-3\d8f0736849519ab6bdecb1f142cfd560\transformed\android-image-cropper-2.8.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.8.0] C:\Users\Ilya\.gradle\caches\transforms-3\d8f0736849519ab6bdecb1f142cfd560\transformed\android-image-cropper-2.8.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.databinding:viewbinding:7.4.0] C:\Users\Ilya\.gradle\caches\transforms-3\4589cc5461cf5330b6b3610a59ebadb5\transformed\viewbinding-7.4.0\AndroidManifest.xml:5:5-44
@@ -336,6 +348,8 @@ MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\Ilya\.gradle\
 MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\Ilya\.gradle\caches\transforms-3\ac8bbf2b44c73506f4c1f08015a86640\transformed\navigation-common-2.5.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\Ilya\.gradle\caches\transforms-3\f0d0279f91df5b1c11a8c3e5aa0f2e81\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\Ilya\.gradle\caches\transforms-3\f0d0279f91df5b1c11a8c3e5aa0f2e81\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\Ilya\.gradle\caches\transforms-3\9f16502fe951e7c4749a12224e4b16da\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\Ilya\.gradle\caches\transforms-3\9f16502fe951e7c4749a12224e4b16da\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.firebaseui:firebase-ui-common:8.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\934d0209511c423d4b6816746e978cdc\transformed\firebase-ui-common-8.0.2\AndroidManifest.xml:5:5-7:41
 MERGED from [com.firebaseui:firebase-ui-common:8.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\934d0209511c423d4b6816746e978cdc\transformed\firebase-ui-common-8.0.2\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.compose.material:material:1.2.1] C:\Users\Ilya\.gradle\caches\transforms-3\2aca0b4fe5fba245183c5bb58f317583\transformed\material-1.2.1\AndroidManifest.xml:20:5-21:38
@@ -378,8 +392,6 @@ MERGED from [androidx.compose.ui:ui-geometry:1.2.1] C:\Users\Ilya\.gradle\caches
 MERGED from [androidx.compose.ui:ui-geometry:1.2.1] C:\Users\Ilya\.gradle\caches\transforms-3\6c4a62c1378d5376336f69896333634b\transformed\ui-geometry-1.2.1\AndroidManifest.xml:20:5-21:38
 MERGED from [androidx.compose.runtime:runtime:1.2.1] C:\Users\Ilya\.gradle\caches\transforms-3\c6143e3787dcb3a0e9db71f14df61711\transformed\runtime-1.2.1\AndroidManifest.xml:20:5-21:38
 MERGED from [androidx.compose.runtime:runtime:1.2.1] C:\Users\Ilya\.gradle\caches\transforms-3\c6143e3787dcb3a0e9db71f14df61711\transformed\runtime-1.2.1\AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\Ilya\.gradle\caches\transforms-3\9f16502fe951e7c4749a12224e4b16da\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\Ilya\.gradle\caches\transforms-3\9f16502fe951e7c4749a12224e4b16da\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\037cc54a98ee6351ee7ea2688698618e\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\Ilya\.gradle\caches\transforms-3\037cc54a98ee6351ee7ea2688698618e\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0] C:\Users\Ilya\.gradle\caches\transforms-3\c292cc18cadf1b1d2f308ad1aecda5c3\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -476,16 +488,16 @@ MERGED from [androidx.compose.ui:ui-util:1.2.1] C:\Users\Ilya\.gradle\caches\tra
 MERGED from [androidx.compose.ui:ui-util:1.2.1] C:\Users\Ilya\.gradle\caches\transforms-3\dfee5cc14913db9b875408e182b1160c\transformed\ui-util-1.2.1\AndroidManifest.xml:20:5-21:38
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\ae652ff573b7d09d39093579f2794230\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Ilya\.gradle\caches\transforms-3\ae652ff573b7d09d39093579f2794230\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
-INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
-INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
-		ADDED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Dev\Android\Kotlin\Dolbogram\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\Dolbogram\app\src\main\AndroidManifest.xml
 provider#com.mikepenz.iconics.IconicsContentProvider
 ADDED from [com.mikepenz:iconics-core:4.0.2] C:\Users\Ilya\.gradle\caches\transforms-3\c080bd8a4413c05861579da69793fef9\transformed\iconics-core-4.0.2\AndroidManifest.xml:27:9-32:39
 	android:enabled
