@@ -1,11 +1,13 @@
 package com.konge.dolbogram.activities
 
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import com.konge.dolbogram.databinding.ActivityMainBinding
+import com.konge.dolbogram.notifications.PushService
 import com.konge.dolbogram.ui.fragments.MainFragment
 import com.konge.dolbogram.ui.fragments.register.EnterPhoneNumberFragment
 import com.konge.dolbogram.ui.objects.AppDrawer
@@ -40,6 +42,9 @@ class MainActivity : AppCompatActivity() {
     override fun onStop() {
         super.onStop()
         AppStates.updadeState(AppStates.OFFLINE)
+
+        startService(Intent(this, PushService::class.java))
+
     }
 
     private fun initFunc() {
