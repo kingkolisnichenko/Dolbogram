@@ -6,6 +6,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ServerValue
+import com.google.firebase.messaging.FirebaseMessaging
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.konge.dolbogram.R
@@ -16,6 +17,7 @@ lateinit var AUTH: FirebaseAuth
 lateinit var REF_DATABASE_ROOT: DatabaseReference
 lateinit var REF_STORAGE_ROOT: StorageReference
 
+lateinit var SERVER_KEY_MESSAGING: String
 lateinit var USER: UserModel
 lateinit var UUID: String
 
@@ -28,6 +30,7 @@ const val NODE_USERNAMES = "usernames"
 const val NODE_PHONES = "phones"
 const val NODE_PHONES_CONTACTS = "phones_contacts"
 const val NODE_MESSAGES = "messages"
+const val NODE_SERVER_KEY_MESSAGING = "SERVER_KEY_MESSAGING"
 
 const val CHILD_ID = "id"
 const val CHILD_PHONE = "phone"
@@ -36,6 +39,7 @@ const val CHILD_FULLNAME = "fullname"
 const val CHILD_BIO = "bio"
 const val CHILD_PHOTO_URL = "photoUrl"
 const val CHILD_STATE = "state"
+const val CHILD_MESSAGING_TOKEN = "messaging_token"
 
 const val CHILD_TEXT = "text"
 const val CHILD_TYPE = "type"
@@ -50,6 +54,14 @@ fun initFirebase() {
 
     USER = UserModel()
     UUID = AUTH.currentUser?.uid.toString()
+
+    REF_DATABASE_ROOT.child(NODE_SERVER_KEY_MESSAGING).addListenerForSingleValueEvent(AppValueEventListener{
+        SERVER_KEY_MESSAGING = it.value.toString()
+    })
+
+    FirebaseMessaging.getInstance().token.addOnCompleteListener {
+        setMessagingTokenDatabase(it.result.toString())
+    }
 
 }
 
@@ -119,6 +131,16 @@ inline fun initUser(crossinline function: () -> Unit) {
 
 }
 
+fun setMessagingTokenDatabase(token: String) {
+    REF_DATABASE_ROOT.child(NODE_USERS).child(UUID).child(CHILD_MESSAGING_TOKEN)
+        .setValue(token)
+        .addOnSuccessListener {
+            USER.messaging_token = token
+        }
+        .addOnFailureListener {
+            showToast(it.message.toString())
+        }
+}
 fun setBioToDatabase(newBio: String) {
     REF_DATABASE_ROOT.child(NODE_USERS).child(UUID).child(CHILD_BIO)
         .setValue(newBio)

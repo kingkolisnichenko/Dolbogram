@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-76:/values-land/values-land.xml",
+            "outputFile": "com.konge.dolbogram.app-mergeDebugResources-77:/values-land/values-land.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ilya\\.gradle\\caches\\transforms-3\\9b734d6770f78eb52fa626b45608a6fe\\transformed\\material-1.9.0-alpha01\\res\\values-land\\values-land.xml",
@@ -33,13 +33,13 @@
                     }
                 },
                 {
-                    "source": "D:\\Android\\Projects\\Dolbogram\\app\\src\\main\\res\\values-land\\dimens.xml",
+                    "source": "E:\\Dev\\Android\\Kotlin\\Dolbogram\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "16",
+                        "startOffsets": "17",
                         "endColumns": "41",
-                        "endOffsets": "53"
+                        "endOffsets": "54"
                     },
                     "to": {
                         "startLines": "5",

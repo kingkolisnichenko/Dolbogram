@@ -68,6 +68,7 @@ drawable ic_menu_invate
 drawable ic_menu_phone
 drawable ic_menu_secret_chat
 drawable ic_menu_settings
+drawable ic_push_notifacation
 drawable ic_register_image
 drawable ic_send
 drawable ic_toolbar_find

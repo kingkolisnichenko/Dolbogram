@@ -3,6 +3,11 @@
   <component name="WizardSettings">
     <option name="children">
       <map>
+        <entry key="imageWizard">
+          <value>
+            <PersistentState />
+          </value>
+        </entry>
         <entry key="vectorWizard">
           <value>
             <PersistentState>
@@ -18,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/send/baseline_send_24.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialiconsoutlined/notifications_active/outline_notifications_active_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -29,7 +34,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="222222" />
-                            <entry key="outputName" value="ic_send" />
+                            <entry key="outputName" value="ic_push_notifacation" />
                             <entry key="sourceFile" value="D:\Android\Projects\Dolbogram" />
                           </map>
                         </option>

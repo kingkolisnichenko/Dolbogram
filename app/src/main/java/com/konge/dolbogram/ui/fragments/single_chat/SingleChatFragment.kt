@@ -13,6 +13,12 @@ import com.konge.dolbogram.utilits.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.fragment_single_chat.*
 import kotlinx.android.synthetic.main.toolbar_info.view.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import java.io.OutputStreamWriter
+import java.net.HttpURLConnection
+import java.net.URL
 
 class SingleChatFragment(private val contact: CommonModel) :
     BaseFragment(R.layout.fragment_single_chat) {
@@ -63,7 +69,7 @@ class SingleChatFragment(private val contact: CommonModel) :
 
         mMessagesListener = AppChildEventListener {
 
-            mAdapter.adItem(it.getCommonModel(), mSmoothScrollToPosition){
+            mAdapter.adItem(it.getCommonModel(), mSmoothScrollToPosition) {
                 if (mSmoothScrollToPosition) mRecyclerView.smoothScrollToPosition(mAdapter.itemCount)
                 mSwipeRefreshLayout.isRefreshing = false
             }
@@ -111,9 +117,57 @@ class SingleChatFragment(private val contact: CommonModel) :
             if (message.isNotEmpty()) {
                 sendMessage(message, contact.id, TYPE_TEXT) {
                     single_chat_input_message.setText("")
+
+                    if (mReceivingUser.state == AppStates.OFFLINE.state && mReceivingUser.messaging_token.isNotEmpty()) {
+                        CoroutineScope(Dispatchers.IO).launch {
+                            notifyRecingUser(mReceivingUser, message)
+                        }
+                    }
+
                 }
             }
         }
+    }
+
+    private fun notifyRecingUser(receivingUser: UserModel, message: String) {
+
+        val serverKey = SERVER_KEY_MESSAGING
+        val deviceToken = receivingUser.messaging_token.toString()
+
+        val url = URL("https://fcm.googleapis.com/fcm/send")
+        val connection = url.openConnection() as HttpURLConnection
+        connection.requestMethod = "POST"
+        connection.doOutput = true
+        connection.doInput = true
+        connection.useCaches = false
+        connection.setRequestProperty("Authorization", "key=$serverKey")
+        connection.setRequestProperty("Content-Type", "application/json")
+
+        val json = """
+                {
+                    "to": "$deviceToken",
+                    "notification": {
+                        "title": "New message in Dolbogram",
+                        "body": "$message",
+                        "click_action": "OPEN_ACTIVITY_MAIN"
+                    }
+                }
+                """
+
+        val outputStream = connection.outputStream
+        val writer = OutputStreamWriter(outputStream, "UTF-8")
+        writer.write(json)
+        writer.flush()
+        writer.close()
+        outputStream.close()
+
+        val responseCode = connection.responseCode
+        if (responseCode == 200) {
+            println("Push Notification sent successfully.")
+        } else {
+            println("Push Notification failed with response code: $responseCode")
+        }
+
     }
 
     private fun initToolbarInfo() {

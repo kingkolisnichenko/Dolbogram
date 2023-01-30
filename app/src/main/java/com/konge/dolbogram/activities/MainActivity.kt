@@ -1,7 +1,9 @@
 package com.konge.dolbogram.activities
 
+import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -37,6 +39,7 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         AppStates.updadeState(AppStates.ONLINE)
+
     }
 
     override fun onStop() {
@@ -62,6 +65,10 @@ class MainActivity : AppCompatActivity() {
 
 
             replaceFragment(MainFragment(), false)
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                checkPermissions(Manifest.permission.POST_NOTIFICATIONS)
+            }
 
         } else {
             replaceFragment(EnterPhoneNumberFragment(), false)
