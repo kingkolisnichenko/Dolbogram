@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.database.DatabaseReference
@@ -16,6 +17,9 @@ import com.konge.dolbogram.utilits.*
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.contact_item.view.*
 import kotlinx.android.synthetic.main.fragment_contacts.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class ContactsFragment : BaseFragment(R.layout.fragment_contacts) {
 
@@ -24,6 +28,7 @@ class ContactsFragment : BaseFragment(R.layout.fragment_contacts) {
     private lateinit var mRefContacts: DatabaseReference
     private lateinit var mRefUsers: DatabaseReference
     private lateinit var mRefUsersListener: AppValueEventListener
+    private lateinit var mSwipeRefreshLayout: SwipeRefreshLayout
     private var mapListeners = hashMapOf<DatabaseReference, AppValueEventListener>()
 
     override fun onResume() {
@@ -33,9 +38,18 @@ class ContactsFragment : BaseFragment(R.layout.fragment_contacts) {
 
         initRecyclerView()
 
+        mSwipeRefreshLayout = contact_swipe_refresh
+
+        mSwipeRefreshLayout.setOnRefreshListener {
+            CoroutineScope(Dispatchers.IO).launch {
+                initContacts()
+            }
+            mSwipeRefreshLayout.isRefreshing = false
+        }
     }
 
     private fun initRecyclerView() {
+
         mRecyclerView = contact_recycler_view
         mRefContacts = REF_DATABASE_ROOT.child(NODE_PHONES_CONTACTS).child(UUID)
 

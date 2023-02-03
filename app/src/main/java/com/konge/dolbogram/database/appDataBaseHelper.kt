@@ -55,14 +55,16 @@ fun initFirebase() {
     USER = UserModel()
     UUID = AUTH.currentUser?.uid.toString()
 
-    REF_DATABASE_ROOT.child(NODE_SERVER_KEY_MESSAGING).addListenerForSingleValueEvent(AppValueEventListener{
-        SERVER_KEY_MESSAGING = it.value.toString()
-    })
+    if (AUTH.currentUser != null) {
+        REF_DATABASE_ROOT.child(NODE_SERVER_KEY_MESSAGING)
+            .addListenerForSingleValueEvent(AppValueEventListener {
+                SERVER_KEY_MESSAGING = it.value.toString()
+            })
 
-    FirebaseMessaging.getInstance().token.addOnCompleteListener {
-        setMessagingTokenDatabase(it.result.toString())
+        FirebaseMessaging.getInstance().token.addOnCompleteListener {
+            setMessagingTokenDatabase(it.result.toString())
+        }
     }
-
 }
 
 fun updatePhonesToDatabase(arrayContacts: ArrayList<CommonModel>) {
