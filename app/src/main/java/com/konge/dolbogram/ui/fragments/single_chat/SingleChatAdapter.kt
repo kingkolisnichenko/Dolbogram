@@ -58,20 +58,21 @@ class SingleChatAdapter : RecyclerView.Adapter<SingleChatAdapter.SingleChatHolde
 
     }
 
-    fun adItem(item: CommonModel, toBottom: Boolean, onSuccess:() ->Unit) {
+    fun addItemToBottom(item: CommonModel, onSuccess: () -> Unit) {
         if (!mListMessagesCash.contains(item)) {
-            if (toBottom) {
-                mListMessagesCash.add(item)
-                notifyItemChanged(mListMessagesCash.size)
-            } else {
-                mListMessagesCash.add(item)
-                mListMessagesCash.sortBy { it.timeStamp.toString() }
-                notifyItemChanged(mListMessagesCash.indexOf(item))
-            }
+            mListMessagesCash.add(item)
+            notifyItemChanged(mListMessagesCash.size)
         }
-
         onSuccess()
+    }
 
+    fun addItemToTop(item: CommonModel, onSuccess: () -> Unit) {
+        if (!mListMessagesCash.contains(item)) {
+            mListMessagesCash.add(item)
+            mListMessagesCash.sortBy { it.timeStamp.toString() }
+            notifyItemChanged(mListMessagesCash.indexOf(item))
+        }
+        onSuccess()
     }
 }
 

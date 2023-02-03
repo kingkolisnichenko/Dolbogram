@@ -12,6 +12,9 @@ import com.google.firebase.storage.StorageReference
 import com.konge.dolbogram.R
 import com.konge.dolbogram.models.CommonModel
 import com.konge.dolbogram.models.UserModel
+import java.io.OutputStreamWriter
+import java.net.HttpURLConnection
+import java.net.URL
 
 lateinit var AUTH: FirebaseAuth
 lateinit var REF_DATABASE_ROOT: DatabaseReference
@@ -220,6 +223,7 @@ fun sendMessage(message: String, receivingUserID: String, typeText: String, func
     mapMessage[CHILD_FROM] = UUID
     mapMessage[CHILD_TYPE] = typeText
     mapMessage[CHILD_TEXT] = message
+    mapMessage[CHILD_ID] = messageKey.toString()
     mapMessage[CHILD_TIMESTAMP] = ServerValue.TIMESTAMP
 
     val mapDialogs = hashMapOf<String, Any>()
@@ -237,4 +241,44 @@ fun DataSnapshot.getCommonModel(): CommonModel =
 fun DataSnapshot.getUserModel(): UserModel =
     this.getValue(UserModel::class.java) ?: UserModel()
 
+fun notifyRecingUser(receivingUser: UserModel, message: String) {
 
+    val serverKey = SERVER_KEY_MESSAGING
+    val deviceToken = receivingUser.messaging_token.toString()
+
+    val url = URL("https://fcm.googleapis.com/fcm/send")
+    val connection = url.openConnection() as HttpURLConnection
+    connection.requestMethod = "POST"
+    connection.doOutput = true
+    connection.doInput = true
+    connection.useCaches = false
+    connection.setRequestProperty("Authorization", "key=$serverKey")
+    connection.setRequestProperty("Content-Type", "application/json")
+
+    val json = """
+                {
+                    "to": "$deviceToken",
+                    "from": "$UUID",
+                    "notification": {
+                        "title": "${receivingUser.fullname}",
+                        "body": "$message",
+                        "click_action": "OPEN_ACTIVITY_MAIN"
+                    }
+                }
+                """
+
+    val outputStream = connection.outputStream
+    val writer = OutputStreamWriter(outputStream, "UTF-8")
+    writer.write(json)
+    writer.flush()
+    writer.close()
+    outputStream.close()
+
+    val responseCode = connection.responseCode
+    if (responseCode == 200) {
+        println("Push Notification sent successfully.")
+    } else {
+        println("Push Notification failed with response code: $responseCode")
+    }
+
+}

@@ -31,12 +31,17 @@ class ContactsFragment : BaseFragment(R.layout.fragment_contacts) {
     private lateinit var mSwipeRefreshLayout: SwipeRefreshLayout
     private var mapListeners = hashMapOf<DatabaseReference, AppValueEventListener>()
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        initRecyclerView()
+
+    }
+
     override fun onResume() {
         super.onResume()
 
         APP_ACTIVITY.title = getString(R.string.app_title_contacts)
-
-        initRecyclerView()
 
         mSwipeRefreshLayout = contact_swipe_refresh
 
@@ -107,6 +112,7 @@ class ContactsFragment : BaseFragment(R.layout.fragment_contacts) {
 
     override fun onPause() {
         super.onPause()
+
         mAdapter.stopListening()
 
         mapListeners.forEach {

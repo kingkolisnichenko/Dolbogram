@@ -1,7 +1,9 @@
 package com.konge.dolbogram.ui.fragments.single_chat
 
+import android.os.Bundle
 import android.view.View
 import android.widget.AbsListView
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.firebase.database.DatabaseReference
@@ -28,12 +30,14 @@ class SingleChatFragment(private val contact: CommonModel) :
     private lateinit var mToolbarInfo: View
     private lateinit var mRefUser: DatabaseReference
     private lateinit var mSwipeRefreshLayout: SwipeRefreshLayout
+    private lateinit var mLayoutManager: LinearLayoutManager
 
     private lateinit var mRefMessages: DatabaseReference
     private lateinit var mAdapter: SingleChatAdapter
     private lateinit var mRecyclerView: RecyclerView
     private lateinit var mMessagesListener: AppChildEventListener
-    private var mCountMessages = 15
+
+    private var mCountMessages = 20
     private var mIsScrolling = false
     private var mSmoothScrollToPosition = true
 
@@ -57,6 +61,7 @@ class SingleChatFragment(private val contact: CommonModel) :
     }
 
     private fun initRecyclerView() {
+        mLayoutManager = LinearLayoutManager(this.context)
         mRecyclerView = single_chat_recycler_view
         mSwipeRefreshLayout = single_chat_swipe_refresh
 
@@ -66,15 +71,17 @@ class SingleChatFragment(private val contact: CommonModel) :
             .child(contact.id)
 
         mRecyclerView.adapter = mAdapter
+        mRecyclerView.layoutManager = mLayoutManager
+        mRecyclerView.isNestedScrollingEnabled = false
 
         mMessagesListener = AppChildEventListener {
 
-            mAdapter.adItem(it.getCommonModel(), mSmoothScrollToPosition) {
-                if (mSmoothScrollToPosition) mRecyclerView.smoothScrollToPosition(mAdapter.itemCount)
-                mSwipeRefreshLayout.isRefreshing = false
+            val msg = it.getCommonModel()
+            if (mSmoothScrollToPosition) {
+                mAdapter.addItemToBottom(msg) { mRecyclerView.smoothScrollToPosition(mAdapter.itemCount) }
+            } else {
+                mAdapter.addItemToTop(msg) { mSwipeRefreshLayout.isRefreshing = false }
             }
-
-
         }
 
         mRefMessages.limitToLast(mCountMessages).addChildEventListener(mMessagesListener)
@@ -89,7 +96,7 @@ class SingleChatFragment(private val contact: CommonModel) :
 
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
-                if (mIsScrolling && dy < 0) {
+                if (mIsScrolling && dy < 0 && mLayoutManager.findFirstVisibleItemPosition() <= 3) {
                     updateData()
                 }
             }
@@ -127,47 +134,6 @@ class SingleChatFragment(private val contact: CommonModel) :
                 }
             }
         }
-    }
-
-    private fun notifyRecingUser(receivingUser: UserModel, message: String) {
-
-        val serverKey = SERVER_KEY_MESSAGING
-        val deviceToken = receivingUser.messaging_token.toString()
-
-        val url = URL("https://fcm.googleapis.com/fcm/send")
-        val connection = url.openConnection() as HttpURLConnection
-        connection.requestMethod = "POST"
-        connection.doOutput = true
-        connection.doInput = true
-        connection.useCaches = false
-        connection.setRequestProperty("Authorization", "key=$serverKey")
-        connection.setRequestProperty("Content-Type", "application/json")
-
-        val json = """
-                {
-                    "to": "$deviceToken",
-                    "notification": {
-                        "title": "New message in Dolbogram",
-                        "body": "$message",
-                        "click_action": "OPEN_ACTIVITY_MAIN"
-                    }
-                }
-                """
-
-        val outputStream = connection.outputStream
-        val writer = OutputStreamWriter(outputStream, "UTF-8")
-        writer.write(json)
-        writer.flush()
-        writer.close()
-        outputStream.close()
-
-        val responseCode = connection.responseCode
-        if (responseCode == 200) {
-            println("Push Notification sent successfully.")
-        } else {
-            println("Push Notification failed with response code: $responseCode")
-        }
-
     }
 
     private fun initToolbarInfo() {

@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:background="@drawable/bg_user_message"
+        android:gravity="end"
         app:layout_constrainedWidth="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,17 +22,16 @@
 
         <TextView
             android:id="@+id/chat_user_message"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="end"
             android:padding="@dimen/app_padding"
             android:textColor="@color/colorgrey"
             android:textSize="@dimen/text_normal"
-            app:layout_constrainedWidth="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/chat_user_message_time"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Hello how are you" />
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="@tools:sample/lorem" />
 
         <TextView
             android:id="@+id/chat_user_message_time"
@@ -54,6 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="100dp"
         android:background="@drawable/bg_receiving_message"
+        android:gravity="start"
         app:layout_constrainedWidth="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,8 +66,8 @@
             android:id="@+id/chat_received_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="start"
             android:padding="@dimen/app_padding"
+            android:textAlignment="textStart"
             android:textColor="@color/colorgrey"
             android:textSize="@dimen/text_normal"
             app:layout_constrainedWidth="true"

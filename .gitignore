@@ -8,3 +8,11 @@
 .cxx
 google-services.json
 \compileDebugKotlin
+workspace.xml
+Dolbogram.app.androidTest.iml
+Dolbogram.app.main.iml
+Dolbogram.app.unitTest.iml
+gradle-wrapper.jar
+gradle-wrapper.properties
+gradlew
+
