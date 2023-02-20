@@ -50,6 +50,11 @@ class MainFragment : Fragment() {
     override fun onResume() {
         super.onResume()
 
+        APP_ACTIVITY.title = getString(R.string.app_title_chats)
+
+        APP_ACTIVITY.mAppDrawer.enableDrawer()
+
+        hideKeyboard()
         (view as ComposeView).apply {
             setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
             setContent {
@@ -57,11 +62,7 @@ class MainFragment : Fragment() {
             }
         }
 
-        APP_ACTIVITY.title = getString(R.string.app_title_chats)
 
-        APP_ACTIVITY.mAppDrawer.enableDrawer()
-
-        hideKeyboard()
 
     }
 

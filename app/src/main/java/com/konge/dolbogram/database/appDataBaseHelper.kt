@@ -25,8 +25,7 @@ lateinit var USER: UserModel
 lateinit var UUID: String
 
 const val FOLDER_PROFILE_IMAGE = "profile_image"
-
-const val TYPE_TEXT = "text"
+const val FOLDER_ATTACHED_FILES = "attached_files"
 
 const val NODE_USERS = "users"
 const val NODE_USERNAMES = "usernames"
@@ -43,6 +42,7 @@ const val CHILD_BIO = "bio"
 const val CHILD_PHOTO_URL = "photoUrl"
 const val CHILD_STATE = "state"
 const val CHILD_MESSAGING_TOKEN = "messaging_token"
+const val CHILD_IMAGE_URL = "image_url"
 
 const val CHILD_TEXT = "text"
 const val CHILD_TYPE = "type"
@@ -235,6 +235,27 @@ fun sendMessage(message: String, receivingUserID: String, typeText: String, func
         .addOnFailureListener { showToast(it.message.toString()) }
 }
 
+fun sendMessageAsFile(receivingUserID: String, fileUrl: String, messageKey: String) {
+
+    val refDialogUser = "$NODE_MESSAGES/$UUID/$receivingUserID"
+    val refDialogReceivingUser = "$NODE_MESSAGES/$receivingUserID/$UUID"
+
+    val mapMessage = hashMapOf<String, Any>()
+    mapMessage[CHILD_FROM] = UUID
+    mapMessage[CHILD_TYPE] = TYPE_MESSAGE_IMAGE
+    mapMessage[CHILD_ID] = messageKey
+    mapMessage[CHILD_TIMESTAMP] = ServerValue.TIMESTAMP
+    mapMessage[CHILD_IMAGE_URL] = fileUrl
+
+    val mapDialogs = hashMapOf<String, Any>()
+    mapDialogs["$refDialogUser/$messageKey"] = mapMessage
+    mapDialogs["$refDialogReceivingUser/$messageKey"] = mapMessage
+
+    REF_DATABASE_ROOT.updateChildren(mapDialogs)
+        .addOnFailureListener { showToast(it.message.toString()) }
+
+}
+
 fun DataSnapshot.getCommonModel(): CommonModel =
     this.getValue(CommonModel::class.java) ?: CommonModel()
 
@@ -260,7 +281,7 @@ fun notifyRecingUser(receivingUser: UserModel, message: String) {
                     "to": "$deviceToken",
                     "from": "$UUID",
                     "notification": {
-                        "title": "${receivingUser.fullname}",
+                        "title": "${USER.fullname}",
                         "body": "$message",
                         "click_action": "OPEN_ACTIVITY_MAIN"
                     }

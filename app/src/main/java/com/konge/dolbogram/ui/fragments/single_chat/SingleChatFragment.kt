@@ -1,6 +1,7 @@
 package com.konge.dolbogram.ui.fragments.single_chat
 
-import android.os.Bundle
+import android.app.Activity
+import android.content.Intent
 import android.view.View
 import android.widget.AbsListView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -12,15 +13,13 @@ import com.konge.dolbogram.models.CommonModel
 import com.konge.dolbogram.models.UserModel
 import com.konge.dolbogram.ui.fragments.BaseFragment
 import com.konge.dolbogram.utilits.*
+import com.theartofdev.edmodo.cropper.CropImage
 import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.fragment_single_chat.*
 import kotlinx.android.synthetic.main.toolbar_info.view.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import java.io.OutputStreamWriter
-import java.net.HttpURLConnection
-import java.net.URL
 
 class SingleChatFragment(private val contact: CommonModel) :
     BaseFragment(R.layout.fragment_single_chat) {
@@ -44,6 +43,8 @@ class SingleChatFragment(private val contact: CommonModel) :
     override fun onResume() {
         super.onResume()
 
+        initFields()
+
         initToolbar()
 
         initRecyclerView()
@@ -58,6 +59,30 @@ class SingleChatFragment(private val contact: CommonModel) :
 
         mRefMessages.removeEventListener(mMessagesListener)
 
+    }
+
+    private fun initFields() {
+
+        single_chat_input_message.addTextChangedListener(AppTextWatcher {
+            val string = single_chat_input_message.text.toString()
+            if (string.isEmpty()) {
+                single_chat_image_send.visibility = View.GONE
+                single_chat_image_atach.visibility = View.VISIBLE
+            } else {
+                single_chat_image_send.visibility = View.VISIBLE
+                single_chat_image_atach.visibility = View.GONE
+            }
+        })
+
+        single_chat_image_atach.setOnClickListener { attachFile() }
+
+    }
+
+    private fun attachFile() {
+        CropImage.activity()
+            .setAspectRatio(1, 1)
+            .setRequestedSize(600, 600)
+            .start(APP_ACTIVITY, this)
     }
 
     private fun initRecyclerView() {
@@ -122,7 +147,7 @@ class SingleChatFragment(private val contact: CommonModel) :
             mSmoothScrollToPosition = true
             val message = single_chat_input_message.text.toString()
             if (message.isNotEmpty()) {
-                sendMessage(message, contact.id, TYPE_TEXT) {
+                sendMessage(message, contact.id, TYPE_MESSAGE_TEXT) {
                     single_chat_input_message.setText("")
 
                     if (mReceivingUser.state == AppStates.OFFLINE.state && mReceivingUser.messaging_token.isNotEmpty()) {
@@ -155,5 +180,26 @@ class SingleChatFragment(private val contact: CommonModel) :
         mRefMessages.limitToLast(mCountMessages).addChildEventListener(mMessagesListener)
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE
+            && resultCode == Activity.RESULT_OK
+            && data != null
+        ) {
+            val uri = CropImage.getActivityResult(data).uri
+            val messageKey = REF_DATABASE_ROOT.child(NODE_MESSAGES).child(UUID).child(contact.id)
+                .push().key.toString()
+
+            val path = REF_STORAGE_ROOT.child(FOLDER_ATTACHED_FILES).child(messageKey)
+
+            putImageToStorage(uri, path) {
+                getUrlFromStorage(path) {
+                    sendMessageAsFile(contact.id, it, messageKey)
+                }
+            }
+
+        }
+    }
 
 }
