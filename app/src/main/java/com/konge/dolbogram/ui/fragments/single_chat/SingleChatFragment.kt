@@ -36,7 +36,7 @@ class SingleChatFragment(private val contact: CommonModel) :
     private lateinit var mRecyclerView: RecyclerView
     private lateinit var mMessagesListener: AppChildEventListener
 
-    private var mCountMessages = 20
+    private var mCountMessages = 25
     private var mIsScrolling = false
     private var mSmoothScrollToPosition = true
 
@@ -175,7 +175,7 @@ class SingleChatFragment(private val contact: CommonModel) :
     private fun updateData() {
         mSmoothScrollToPosition = false
         mIsScrolling = false
-        mCountMessages += 10
+        mCountMessages += 15
         mRefMessages.removeEventListener(mMessagesListener)
         mRefMessages.limitToLast(mCountMessages).addChildEventListener(mMessagesListener)
     }
@@ -195,7 +195,16 @@ class SingleChatFragment(private val contact: CommonModel) :
 
             putImageToStorage(uri, path) {
                 getUrlFromStorage(path) {
-                    sendMessageAsFile(contact.id, it, messageKey)
+                    sendMessageAsFile(contact.id, it, messageKey){
+
+                        if (mReceivingUser.state == AppStates.OFFLINE.state && mReceivingUser.messaging_token.isNotEmpty()) {
+                            CoroutineScope(Dispatchers.IO).launch {
+                                notifyRecingUser(mReceivingUser, "Image")
+                            }
+                        }
+
+                    }
+                    mSmoothScrollToPosition = true
                 }
             }
 

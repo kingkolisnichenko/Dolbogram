@@ -9,7 +9,7 @@ data class CommonModel(
     var photoUrl: String = "empty",
     var phone: String = "",
     var messaging_token:String = "",
-    var image_url:String = "",
+    var image_url:String = "empty",
 
     var text: String = "",
     var type: String = "",

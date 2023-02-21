@@ -235,7 +235,7 @@ fun sendMessage(message: String, receivingUserID: String, typeText: String, func
         .addOnFailureListener { showToast(it.message.toString()) }
 }
 
-fun sendMessageAsFile(receivingUserID: String, fileUrl: String, messageKey: String) {
+fun sendMessageAsFile(receivingUserID: String, fileUrl: String, messageKey: String, function: () -> Unit) {
 
     val refDialogUser = "$NODE_MESSAGES/$UUID/$receivingUserID"
     val refDialogReceivingUser = "$NODE_MESSAGES/$receivingUserID/$UUID"
@@ -252,6 +252,7 @@ fun sendMessageAsFile(receivingUserID: String, fileUrl: String, messageKey: Stri
     mapDialogs["$refDialogReceivingUser/$messageKey"] = mapMessage
 
     REF_DATABASE_ROOT.updateChildren(mapDialogs)
+        .addOnSuccessListener { function() }
         .addOnFailureListener { showToast(it.message.toString()) }
 
 }

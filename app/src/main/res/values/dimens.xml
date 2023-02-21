@@ -25,6 +25,7 @@
     <dimen name="register_image_width_height">80dp</dimen>
     <dimen name="single_chat_toolbar_image_width">50dp</dimen>
     <dimen name="single_chat_toolbar_image_heigth">50dp</dimen>
+    <dimen name="chat_image_size">250dp</dimen>
 
 
 </resources>
